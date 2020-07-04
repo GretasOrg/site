@@ -1,6 +1,7 @@
 :root {
   --black: #323232;
   --green: #77c03d;
+  --green-shadow: rgba(150, 249, 71, 0.35);
   --white: white;
 
   --text-3xs: 0.25rem;
@@ -41,10 +42,33 @@ body {
   font-family: "Montserrat", sans-serif;
   margin: auto;
   max-width: 1158px;
+  color: var(--black);
 }
 
 button:focus {
   outline: none;
+}
+
+button {
+  line-height: var(--text-lg);
+  font-size: var(--text-lg);
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+  border: 1px solid transparent;
+  user-select: none;
+  padding: var(--spacer-3) var(--spacer-4) var(--spacer-3) var(--spacer-4);
+  cursor: pointer;
+}
+
+button.round {
+  border-radius: 63px;
+}
+
+button.primary {
+  color: var(--white);
+  box-shadow: 0px 4px 6px var(--green-shadow);
+  background-color: var(--green);
 }
 
 .top {
@@ -84,20 +108,20 @@ button:focus {
 }
 .read-more {
   grid-area: button;
-  background-color: var(--green);
-  border-radius: 63px;
-  line-height: var(--text-lg);
+  /* background-color: var(--green);
+  border-radius: 63px; */
+  /* line-height: var(--text-lg);
   font-size: var(--text-lg);
   font-weight: bold;
-  text-align: center;
-  color: var(--white);
-  display: inline-block;
-  border: 1px solid transparent;
-  user-select: none;
-  padding: var(--spacer-3) var(--spacer-4) var(--spacer-3) var(--spacer-4);
+  text-align: center; */
+  /* color: var(--white); */
+  /* display: inline-block;
+  border: 1px solid transparent; */
+  /* user-select: none;
+  padding: var(--spacer-3) var(--spacer-4) var(--spacer-3) var(--spacer-4); */
   justify-self: start;
-  box-shadow: 0px 4px 6px rgba(150, 249, 71, 0.35);
-  cursor: pointer;
+  /* box-shadow: 0px 4px 6px var(--green-shadow); */
+  /* cursor: pointer; */
 }
 
 .bg-image-top-right {
@@ -115,4 +139,134 @@ button:focus {
   position: absolute;
   left: 13%;
   top: 70%;
+}
+
+.meals-title {
+  position: relative;
+}
+
+.meals-title-text {
+  font-weight: normal;
+  line-height: var(--text-4xl);
+  font-size: var(--text-4xl);
+  text-align: center;
+}
+
+.meals-title-bg {
+  position: absolute;
+  left: 0px;
+  top: 80px;
+  z-index: -2;
+}
+.meals-title-sun {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -3;
+}
+.meals-title-flower {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  z-index: -1;
+}
+
+.meals-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.meal {
+  flex: 0 0 16.75rem;
+  /* height: 10rem; */
+  border-radius: 17px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.meal-image {
+  object-fit: cover;
+}
+
+.meal-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-left: var(--spacer-3);
+  padding-right: var(--spacer-3);
+  justify-content: space-between;
+}
+
+.meal-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: var(--text-2xl);
+  line-height: var(--text-3xl);
+  padding-top: var(--spacer-3);
+  padding-bottom: var(--spacer-3);
+  margin: 0;
+  color: var(--green);
+}
+
+.meal-description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--text-lg);
+  line-height: var(--text-3xl);
+  padding-top: var(--spacer-3);
+  padding-bottom: var(--spacer-3);
+  margin: 0;
+}
+
+.meal-price {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.meal-price .currency {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  color: var(--green);
+  font-style: normal;
+  font-weight: bold;
+  font-size: var(--text-lg);
+  line-height: var(--text-2xl);
+}
+
+.meal-price .price {
+  width: 50%;
+  color: var(--green);
+  font-style: normal;
+  font-weight: bold;
+  font-size: var(--text-5xl);
+  line-height: var(--text-5xl);
+  border-bottom: 1px solid #d0d0d0;
+  text-align: center;
+}
+
+.meal-message {
+  font-style: normal;
+  font-weight: bold;
+  font-size: var(--text-base);
+  color: var(--green);
+  line-height: var(--text-2xl);
+  flex: 1;
+  /* padding-top: var(--spacer-3);
+  padding-bottom: var(--spacer-3);
+  margin: 0; */
+}
+
+.meal-button {
+  padding-bottom: var(--spacer-6);
+}
+
+.meal-button button {
+  width: 100%;
+  border-radius: 63px;
+  font-size: var(--text-lg);
 }
