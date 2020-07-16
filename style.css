@@ -101,7 +101,6 @@ button.primary {
 
 .top2 {
   /* background-color: aliceblue; */
-  /* background-image: url(assets/images/bg-vermelho.png); */
   max-width: var(--main-max-width);
   width: 100%;
   min-height: var(--main-min-height);
@@ -143,57 +142,14 @@ button.primary {
   grid-area: description;
   /* background-color: aquamarine; */
   margin: 0;
-}
-
-.top2 .read-more-button {
-  grid-area: button;
-}
-
-/* .top {
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 10% 28.125rem auto;
-  grid-template-rows: 66px auto auto auto;
-  // grid-template-rows: 10rem auto auto auto;
-  grid-template-areas:
-    "spacer logo image"
-    "spacer title image"
-    "spacer description image"
-    "spacer button image";
-} */
-
-.logo {
-  grid-area: logo;
-  /* height: var(--text-6xl); */
-  align-self: center;
-  height: 100%;
-  /* padding-top: var(--spacer-6);
-  padding-bottom: var(--spacer-6); */
-}
-.description {
-  grid-area: description;
   font-size: var(--text-base);
   font-weight: normal;
-  /* background-color: aqua; */
   line-height: var(--text-2xl);
-  /* padding-bottom: var(--spacer-4); */
 }
-.read-more {
+
+.top2 .read-more {
   grid-area: button;
-  /* background-color: var(--green);
-  border-radius: 63px; */
-  /* line-height: var(--text-lg);
-  font-size: var(--text-lg);
-  font-weight: bold;
-  text-align: center; */
-  /* color: var(--white); */
-  /* display: inline-block;
-  border: 1px solid transparent; */
-  /* user-select: none;
-  padding: var(--spacer-3) var(--spacer-4) var(--spacer-3) var(--spacer-4); */
   justify-self: start;
-  /* box-shadow: 0px 4px 6px var(--green-shadow); */
-  /* cursor: pointer; */
 }
 
 .bg-image-top-right {
