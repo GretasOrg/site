@@ -41,11 +41,16 @@
 
   --main-content-padding-left: calc(var(--spacer-10) + var(--spacer-7));
   --main-max-width: 1158px;
+  --main-min-height: 500px;
+
+  --button-height: 54px;
 }
 body {
   font-family: "Montserrat", sans-serif;
-  margin: auto;
-  max-width: var(--main-max-width);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  /* max-width: var(--main-max-width); */
   color: var(--black);
 }
 
@@ -63,6 +68,7 @@ button {
   user-select: none;
   padding: var(--spacer-3) var(--spacer-4) var(--spacer-3) var(--spacer-4);
   cursor: pointer;
+  height: var(--button-height);
 }
 
 button.round {
@@ -75,32 +81,73 @@ button.primary {
   background-color: var(--green);
 }
 
-.top {
+.top2 {
+  background-color: aliceblue;
+  max-width: var(--main-max-width);
+  width: 100%;
+  min-height: var(--main-min-height);
+  height: 100vh;
   display: grid;
-  grid-template-columns: 4rem 28.125rem auto;
-  grid-template-rows: 10rem auto auto auto;
+  grid-template-columns: 20% 450px 1fr;
+  /* grid-template-rows: 66px 1fr 180px 163px var(--button-height); */
+  grid-template-rows: 66px 1fr 180px 1fr 163px 1fr var(--button-height) 1fr;
+  /* grid-template-rows: 10rem auto auto auto; */
+  grid-template-areas:
+    ". logo image"
+    ". . image"
+    ". title image"
+    ". . image"
+    ". description image"
+    ". . image"
+    ". button image"
+    ". . image";
+}
+
+.top2 .logo {
+  grid-area: logo;
+  background-color: antiquewhite;
+}
+
+.top2 .title {
+  grid-area: title;
+  background-color: aqua;
+  font-size: var(--text-4xl);
+  font-weight: 300;
+  /* background-color: antiquewhite; */
+  line-height: var(--text-6xl);
+  margin: 0;
+}
+
+.top2 .description {
+  grid-area: description;
+  background-color: aquamarine;
+  margin: 0;
+}
+
+.top2 .read-more-button {
+  grid-area: button;
+}
+
+/* .top {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 10% 28.125rem auto;
+  grid-template-rows: 66px auto auto auto;
+  // grid-template-rows: 10rem auto auto auto;
   grid-template-areas:
     "spacer logo image"
     "spacer title image"
     "spacer description image"
     "spacer button image";
-}
+} */
 
 .logo {
   grid-area: logo;
-  height: var(--text-6xl);
+  /* height: var(--text-6xl); */
   align-self: center;
-  /* height: 100%; */
+  height: 100%;
   /* padding-top: var(--spacer-6);
   padding-bottom: var(--spacer-6); */
-}
-.title {
-  grid-area: title;
-  font-size: var(--text-4xl);
-  font-weight: 300;
-  /* background-color: antiquewhite; */
-  line-height: var(--text-5xl);
-  /* padding-top: var(--spacer-2); */
 }
 .description {
   grid-area: description;
@@ -108,7 +155,7 @@ button.primary {
   font-weight: normal;
   /* background-color: aqua; */
   line-height: var(--text-2xl);
-  padding-bottom: var(--spacer-4);
+  /* padding-bottom: var(--spacer-4); */
 }
 .read-more {
   grid-area: button;
