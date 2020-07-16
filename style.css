@@ -2,7 +2,10 @@
   --black: #323232;
   --green: #77c03d;
   --green-shadow: rgba(150, 249, 71, 0.35);
+  --grey: #e5e5e5;
   --white: white;
+
+  --color-bg: var(--grey);
 
   --text-4xs: 0.125rem;
   --text-3xs: 0.25rem;
@@ -17,6 +20,20 @@
   --text-4xl: 2.25rem;
   --text-5xl: 3rem;
   --text-6xl: 4rem;
+
+  --text-4xs-em: 0.125em;
+  --text-3xs-em: 0.25em;
+  --text-2xs-em: 0.5em;
+  --text-xs-em: 0.75em;
+  --text-sm-em: 0.875em;
+  --text-base-em: 1em;
+  --text-lg-em: 1.125em;
+  --text-xl-em: 1.25em;
+  --text-2xl-em: 1.5em;
+  --text-3xl-em: 1.875em;
+  --text-4xl-em: 2.25em;
+  --text-5xl-em: 3em;
+  --text-6xl-em: 4em;
 
   --spacer-0: 0;
   --spacer-1: 4px;
@@ -52,6 +69,7 @@ body {
   justify-content: center;
   /* max-width: var(--main-max-width); */
   color: var(--black);
+  background-color: var(--color-bg);
 }
 
 button:focus {
@@ -82,17 +100,20 @@ button.primary {
 }
 
 .top2 {
-  background-color: aliceblue;
+  /* background-color: aliceblue; */
+  /* background-image: url(assets/images/bg-vermelho.png); */
   max-width: var(--main-max-width);
   width: 100%;
   min-height: var(--main-min-height);
   height: 100vh;
+  max-height: 825px;
   display: grid;
   grid-template-columns: 20% 450px 1fr;
   /* grid-template-rows: 66px 1fr 180px 163px var(--button-height); */
-  grid-template-rows: 66px 1fr 180px 1fr 163px 1fr var(--button-height) 1fr;
+  grid-template-rows: 2fr 66px 3fr 180px 2fr 163px 2fr var(--button-height) 2fr;
   /* grid-template-rows: 10rem auto auto auto; */
   grid-template-areas:
+    ". . image"
     ". logo image"
     ". . image"
     ". title image"
@@ -105,22 +126,22 @@ button.primary {
 
 .top2 .logo {
   grid-area: logo;
-  background-color: antiquewhite;
+  /* background-color: antiquewhite; */
 }
 
 .top2 .title {
   grid-area: title;
-  background-color: aqua;
-  font-size: var(--text-4xl);
+  /* background-color: aqua; */
+  font-size: var(--text-4xl-em);
   font-weight: 300;
   /* background-color: antiquewhite; */
-  line-height: var(--text-6xl);
+  line-height: var(--text-5xl);
   margin: 0;
 }
 
 .top2 .description {
   grid-area: description;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
   margin: 0;
 }
 
@@ -176,20 +197,21 @@ button.primary {
 }
 
 .bg-image-top-right {
-  grid-area: image;
   width: 100%;
-  position: relative;
+  position: absolute;
   /* background-color: tomato; */
 }
 
 .bg-image-top-right .main-bg {
   /* width: 100%; */
+  position: absolute;
+  right: 0px;
+  max-width: 40vw;
 }
 .bg-image-top-right .flower {
-  /* width: 100%; */
   position: absolute;
-  left: 13%;
-  top: 70%;
+  right: 363px;
+  top: 455px;
 }
 
 .meals-title {
