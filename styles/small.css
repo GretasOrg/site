@@ -1,2 +1,11 @@
 @media (max-width: 767px) {
+  .meals-title-bg {
+    top: 180px;
+  }
+  .meals-title-sun {
+    top: 100px;
+  }
+  .meals-title-flower {
+    top: 130px;
+  }
 }
