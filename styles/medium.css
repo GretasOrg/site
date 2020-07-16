@@ -1,6 +1,6 @@
 @media (max-width: 1024px) {
-  .top2 {
-    grid-template-columns: 10% 450px 1fr;
+  :root {
+    --main-content-padding: 10%;
   }
 
   .meals-title {
