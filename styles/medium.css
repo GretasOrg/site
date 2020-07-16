@@ -1,0 +1,20 @@
+@media (max-width: 1024px) {
+  .top2 {
+    grid-template-columns: 10% 450px 1fr;
+  }
+
+  .meals-title {
+    padding-left: var(--spacer-5);
+    padding-right: var(--spacer-5);
+  }
+
+  .meals-title-bg {
+    top: 140px;
+  }
+  .meals-title-sun {
+    top: 60px;
+  }
+  .meals-title-flower {
+    top: 90px;
+  }
+}
