@@ -335,13 +335,13 @@ footer span {
   padding-top: var(--spacer-1);
 }
 
-/* .footer-bg {
+.footer-bg {
   width: 100%;
   position: absolute;
   top: calc(-1 * var(--spacer-10));
   z-index: -2;
   height: 100%;
-} */
+}
 
 .footer-woman {
   position: absolute;
