@@ -2,7 +2,7 @@
   --black: #323232;
   --green: #77c03d;
   --green-shadow: rgba(150, 249, 71, 0.35);
-  --grey: #e5e5e5;
+  --grey: #f6f6f6;
   --white: white;
 
   --color-bg: var(--grey);
@@ -70,6 +70,7 @@ body {
   /* max-width: var(--main-max-width); */
   color: var(--black);
   background-color: var(--color-bg);
+  display: block;
 }
 
 button:focus {
@@ -171,7 +172,7 @@ button.primary {
 }
 
 .meals-title {
-  margin-top: var(--spacer-10);
+  margin-top: var(--spacer-7);
   position: relative;
 }
 
@@ -208,7 +209,8 @@ button.primary {
   justify-content: center;
 
   --gutter: var(--spacer-3);
-  margin: calc(-1 * var(--gutter)) calc(-1 * var(--gutter));
+  margin-top: var(--spacer-9);
+  /* margin: calc(-1 * var(--gutter)) calc(-1 * var(--gutter)); */
 }
 
 .meal {
