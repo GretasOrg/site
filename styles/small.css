@@ -1,4 +1,25 @@
 @media (max-width: 767px) {
+  .top2 {
+    grid-template-columns: var(--main-content-padding) auto var(
+        --main-content-padding
+      );
+    grid-template-rows: 2fr 66px 3fr auto 2fr auto 2fr var(--button-height) 2fr;
+  }
+
+  .top2 .title {
+    font-size: var(--text-4xl);
+    line-height: var(--text-5xl);
+  }
+
+  .top2 .description {
+    font-size: var(--text-lg);
+    line-height: var(--text-2xl);
+  }
+
+  .bg-image-top-right .main-bg {
+    max-width: 30vw;
+  }
+
   .meals-title-bg {
     top: 180px;
   }
@@ -7,5 +28,15 @@
   }
   .meals-title-flower {
     top: 130px;
+  }
+
+  .footer-woman {
+    height: 30vh;
+    bottom: 30vh;
+  }
+
+  .footer-sun {
+    height: 200px;
+    bottom: 30vh;
   }
 }
