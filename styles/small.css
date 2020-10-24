@@ -1,4 +1,4 @@
-@media (max-width: 767px) {
+@media (min-width: 576px) {
   .top2 {
     grid-template-columns: var(--main-content-padding) auto var(
         --main-content-padding
@@ -7,36 +7,12 @@
   }
 
   .top2 .title {
-    font-size: var(--text-4xl);
-    line-height: var(--text-5xl);
+    font-size: var(--font-3xl);
+    line-height: var(--font-5xl);
   }
 
   .top2 .description {
-    font-size: var(--text-lg);
-    line-height: var(--text-2xl);
-  }
-
-  .bg-image-top-right .main-bg {
-    max-width: 30vw;
-  }
-
-  .meals-title-bg {
-    top: 180px;
-  }
-  .meals-title-sun {
-    top: 100px;
-  }
-  .meals-title-flower {
-    top: 130px;
-  }
-
-  .footer-woman {
-    height: 30vh;
-    bottom: 30vh;
-  }
-
-  .footer-sun {
-    height: 200px;
-    bottom: 30vh;
+    font-size: var(--font-base);
+    line-height: var(--font-2xl);
   }
 }

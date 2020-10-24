@@ -1,17 +1,20 @@
-@media (max-width: 1280px) {
+@media (min-width: 992) {
   :root {
-    --main-content-padding: 15%;
+    --main-content-padding: 10%;
   }
 
-  .footer-woman {
-    height: 60vw;
-    max-height: 500px;
-    /* height: calc(0.6 * var(--main-max-width)); */
-    right: 5%;
-    z-index: 1;
-    bottom: 140px;
+  .meals-title {
+    padding-left: var(--s-5);
+    padding-right: var(--s-5);
   }
-  /* .top2 {
-    grid-template-columns: 15% 450px 1fr;
-  } */
+
+  .meals-title-bg {
+    top: 140px;
+  }
+  .meals-title-sun {
+    top: 60px;
+  }
+  .meals-title-flower {
+    top: 90px;
+  }
 }

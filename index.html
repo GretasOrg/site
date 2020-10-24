@@ -4,45 +4,59 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gretas - Fortalecendo o Sertão</title>
+    <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles/config/colors.css" />
+    <link rel="stylesheet" href="styles/config/spacing.css" />
+    <link rel="stylesheet" href="styles/config/typography.css" />
+    <link rel="stylesheet" href="styles/elements/buttons.css" />
+    <link rel="stylesheet" href="styles/elements/buttons.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/extra-large.css" />
     <link rel="stylesheet" href="styles/large.css" />
     <link rel="stylesheet" href="styles/medium.css" />
     <link rel="stylesheet" href="styles/small.css" />
-    <link rel="stylesheet" href="styles/extra-small.css" />
+    <link rel="stylesheet" href="styles/partials/intro.css" />
   </head>
   <body>
-    <div class="bg-image-top-right">
-      <img
-        class="main-bg"
-        src="assets/images/bg-vermelho.jpg"
-        alt=""
-        srcset=""
-      />
-    </div>
-    <div class="top2">
-      <img class="logo" src="assets/images/logo.svg" alt="" srcset="" />
-      <h1 class="title">
-        Colabore com o <br />Gretas
-        <b
-          >e ajude a <br />
-          fortalecer o Sertão.</b
-        >
-      </h1>
-      <p class="description">
-        Você pode transformar vidas com uma doação. Com o valor de uma refeição
-        - seja um cafezinho ou pensão completa - você pode multiplicar amor e
-        levar mais esperança aos moradoras da cidade de Ibimirim, no sertão de
-        Pernambuco. Escolha quanto você quer doar, apoie o Gretas e contribua de
-        forma simples e rápida com o projeto.
-      </p>
-      <button class="read-more primary round">Saiba mais sobre nós.</button>
-    </div>
+    <main>
+      <section class="intro">
+        <img
+          class="intro__bg"
+          src="assets/images/bg-vermelho.jpg"
+          alt=""
+          srcset=""
+        />
+        <img
+          class="intro__logo"
+          src="assets/images/logo.svg"
+          alt=""
+          srcset=""
+        />
+        <h1 class="intro__title">
+          Colabore com o <br />Gretas
+          <b
+            >e ajude a <br />
+            fortalecer o Sertão.</b
+          >
+        </h1>
+        <p class="intro__description">
+          Você pode transformar vidas com uma doação. Com o valor de uma
+          refeição - seja um cafezinho ou pensão completa - você pode
+          multiplicar amor e levar mais esperança aos moradoras da cidade de
+          Ibimirim, no sertão de Pernambuco. Escolha quanto você quer doar,
+          apoie o Gretas e contribua de forma simples e rápida com o projeto.
+        </p>
+        <button class="intro__button primary round">
+          Saiba mais sobre nós.
+        </button>
+      </section>
+    </main>
 
-    <div class="meals-title">
+    <!-- <div class="meals-title">
       <h2 class="meals-title-text">
         Com o valor de uma refeição, <br /><b
           >você pode ajudar centenas de famílias.</b
@@ -57,109 +71,178 @@
       />
     </div>
     <div class="meals-container">
-      <div class="meal">
-        <img class="meal-image" src="assets/images/plano-cafe.png" />
-        <div class="meal-content">
-          <h3 class="meal-title">Cafezinho</h3>
-          <p class="meal-description">
-            Que tal aquele cafezinho pra despertar? Vamos nessa!
-          </p>
-          <div class="meal-price">
-            <span class="currency">R$</span>
-            <span class="price">2,99</span>
-          </div>
-          <div class="meal-select"></div>
-          <p class="meal-message">
-            Investe aqui no Cafezinho quentinho que ésdfasdfsdfg sdfgsdfgsdfg
-            sdfgsdfgsdfgsdfg sdfgsdfgsdfg asdfasdfasdf asdfasdfasdfas
-            dfasdfasdfasdf asdfasdfas dfasdfasdf asdfasdfasd fasdfasdfasd
-            fasdfsdf o melhor do Brasil!!
-          </p>
-          <div class="meal-button">
-            <button class="primary round">Doar</button>
-          </div>
-        </div>
-      </div>
-      <div class="meal">
-        <img class="meal-image" src="assets/images/plano-cafe.png" />
-        <div class="meal-content">
-          <h3 class="meal-title">Cafezinho</h3>
-          <p class="meal-description">
-            Que tal aquele cafezinho pra despertar? Vamos nessa!
-          </p>
-          <div class="meal-price">
-            <span class="currency">R$</span>
-            <span class="price">2,99</span>
-          </div>
-          <div class="meal-select"></div>
-          <p class="meal-message">
-            Investe aqui no Cafezinho quentinho que é o melhor do Brasil!!
-          </p>
-          <div class="meal-button">
-            <button class="primary round">Doar</button>
+      <div class="meal-container">
+        <div class="meal">
+          <img class="meal-image" src="assets/images/plano-cafe.png" />
+          <div class="meal-content">
+            <h3 class="meal-title">Cafezinho</h3>
+            <p class="meal-description">
+              Que tal aquele cafezinho pra despertar? Vamos nessa!
+            </p>
+            <div class="meal-price">
+              <span class="currency">R$</span>
+              <span class="price">2,99</span>
+            </div>
+            <div class="meal-select"></div>
+            <p class="meal-message">
+              Investe aqui no Cafezinho quentinho que ésdfasdfsdfg sdfgsdfgsdfg
+              sdfgsdfgsdfgsdfg sdfgsdfgsdfg asdfasdfasdf asdfasdfasdfas
+              dfasdfasdfasdf asdfasdfas dfasdfasdf asdfasdfasd fasdfasdfasd
+              fasdfsdf o melhor do Brasil!!
+            </p>
+            <div class="meal-button">
+              <button class="primary round">Doar</button>
+            </div>
           </div>
         </div>
       </div>
-      <div class="meal">
-        <img class="meal-image" src="assets/images/plano-cafe.png" />
-        <div class="meal-content">
-          <h3 class="meal-title">Cafezinho</h3>
-          <p class="meal-description">
-            Que tal aquele cafezinho pra despertar? Vamos nessa!
-          </p>
-          <div class="meal-price">
-            <span class="currency">R$</span>
-            <span class="price">2,99</span>
-          </div>
-          <div class="meal-select"></div>
-          <p class="meal-message">
-            Investe aqui no Cafezinho quentinho que ésdfasdfsdfg sdfgsdfgsdfg
-            sdfgsdfgsdfgsdfg sdfgsdfgsdfg asdfasdfasdf asdfasdfasdfas
-            dfasdfasdfasdf asdfasdfas dfasdfasdf asdfasdfasd fasdfasdfasd
-            fasdfsdf o melhor do Brasil!!
-          </p>
-          <div class="meal-button">
-            <button class="primary round">Doar</button>
-          </div>
-        </div>
-      </div>
-      <div class="meal">
-        <img class="meal-image" src="assets/images/plano-cafe.png" />
-        <div class="meal-content">
-          <h3 class="meal-title">Cafezinho</h3>
-          <p class="meal-description">
-            Que tal aquele cafezinho pra despertar? Vamos nessa!
-          </p>
-          <div class="meal-price">
-            <span class="currency">R$</span>
-            <span class="price">2,99</span>
-          </div>
-          <div class="meal-select"></div>
-          <p class="meal-message">
-            Investe aqui no Cafezinho quentinho que é o melhor do Brasil!!
-          </p>
-          <div class="meal-button">
-            <button class="primary round">Doar</button>
+      <div class="meal-container">
+        <div class="meal">
+          <img class="meal-image" src="assets/images/plano-cafe.png" />
+          <div class="meal-content">
+            <h3 class="meal-title">Cafezinho</h3>
+            <p class="meal-description">
+              Que tal aquele cafezinho pra despertar? Vamos nessa!
+            </p>
+            <div class="meal-price">
+              <span class="currency">R$</span>
+              <span class="price">2,99</span>
+            </div>
+            <div class="meal-select"></div>
+            <p class="meal-message">
+              Investe aqui no Cafezinho quentinho que ésdfasdfsdfg sdfgsdfgsdfg
+              sdfgsdfgsdfgsdfg sdfgsdfgsdfg asdfasdfasdf asdfasdfasdfas
+              dfasdfasdfasdf asdfasdfas dfasdfasdf asdfasdfasd fasdfasdfasd
+              fasdfsdf o melhor do Brasil!!
+            </p>
+            <div class="meal-button">
+              <button class="primary round">Doar</button>
+            </div>
           </div>
         </div>
       </div>
-      <div class="meal">
-        <img class="meal-image" src="assets/images/plano-cafe.png" />
-        <div class="meal-content">
-          <h3 class="meal-title">Cafezinho</h3>
-          <p class="meal-description">
-            Que tal aquele cafezinho pra despertar? Vamos nessa!
-          </p>
-          <div class="meal-price">
-            <span class="currency">R$</span>
-            <span class="price">2,99</span>
+      <div class="meal-container">
+        <div class="meal">
+          <img class="meal-image" src="assets/images/plano-cafe.png" />
+          <div class="meal-content">
+            <h3 class="meal-title">Cafezinho</h3>
+            <p class="meal-description">
+              Que tal aquele cafezinho pra despertar? Vamos nessa!
+            </p>
+            <div class="meal-price">
+              <span class="currency">R$</span>
+              <span class="price">2,99</span>
+            </div>
+            <div class="meal-select"></div>
+            <p class="meal-message">
+              Investe aqui no Cafezinho quentinho que ésdfasdfsdfg sdfgsdfgsdfg
+              sdfgsdfgsdfgsdfg sdfgsdfgsdfg asdfasdfasdf asdfasdfasdfas
+              dfasdfasdfasdf asdfasdfas dfasdfasdf asdfasdfasd fasdfasdfasd
+              fasdfsdf o melhor do Brasil!!
+            </p>
+            <div class="meal-button">
+              <button class="primary round">Doar</button>
+            </div>
           </div>
-          <div class="meal-select"></div>
-          <p class="meal-message">
-            Investe aqui no Cafezinho quentinho que é o melhor do Brasil!!
-          </p>
-          <div class="meal-button">
-            <button class="primary round">Doar</button>
+        </div>
+      </div>
+      <div class="meal-container">
+        <div class="meal">
+          <img class="meal-image" src="assets/images/plano-cafe.png" />
+          <div class="meal-content">
+            <h3 class="meal-title">Cafezinho</h3>
+            <p class="meal-description">
+              Que tal aquele cafezinho pra despertar? Vamos nessa!
+            </p>
+            <div class="meal-price">
+              <span class="currency">R$</span>
+              <span class="price">2,99</span>
+            </div>
+            <div class="meal-select"></div>
+            <p class="meal-message">
+              Investe aqui no Cafezinho quentinho que ésdfasdfsdfg sdfgsdfgsdfg
+              sdfgsdfgsdfgsdfg sdfgsdfgsdfg asdfasdfasdf asdfasdfasdfas
+              dfasdfasdfasdf asdfasdfas dfasdfasdf asdfasdfasd fasdfasdfasd
+              fasdfsdf o melhor do Brasil!!
+            </p>
+            <div class="meal-button">
+              <button class="primary round">Doar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="meal-container">
+        <div class="meal">
+          <img class="meal-image" src="assets/images/plano-cafe.png" />
+          <div class="meal-content">
+            <h3 class="meal-title">Cafezinho</h3>
+            <p class="meal-description">
+              Que tal aquele cafezinho pra despertar? Vamos nessa!
+            </p>
+            <div class="meal-price">
+              <span class="currency">R$</span>
+              <span class="price">2,99</span>
+            </div>
+            <div class="meal-select"></div>
+            <p class="meal-message">
+              Investe aqui no Cafezinho quentinho que ésdfasdfsdfg sdfgsdfgsdfg
+              sdfgsdfgsdfgsdfg sdfgsdfgsdfg asdfasdfasdf asdfasdfasdfas
+              dfasdfasdfasdf asdfasdfas dfasdfasdf asdfasdfasd fasdfasdfasd
+              fasdfsdf o melhor do Brasil!!
+            </p>
+            <div class="meal-button">
+              <button class="primary round">Doar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="meal-container">
+        <div class="meal">
+          <img class="meal-image" src="assets/images/plano-cafe.png" />
+          <div class="meal-content">
+            <h3 class="meal-title">Cafezinho</h3>
+            <p class="meal-description">
+              Que tal aquele cafezinho pra despertar? Vamos nessa!
+            </p>
+            <div class="meal-price">
+              <span class="currency">R$</span>
+              <span class="price">2,99</span>
+            </div>
+            <div class="meal-select"></div>
+            <p class="meal-message">
+              Investe aqui no Cafezinho quentinho que ésdfasdfsdfg sdfgsdfgsdfg
+              sdfgsdfgsdfgsdfg sdfgsdfgsdfg asdfasdfasdf asdfasdfasdfas
+              dfasdfasdfasdf asdfasdfas dfasdfasdf asdfasdfasd fasdfasdfasd
+              fasdfsdf o melhor do Brasil!!
+            </p>
+            <div class="meal-button">
+              <button class="primary round">Doar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="meal-container">
+        <div class="meal">
+          <img class="meal-image" src="assets/images/plano-cafe.png" />
+          <div class="meal-content">
+            <h3 class="meal-title">Cafezinho</h3>
+            <p class="meal-description">
+              Que tal aquele cafezinho pra despertar? Vamos nessa!
+            </p>
+            <div class="meal-price">
+              <span class="currency">R$</span>
+              <span class="price">2,99</span>
+            </div>
+            <div class="meal-select"></div>
+            <p class="meal-message">
+              Investe aqui no Cafezinho quentinho que ésdfasdfsdfg sdfgsdfgsdfg
+              sdfgsdfgsdfgsdfg sdfgsdfgsdfg asdfasdfasdf asdfasdfasdfas
+              dfasdfasdfasdf asdfasdfas dfasdfasdf asdfasdfasd fasdfasdfasd
+              fasdfsdf o melhor do Brasil!!
+            </p>
+            <div class="meal-button">
+              <button class="primary round">Doar</button>
+            </div>
           </div>
         </div>
       </div>
@@ -187,6 +270,6 @@
           <img src="assets/images/facebook.svg" alt="" srcset="" />
         </div>
       </div>
-    </footer>
+    </footer> -->
   </body>
 </html>

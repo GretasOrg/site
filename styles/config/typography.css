@@ -1,0 +1,29 @@
+:root {
+  --font-4xs: 0.125rem;
+  --font-3xs: 0.25rem;
+  --font-2xs: 0.5rem;
+  --font-xs: 0.75rem;
+  --font-sm: 0.875rem;
+  --font-base: 1rem;
+  --font-lg: 1.125rem;
+  --font-xl: 1.25rem;
+  --font-2xl: 1.5rem;
+  --font-3xl: 1.875rem;
+  --font-4xl: 2.25rem;
+  --font-5xl: 3rem;
+  --font-6xl: 4rem;
+
+  --font-4xs-em: 0.125em;
+  --font-3xs-em: 0.25em;
+  --font-2xs-em: 0.5em;
+  --font-xs-em: 0.75em;
+  --font-sm-em: 0.875em;
+  --font-base-em: 1em;
+  --font-lg-em: 1.125em;
+  --font-xl-em: 1.25em;
+  --font-2xl-em: 1.5em;
+  --font-3xl-em: 1.875em;
+  --font-4xl-em: 2.25em;
+  --font-5xl-em: 3em;
+  --font-6xl-em: 4em;
+}
