@@ -9,6 +9,13 @@
   margin: 0 auto;
 }
 
+@media (max-width: 393px) {
+  .intro {
+    height: auto;
+    max-height: min-content;
+  }
+}
+
 .intro__bg {
   position: absolute;
   width: 24%;
