@@ -133,7 +133,7 @@
   padding-bottom: var(--s-6);
 }
 
-.meals .meals__item-button button {
+.meals .meals__item-button .button {
   width: 100%;
   border-radius: 63px;
   font-size: var(--font-lg);
