@@ -3,7 +3,9 @@
   --green: #77c03d;
   --green-shadow: rgba(150, 249, 71, 0.35);
   --grey: #f6f6f6;
+  --grey-light: #f8f8f8;
   --white: white;
 
   --color-bg: var(--grey);
+  --color-card-bg: var(--grey-light);
 }
