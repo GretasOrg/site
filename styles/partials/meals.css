@@ -20,6 +20,14 @@
   top: var(--s-14);
 }
 
+.meals .meals__title-bg-bottom {
+  position: absolute;
+  z-index: -1;
+  width: 30%;
+  top: 30%;
+  right: 0;
+}
+
 .meals .meals__container {
   display: flex;
   flex-direction: row;
@@ -29,7 +37,7 @@
 
   --gutter: var(--s-3);
   margin: var(--s-9) auto;
-  max-width: 1118px;
+  max-width: 1290px;
 }
 
 .meals .meals__item-container {
@@ -40,9 +48,8 @@
 
 .meals .meals__item {
   margin: 0 auto;
-  /* width: 16.75rem; */
-  width: 21.75rem;
-  height: 742px;
+  width: 16.75rem;
+  height: auto;
   border-radius: var(--radius-5);
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -136,6 +143,10 @@
   .meals .meals__title-bg {
     width: 20%;
     top: var(--s-11);
+  }
+  .meals .meals__item {
+    /* width: 21.75rem; */
+    height: 844px;
   }
 }
 
