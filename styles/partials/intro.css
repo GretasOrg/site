@@ -81,7 +81,7 @@
 @media (min-width: 1200px) {
   .intro {
     min-height: 550px;
-    max-height: 745px;
+    max-height: 650px;
     max-width: var(--main-max-width);
   }
   .intro__logo {
