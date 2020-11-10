@@ -11,6 +11,7 @@
   font-size: var(--font-4xl);
   text-align: center;
   margin: 0 var(--x-padding);
+  word-break: break-word;
 }
 
 .meals .meals__title-bg {
