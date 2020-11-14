@@ -14,3 +14,7 @@ body {
   background-color: var(--color-bg);
   display: block;
 }
+
+* {
+  font-family: "Montserrat", sans-serif;
+}

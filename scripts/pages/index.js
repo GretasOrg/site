@@ -34,5 +34,8 @@
       const newLink = `https://gretas.faturasimples.com.br/contratar/gretas?plano=${plan}&valor=${price}.00&recorrencia=${frequency}`;
       link.href = newLink;
     });
+    planInputEl.addEventListener("focus", (_) => {
+      planInputEl.value = "";
+    });
   });
 })();
