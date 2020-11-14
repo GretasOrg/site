@@ -121,6 +121,10 @@
   text-align: center;
 }
 
+.meals .meals__item-select {
+  margin: var(--s-4) 0 var(--s-2) 0;
+}
+
 .meals .meals__item-message {
   font-style: normal;
   font-weight: bold;
@@ -147,7 +151,7 @@
   }
   .meals .meals__item {
     /* width: 21.75rem; */
-    height: 784px;
+    height: 818px;
   }
 }
 

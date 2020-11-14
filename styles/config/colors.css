@@ -4,8 +4,13 @@
   --green-shadow: rgba(150, 249, 71, 0.35);
   --grey: #f6f6f6;
   --grey-light: #f8f8f8;
+  --grey-dark: #e4e4e4;
   --white: white;
 
   --color-bg: var(--grey);
   --color-card-bg: var(--grey-light);
+
+  --color-text-light: var(--white);
+
+  --color-primary: var(--green);
 }

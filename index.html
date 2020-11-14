@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gretas - Fortalecendo o Sertão</title>
     <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/config/borders.css" />
     <link rel="stylesheet" href="styles/config/colors.css" />
     <link rel="stylesheet" href="styles/config/spacing.css" />
@@ -24,8 +27,18 @@
   <body>
     <main>
       <section class="intro">
-        <img class="intro__bg" src="assets/images/bg-vermelho.jpg" alt="" srcset="" />
-        <img class="intro__logo" src="assets/images/logo.svg" alt="" srcset="" />
+        <img
+          class="intro__bg"
+          src="assets/images/bg-vermelho.jpg"
+          alt=""
+          srcset=""
+        />
+        <img
+          class="intro__logo"
+          src="assets/images/logo.svg"
+          alt=""
+          srcset=""
+        />
         <h1 class="intro__title">
           Colabore com o <br />Gretas
           <b
@@ -34,31 +47,64 @@
           >
         </h1>
         <p class="intro__description">
-          A sua doação contribui para o bem estar dos moradores e moradoras da cidade de Ibimirim, no sertão pernambucano, através de
-          projetos elaborados de acordo com as necessidades levantadas pela população. Escolha o que você pode doar e fortaleça essa
-          corrente de forma simples e rápida, mas transformadora.
+          A sua doação contribui para o bem estar dos moradores e moradoras da
+          cidade de Ibimirim, no sertão pernambucano, através de projetos
+          elaborados de acordo com as necessidades levantadas pela população.
+          Escolha o que você pode doar e fortaleça essa corrente de forma
+          simples e rápida, mas transformadora.
         </p>
-        <a class="button intro__button primary round" href="https://instagram.com/gretas_org" target="_blank"> Saiba mais sobre nós. </a>
+        <a
+          class="button intro__button primary round"
+          href="https://instagram.com/gretas_org"
+          target="_blank"
+        >
+          Saiba mais sobre nós.
+        </a>
       </section>
       <section class="meals">
-        <h2 class="meals__title">CADA DOAÇÃO É UM PASSO PARA<br /><b> O DESENVOLVIMETO SOCIAL DO SERTÃO.</b></h2>
+        <h2 class="meals__title">
+          CADA DOAÇÃO É UM PASSO PARA<br /><b>
+            O DESENVOLVIMETO SOCIAL DO SERTÃO.</b
+          >
+        </h2>
         <img class="meals__title-bg" src="assets/images/bg-verde.png" alt="" />
-        <img class="meals__title-bg-bottom" src="assets/images/meals/bg-amarelo.png" alt="" />
+        <img
+          class="meals__title-bg-bottom"
+          src="assets/images/meals/bg-amarelo.png"
+          alt=""
+        />
         <div class="meals__container">
           <div class="meals__item-container">
-            <div class="meals__item">
-              <img class="meals__item-image" src="assets/images/meals/meal-acao-de-saude.jpg" />
+            <div class="meals__item" data-plan="2" data-price="100">
+              <img
+                class="meals__item-image"
+                src="assets/images/meals/meal-acao-de-saude.jpg"
+              />
               <div class="meals__item-content">
                 <h3 class="meals__item-title">Ação de Saúde</h3>
-                <p class="meals__item-description">Leve a oportunidade de uma consulta médica a uma família do Sertão.</p>
+                <p class="meals__item-description">
+                  Leve a oportunidade de uma consulta médica a uma família do
+                  Sertão.
+                </p>
                 <div class="meals__item-price">
                   <span class="currency">R$</span>
                   <span class="price">100,00</span>
                 </div>
-                <div class="meals__item-select"></div>
+                <div class="meals__item-select dropdown closed">
+                  <span class="dropdown__selected" data-value="0">
+                    Somente uma vez
+                  </span>
+                  <ul class="dropdown__menu">
+                    <li class="dropdown__option" data-value="0">
+                      Somente uma vez
+                    </li>
+                    <li class="dropdown__option" data-value="1">Por mês</li>
+                  </ul>
+                </div>
                 <p class="meals__item-message">
-                  Consulta por família em uma destas especialidades médicas: ginecologista, cardiologista, dermatologista, dentista, clínico
-                  geral, médico da família ou pediatra.
+                  Consulta por família em uma destas especialidades médicas:
+                  ginecologista, cardiologista, dermatologista, dentista,
+                  clínico geral, médico da família ou pediatra.
                 </p>
                 <div class="meals__item-button">
                   <a
@@ -72,21 +118,37 @@
             </div>
           </div>
           <div class="meals__item-container">
-            <div class="meals__item">
-              <img class="meals__item-image" src="assets/images/meals/meal-alimentacao.jpg" />
+            <div class="meals__item" data-plan="3" data-price="80">
+              <img
+                class="meals__item-image"
+                src="assets/images/meals/meal-alimentacao.jpg"
+              />
               <div class="meals__item-content">
                 <h3 class="meals__item-title">Vale Alimentação</h3>
                 <p class="meals__item-description">
-                  Todo ser humano precisa de alimento. Compre o Vale e fortaleça uma família em estado de vulnerabilidade.
+                  Todo ser humano precisa de alimento. Compre o Vale e fortaleça
+                  uma família em estado de vulnerabilidade.
                 </p>
                 <div class="meals__item-price">
                   <span class="currency">R$</span>
                   <span class="price">80,00</span>
                 </div>
-                <div class="meals__item-select"></div>
+                <div class="meals__item-select dropdown closed">
+                  <span class="dropdown__selected" data-value="0">
+                    Somente uma vez
+                  </span>
+                  <ul class="dropdown__menu">
+                    <li class="dropdown__option" data-value="0">
+                      Somente uma vez
+                    </li>
+                    <li class="dropdown__option" data-value="1">Por mês</li>
+                  </ul>
+                </div>
                 <p class="meals__item-message">
-                  Com este valor uma família pode levar para casa: feijão, arroz, macarrão, farinha, açúcar, óleo, vinagre, leite em pó,
-                  extrato de tomate, fubá, café, doce de goiabada, tempero, sal, bolacha doce/salgada, verduras e ovos.
+                  Com este valor uma família pode levar para casa: feijão,
+                  arroz, macarrão, farinha, açúcar, óleo, vinagre, leite em pó,
+                  extrato de tomate, fubá, café, doce de goiabada, tempero, sal,
+                  bolacha doce/salgada, verduras e ovos.
                 </p>
                 <div class="meals__item-button">
                   <a
@@ -100,20 +162,37 @@
             </div>
           </div>
           <div class="meals__item-container">
-            <div class="meals__item">
-              <img class="meals__item-image" src="assets/images/meals/meal-educacao-para-saude-2.jpg" />
+            <div class="meals__item" data-plan="4" data-price="50">
+              <img
+                class="meals__item-image"
+                src="assets/images/meals/meal-educacao-para-saude-2.jpg"
+              />
               <div class="meals__item-content">
                 <h3 class="meals__item-title">Educação para Saúde</h3>
                 <p class="meals__item-description">
-                  A pandemia atinge o mundo todo, mas a educação é limitada. Incentive a divulgação sobre cuidados básicos de doenças comuns
-                  na região e como combatê-las.
+                  A pandemia atinge o mundo todo, mas a educação é limitada.
+                  Incentive a divulgação sobre cuidados básicos de doenças
+                  comuns na região e como combatê-las.
                 </p>
                 <div class="meals__item-price">
                   <span class="currency">R$</span>
                   <span class="price">50,00</span>
                 </div>
-                <div class="meals__item-select"></div>
-                <p class="meals__item-message">Itens: vídeos educativos e programas de rádio por 2 meses em toda região.</p>
+                <div class="meals__item-select dropdown closed">
+                  <span class="dropdown__selected" data-value="0">
+                    Somente uma vez
+                  </span>
+                  <ul class="dropdown__menu">
+                    <li class="dropdown__option" data-value="0">
+                      Somente uma vez
+                    </li>
+                    <li class="dropdown__option" data-value="1">Por mês</li>
+                  </ul>
+                </div>
+                <p class="meals__item-message">
+                  Itens: vídeos educativos e programas de rádio por 2 meses em
+                  toda região.
+                </p>
                 <div class="meals__item-button">
                   <a
                     class="button primary round"
@@ -126,19 +205,35 @@
             </div>
           </div>
           <div class="meals__item-container">
-            <div class="meals__item">
-              <img class="meals__item-image" src="assets/images/meals/meal-vermifugacao-2.jpg" />
+            <div class="meals__item" data-plan="5" data-price="24">
+              <img
+                class="meals__item-image"
+                src="assets/images/meals/meal-vermifugacao-2.jpg"
+              />
               <div class="meals__item-content">
                 <h3 class="meals__item-title">Vermifugação</h3>
                 <p class="meals__item-description">
-                  A falta de saneamento básico provoca o surgimento de doenças de verminoses. Contribua com nossa ação de vermifugação!
+                  A falta de saneamento básico provoca o surgimento de doenças
+                  de verminoses. Contribua com nossa ação de vermifugação!
                 </p>
                 <div class="meals__item-price">
                   <span class="currency">R$</span>
                   <span class="price">24,00</span>
                 </div>
-                <div class="meals__item-select"></div>
-                <p class="meals__item-message">Itens: Remédio (R$4,00) X família (6 pessoas)</p>
+                <div class="meals__item-select dropdown closed">
+                  <span class="dropdown__selected" data-value="0">
+                    Somente uma vez
+                  </span>
+                  <ul class="dropdown__menu">
+                    <li class="dropdown__option" data-value="0">
+                      Somente uma vez
+                    </li>
+                    <li class="dropdown__option" data-value="1">Por mês</li>
+                  </ul>
+                </div>
+                <p class="meals__item-message">
+                  Itens: Remédio (R$4,00) X família (6 pessoas)
+                </p>
                 <div class="meals__item-button">
                   <a
                     class="button primary round"
@@ -151,18 +246,35 @@
             </div>
           </div>
           <div class="meals__item-container">
-            <div class="meals__item">
-              <img class="meals__item-image" src="assets/images/meals/meal-kit-higiene.jpg" />
+            <div class="meals__item" data-plan="6" data-price="10">
+              <img
+                class="meals__item-image"
+                src="assets/images/meals/meal-kit-higiene.jpg"
+              />
               <div class="meals__item-content">
                 <h3 class="meals__item-title">Kit Higiene</h3>
-                <p class="meals__item-description">Invista nos cuidados básicos da higiene pessoal e do combate ao novo coronavírus.</p>
+                <p class="meals__item-description">
+                  Invista nos cuidados básicos da higiene pessoal e do combate
+                  ao novo coronavírus.
+                </p>
                 <div class="meals__item-price">
                   <span class="currency">R$</span>
                   <span class="price">10,00</span>
                 </div>
-                <div class="meals__item-select"></div>
+                <div class="meals__item-select dropdown closed">
+                  <span class="dropdown__selected" data-value="0">
+                    Somente uma vez
+                  </span>
+                  <ul class="dropdown__menu">
+                    <li class="dropdown__option" data-value="0">
+                      Somente uma vez
+                    </li>
+                    <li class="dropdown__option" data-value="1">Por mês</li>
+                  </ul>
+                </div>
                 <p class="meals__item-message">
-                  Itens: papel higiênico, sabonete, água sanitária, sabão em barra, creme dental, escova de dente, cloro, máscara e álcool
+                  Itens: papel higiênico, sabonete, água sanitária, sabão em
+                  barra, creme dental, escova de dente, cloro, máscara e álcool
                   líquido.
                 </p>
                 <div class="meals__item-button">
@@ -204,5 +316,6 @@
       </div>
     </footer> -->
     <script async src="scripts/elements/dropdowns.js"></script>
+    <script async src="scripts/pages/index.js"></script>
   </body>
 </html>
