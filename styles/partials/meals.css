@@ -117,8 +117,14 @@
   font-weight: bold;
   font-size: var(--font-5xl);
   line-height: var(--font-5xl);
+  border: none;
   border-bottom: 1px solid #d0d0d0;
   text-align: center;
+}
+
+.meals .meals__item-price .price.input {
+  width: 100%;
+  background: none;
 }
 
 .meals .meals__item-select {

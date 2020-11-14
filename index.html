@@ -75,7 +75,47 @@
         />
         <div class="meals__container">
           <div class="meals__item-container">
-            <div class="meals__item" data-plan="2" data-price="100">
+            <div id="mealCustom" class="meals__item" data-plan="9" data-price="0" data-frequency="0">
+              <img
+                class="meals__item-image"
+                src="assets/images/meals/meal-acao-de-saude-2.jpg"
+              />
+              <div class="meals__item-content">
+                <h3 class="meals__item-title">Doe o quanto quiser!</h3>
+                <p class="meals__item-description">
+                  Sua contribuição auxilia o Gretas a levar benefícios de alimentação e cuidados básicos, acesso à saúde e educação para a população de Ibimirim.
+                </p>
+                <div class="meals__item-price">
+                  <span class="currency">R$</span>
+                  <input class="price input" type="number" value="0.00"></input>
+                </div>
+                <div class="meals__item-select dropdown closed">
+                  <span class="dropdown__selected" data-value="0">
+                    Somente uma vez
+                  </span>
+                  <ul class="dropdown__menu">
+                    <li class="dropdown__option" data-value="0">
+                      Somente uma vez
+                    </li>
+                    <li class="dropdown__option" data-value="1">Por mês</li>
+                  </ul>
+                </div>
+                <p class="meals__item-message">
+                  Toda valor doado será direcionado para a Ação Ibimirim que acontecerá em Janeiro de 2021.
+                </p>
+                <div class="meals__item-button">
+                  <a
+                    class="button primary round"
+                    href="https://gretas.faturasimples.com.br/contratar/gretas?plano=6&valor=10.00&recorrencia=0"
+                    target="_blank"
+                    >Doar</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="meals__item-container">
+            <div class="meals__item" data-plan="2" data-price="100" data-frequency="0">
               <img
                 class="meals__item-image"
                 src="assets/images/meals/meal-acao-de-saude.jpg"
@@ -118,7 +158,7 @@
             </div>
           </div>
           <div class="meals__item-container">
-            <div class="meals__item" data-plan="3" data-price="80">
+            <div class="meals__item" data-plan="3" data-price="80" data-frequency="0">
               <img
                 class="meals__item-image"
                 src="assets/images/meals/meal-alimentacao.jpg"
@@ -162,7 +202,7 @@
             </div>
           </div>
           <div class="meals__item-container">
-            <div class="meals__item" data-plan="4" data-price="50">
+            <div class="meals__item" data-plan="4" data-price="50" data-frequency="0">
               <img
                 class="meals__item-image"
                 src="assets/images/meals/meal-educacao-para-saude-2.jpg"
@@ -205,7 +245,7 @@
             </div>
           </div>
           <div class="meals__item-container">
-            <div class="meals__item" data-plan="5" data-price="24">
+            <div class="meals__item" data-plan="5" data-price="24" data-frequency="0">
               <img
                 class="meals__item-image"
                 src="assets/images/meals/meal-vermifugacao-2.jpg"
@@ -232,7 +272,7 @@
                   </ul>
                 </div>
                 <p class="meals__item-message">
-                  Itens: Remédio (R$4,00) X família (6 pessoas)
+                  Itens: Remédio (R$4,00) X família (6 pessoas).
                 </p>
                 <div class="meals__item-button">
                   <a
@@ -246,7 +286,7 @@
             </div>
           </div>
           <div class="meals__item-container">
-            <div class="meals__item" data-plan="6" data-price="10">
+            <div class="meals__item" data-plan="6" data-price="10" data-frequency="0">
               <img
                 class="meals__item-image"
                 src="assets/images/meals/meal-kit-higiene.jpg"
@@ -315,7 +355,8 @@
         </div>
       </div>
     </footer> -->
-    <script async src="scripts/elements/dropdowns.js"></script>
-    <script async src="scripts/pages/index.js"></script>
+    <script defer src="scripts/elements/currency-mask.js"></script>
+    <script defer src="scripts/elements/dropdowns.js"></script>
+    <script defer src="scripts/pages/index.js"></script>
   </body>
 </html>
