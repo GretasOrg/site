@@ -8,7 +8,7 @@
 .meals .meals__title {
   font-weight: normal;
   line-height: var(--font-4xl);
-  font-size: var(--font-4xl);
+  font-size: var(--font-2xl);
   text-align: center;
   margin: 0 var(--x-padding);
   word-break: break-word;
@@ -159,6 +159,12 @@
     /* width: 21.75rem; */
     height: 818px;
   }
+  .meals .meals__title {
+    font-size: var(--font-4xl);
+  }
+}
+
+@media (min-width: 768px) {
 }
 
 @media (min-width: 992px) {
