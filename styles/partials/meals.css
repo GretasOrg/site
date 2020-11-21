@@ -126,6 +126,9 @@
   width: 100%;
   background: none;
 }
+.meals .meals__item-price .label {
+  display: none;
+}
 
 .meals .meals__item-select {
   margin: var(--s-4) 0 var(--s-2) 0;

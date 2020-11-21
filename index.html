@@ -4,7 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gretas - Fortalecendo o Sertão</title>
-    <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
+    <meta name="description" content="Trabalhamos com as comunidades rurais de Ibimirim
+    no estímulo à autonomia e empoderamento de todos
+    que nelas fazem morada, através de programas
+    focados em saúde, segurança alimentar, educação e
+    fonte de renda. Contribuímos para a diminuição das
+    desigualdades sociais e promoção da dignidade
+    humana.">
+    <link rel="canonical" href="https://www.gretas.org/" />
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Gretas - Fortalecendo o Sertão" />
+    <meta property="og:description" content="Trabalhamos com as comunidades rurais de Ibimirim no estímulo à autonomia e empoderamento de todos que nelas fazem morada, através de programas focados em saúde, segurança alimentar, educação e fonte de renda. Contribuímos para a diminuição das desigualdades sociais e promoção da dignidade humana." />
+    <meta property="og:image" content="https://gretas.org/assets/images/mulher-simbolo.jpg" />
+    <meta property="og:url" content="https://www.gretas.org/" />
+    <meta property="og:site_name" content="Projeto Gretas" />
+
+    <meta name="twitter:title" content="Gretas - Fortalecendo o Sertão">
+    <meta name="twitter:description" content="Trabalhamos com as comunidades rurais de Ibimirim no estímulo à autonomia e empoderamento de todos que nelas fazem morada, através de programas focados em saúde, segurança alimentar, educação e fonte de renda. Contribuímos para a diminuição das desigualdades sociais e promoção da dignidade humana.">
+    <meta name="twitter:image" content="https://gretas.org/assets/images/mulher-simbolo.jpg">
+    <meta name="twitter:site" content="Projeto Gretas">
+    <meta name="twitter:creator" content="Projeto Gretas">
+
+    <link href="https://unpkg.com/sanitize.css@12.0.1/sanitize.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap"
       rel="stylesheet"
@@ -30,13 +53,13 @@
         <img
           class="intro__bg"
           src="assets/images/bg-vermelho.jpg"
-          alt=""
+          alt="Fundo vermelho com pessoas felizes participando de uma ação do Gretas"
           srcset=""
         />
         <img
           class="intro__logo"
           src="assets/images/logo.svg"
-          alt=""
+          alt="Logo do Gretas - Fortalecendo o Sertão"
           srcset=""
         />
         <h1 class="intro__title">
@@ -67,11 +90,11 @@
             O DESENVOLVIMETO SOCIAL DO SERTÃO.</b
           >
         </h2>
-        <img class="meals__title-bg" src="assets/images/bg-verde.png" alt="" />
+        <img class="meals__title-bg" src="assets/images/bg-verde.png" alt="Senhora sertaneja se apoiando numa vassoura" />
         <img
           class="meals__title-bg-bottom"
           src="assets/images/meals/bg-amarelo.png"
-          alt=""
+          alt="Criança sorrindo numa janela"
         />
         <div class="meals__container">
           <div class="meals__item-container">
@@ -79,6 +102,7 @@
               <img
                 class="meals__item-image"
                 src="assets/images/meals/meal-acao-de-saude-2.jpg"
+                alt="Árvore seca numa região semi-árida ao lado de uma consulta médica com uma paciente"
               />
               <div class="meals__item-content">
                 <h3 class="meals__item-title">Doe o quanto quiser!</h3>
@@ -87,7 +111,8 @@
                 </p>
                 <div class="meals__item-price">
                   <span class="currency">R$</span>
-                  <input class="price input" type="number" value="0.00"></input>
+                  <label for="price" class="label">Preço</label>
+                  <input class="price input" type="number" value="0.00" name="preço"></input>
                 </div>
                 <div class="meals__item-select dropdown closed">
                   <span class="dropdown__selected" data-value="0">
@@ -106,7 +131,7 @@
                 <div class="meals__item-button">
                   <a
                     class="button primary round"
-                    href="https://gretas.faturasimples.com.br/contratar/gretas?plano=6&valor=10.00&recorrencia=0"
+                    href="https://gretas.faturasimples.com.br/contratar/gretas?plano=9&valor=10.00&recorrencia=0"
                     target="_blank"
                     >Doar</a
                   >
@@ -119,6 +144,7 @@
               <img
                 class="meals__item-image"
                 src="assets/images/meals/meal-acao-de-saude.jpg"
+                alt="Casa simples numa região semi-árida ao lado de um bebê recebendo uma consulta médica"
               />
               <div class="meals__item-content">
                 <h3 class="meals__item-title">Ação de Saúde</h3>
@@ -162,6 +188,7 @@
               <img
                 class="meals__item-image"
                 src="assets/images/meals/meal-alimentacao.jpg"
+                alt="Pessoa guiando um carrinho de compras num supermercado ao lado de um conjunto de frutas e verduras diversas"
               />
               <div class="meals__item-content">
                 <h3 class="meals__item-title">Vale Alimentação</h3>
@@ -206,6 +233,7 @@
               <img
                 class="meals__item-image"
                 src="assets/images/meals/meal-educacao-para-saude-2.jpg"
+                alt="Sala de aula com uma professora e alguns alunos ao lado de um profissional de saúda ajeitando suas luvas"
               />
               <div class="meals__item-content">
                 <h3 class="meals__item-title">Educação para Saúde</h3>
@@ -249,6 +277,7 @@
               <img
                 class="meals__item-image"
                 src="assets/images/meals/meal-vermifugacao-2.jpg"
+                alt="Criança recebendo tratamento dental de um voluntário ao lado de cartelos de comprimidos"
               />
               <div class="meals__item-content">
                 <h3 class="meals__item-title">Tratamento de Verminoses</h3>
@@ -290,6 +319,7 @@
               <img
                 class="meals__item-image"
                 src="assets/images/meals/meal-kit-higiene.jpg"
+                alt="Pessoa usando álcool gel nas mãos ao lado de uma cesta com itens diversos para higiene pessoal"
               />
               <div class="meals__item-content">
                 <h3 class="meals__item-title">Kit Higiene</h3>
