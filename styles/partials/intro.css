@@ -87,4 +87,9 @@
   .intro__logo {
     margin-top: var(--s-6);
   }
+
+  .intro__title {
+    margin-top: var(--s-3);
+    margin-bottom: var(--s-3);
+  }
 }

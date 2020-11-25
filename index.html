@@ -46,8 +46,31 @@
     <link rel="stylesheet" href="styles/partials/intro.css" />
     <link rel="stylesheet" href="styles/partials/meals.css" />
     <link rel="stylesheet" href="styles/partials/footer.css" />
+    <link rel="stylesheet" href="styles/partials/campaign-goal.css" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JPPKT8VV1G"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-JPPKT8VV1G');
+    </script>
   </head>
   <body>
+    <article class="campaign-goal">
+      <div class="campaign-goal__progress-container"></div>
+      <div class="campaign-goal__progress"></div>
+      <span class="campaign-goal__percentage">26%</span>
+      <h2 class="campaign-goal__current-label">Arrecadado</h2>
+      <span class="campaign-goal__current-value">R$5.112,04</span>
+      <span class="campaign-goal__word-connector">de</span>
+      <span class="campaign-goal__goal-label">Meta</span>
+      <span class="campaign-goal__goal-value">R$20.000,00</span>
+      <span class="campaign-goal__supporters-label">Apoiadores</span>
+      <span class="campaign-goal__supporters-value">27</span>
+    </article>
     <main>
       <section class="intro">
         <img

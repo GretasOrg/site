@@ -5,7 +5,10 @@
   --grey: #f6f6f6;
   --grey-light: #f8f8f8;
   --grey-dark: #e4e4e4;
+  --red: #ec4138;
+  --red-dark: #c12438;
   --white: white;
+  --yellow: #fbd134;
 
   --color-bg: var(--grey);
   --color-card-bg: var(--grey-light);
@@ -13,4 +16,10 @@
   --color-text-light: var(--white);
 
   --color-primary: var(--green);
+
+  --color-success: var(--green);
+  --color-warning: var(--yellow);
+  --color-danger: var(--red);
+
+  --color-bg-progress: var(--grey-dark);
 }
