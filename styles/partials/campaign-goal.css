@@ -33,7 +33,7 @@
   grid-area: progress;
   align-self: center;
   border-radius: var(--radius-2);
-  --progress: 80%;
+  --progress: 26%;
   width: var(--progress);
   height: var(--s-2);
   background-image: linear-gradient(
