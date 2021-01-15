@@ -33,14 +33,10 @@
   grid-area: progress;
   align-self: center;
   border-radius: var(--radius-2);
-  --progress: 78%;
+  --progress: 94%;
   width: var(--progress);
   height: var(--s-2);
-  background-image: linear-gradient(
-    to right,
-    var(--color-success) 90%,
-    var(--color-warning)
-  );
+  background-image: linear-gradient(to right, var(--color-success) 90%, var(--color-warning));
 }
 .campaign-goal__percentage {
   grid-area: percentage;
