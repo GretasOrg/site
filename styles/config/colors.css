@@ -1,4 +1,5 @@
 :root {
+  --beige: #fffcf1;
   --black: #323232;
   --green: #77c03d;
   --green-shadow: rgba(150, 249, 71, 0.35);
@@ -12,6 +13,7 @@
 
   --color-bg: var(--grey);
   --color-bg-hover: var(--grey-dark);
+  --color-bg-faded: var(--beige);
   --color-card-bg: var(--grey-light);
 
   --color-text-light: var(--white);
