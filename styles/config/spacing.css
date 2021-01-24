@@ -1,19 +1,19 @@
 :root {
   --s-0: 0;
-  --s-1: 4px;
-  --s-2: 8px;
-  --s-3: 16px;
-  --s-4: 24px;
-  --s-5: 32px;
-  --s-6: 40px;
-  --s-7: 48px;
-  --s-8: 64px;
-  --s-9: 80px;
-  --s-10: 96px;
-  --s-11: 128px;
-  --s-12: 144px;
-  --s-13: 160px;
-  --s-14: 192px;
+  --s-1: calc(4rem / 16);
+  --s-2: calc(8rem / 16);
+  --s-3: 1rem;
+  --s-4: calc(24rem / 16);
+  --s-5: calc(32rem / 16);
+  --s-6: calc(40rem / 16);
+  --s-7: calc(48rem / 16);
+  --s-8: calc(64rem / 16);
+  --s-9: calc(80rem / 16);
+  --s-10: calc(96rem / 16);
+  --s-11: calc(128rem / 16);
+  --s-12: calc(144rem / 16);
+  --s-13: calc(160rem / 16);
+  --s-14: calc(192rem / 16);
 
   --em-spacer-1: calc(1 + 1 / 16);
   --em-spacer-2: calc(1 + 1 / 8);

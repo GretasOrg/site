@@ -19,10 +19,12 @@
   --font-9xl: 5rem;
   --font-10xl: 5.5rem;
   --font-11xl: 6rem;
-  --font-12xl: 7rem;
-  --font-13xl: 8rem;
-  --font-14xl: 9rem;
-  --font-15xl: 10rem;
+  --font-12xl: 6.5rem;
+  --font-13xl: 7rem;
+  --font-14xl: 7.5rem;
+  --font-15xl: 8rem;
+  --font-16xl: 9rem;
+  --font-17xl: 10rem;
 
   --font-4xs-em: 0.125em;
   --font-3xs-em: 0.25em;
@@ -42,8 +44,10 @@
   --font-9xl-em: 5em;
   --font-10xl-em: 5.5em;
   --font-11xl-em: 6em;
-  --font-12xl-em: 7em;
-  --font-13xl-em: 8em;
-  --font-14xl-em: 9em;
-  --font-15xl-em: 10em;
+  --font-12xl-em: 6.5em;
+  --font-13xl-em: 7em;
+  --font-14xl-em: 7.5em;
+  --font-15xl-em: 8em;
+  --font-16xl-em: 9em;
+  --font-17xl-em: 10em;
 }

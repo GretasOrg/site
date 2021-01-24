@@ -43,4 +43,7 @@ body {
 }
 
 @media (max-width: 640px) {
+  :root {
+    --main-content-padding: var(--s-3);
+  }
 }
