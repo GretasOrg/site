@@ -1,95 +1,111 @@
-.intro {
-  --x-padding: var(--main-content-padding);
-  display: block;
+/* 
+# height
+Idealmente, num desktop, ocuparia a altura inteira (descontando o tamanho do menu é claro). No entanto, precisa ter um limite inferior, para que não fique tão pequena, e um limite superior, para que também não fique gigante na tela.
+O limite inferior pode ser 550px e o superior o tamanho da imagem, que é 755px
+
+# margin left
+É definida uma variável global "--main-content-padding" que será utilizada por todos os componentes que tiverem que respeitar margem lateral.
+
+central position
+left flower
+right flower */
+
+.c-intro {
+  --intro-min-height: 550px;
+  --intro-max-height: 755px;
+  padding-left: var(--main-content-padding);
   position: relative;
-  padding-left: var(--x-padding);
-  padding-right: var(--x-padding);
-  height: 100vh;
-  max-height: 650px;
-  margin: 0 auto;
+  min-height: var(--intro-min-height);
+  height: calc(100vh - var(--menu-height));
+  max-height: var(--intro-max-height);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-@media (max-width: 393px) {
-  .intro {
-    height: auto;
-    max-height: min-content;
-  }
-}
-
-.intro__bg {
+.c-intro__bg {
   position: absolute;
-  width: 24%;
-  right: 0;
-  height: auto;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  object-position: left;
-}
-.intro__logo {
-  margin-top: var(--s-3);
-}
-.intro__title {
-  font-size: var(--font-4xl);
-  font-weight: 300;
-  line-height: var(--font-5xl);
-}
-@media (max-width: 327px) {
-  .intro__title {
-    margin-right: calc(-1 * var(--s-2));
-  }
+  object-position: bottom right;
+  z-index: -1;
 }
 
-.intro__title b {
-  font-weight: 700;
-}
-.intro__description {
-  font-size: var(--font-base);
-  font-weight: 400;
-  line-height: var(--font-2xl);
+.c-highlightedText {
+  position: relative;
+  margin: 0;
+  width: fit-content;
+  z-index: 1;
 }
 
-.intro__button {
+.c-highlightedText__text {
+  position: relative;
+  margin: 0;
+  padding: 0 var(--s-4);
+  font-family: var(--family-bm);
+  font-weight: normal;
+  font-size: var(--font-15xl);
+  line-height: var(--font-9xl);
+}
+
+.c-highlightedText__bg {
+  position: absolute;
+  left: 0;
+  top: 30%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.c-highlightedText__bg.c-highlightedText__bg-warning {
+  fill: var(--color-warning);
+}
+.c-highlightedText-second .c-highlightedText__text {
+  line-height: var(--font-10xl);
+}
+.c-highlightedText-second .c-highlightedText__bg {
+  top: 0;
+  height: 115px;
+}
+
+.c-intro__readMore {
+  margin-top: var(--s-9);
+  width: fit-content;
+}
+
+.c-intro__bottom {
+  position: absolute;
+  left: 0;
+  bottom: 0;
   width: 100%;
 }
 
-@media (min-width: 768px) {
-  .intro__bg {
-    width: 30%;
-    height: 100%;
-  }
-  .intro__description {
-    max-width: calc(70% - var(--x-padding));
-  }
-  .intro__button {
-    max-width: calc(70% - var(--x-padding));
+.c-intro__flowerTopLeft {
+  position: absolute;
+  left: -109px;
+  top: -85px;
+  height: 300px;
+}
+
+@media (max-width: 1536px) {
+  .c-highlightedText__text {
+    font-size: var(--font-13xl);
   }
 }
 
-@media (min-width: 992px) {
-  .intro__bg {
-    height: 80%;
-    width: 50%;
-    object-fit: contain;
-    object-position: right;
-  }
-  .intro__button {
-    width: fit-content;
-  }
-  .intro__description {
-    max-width: calc(50% - var(--x-padding));
+@media (max-width: 1280px) {
+}
+@media (max-width: 1024px) {
+  .c-highlightedText__text {
+    font-size: var(--font-12xl);
   }
 }
-@media (min-width: 1200px) {
-  .intro {
-    min-height: 550px;
-    max-height: 650px;
-    max-width: var(--main-max-width);
-  }
-  .intro__logo {
-    margin-top: var(--s-6);
-  }
 
-  .intro__title {
-    margin-top: var(--s-3);
-    margin-bottom: var(--s-3);
-  }
+@media (max-width: 768px) {
+}
+
+@media (max-width: 640px) {
 }

@@ -1,8 +1,8 @@
-.button:focus {
+.c-button:focus {
   outline: none;
 }
 
-.button {
+.c-button {
   line-height: var(--font-lg);
   font-size: var(--font-lg);
   font-weight: bold;
@@ -14,14 +14,21 @@
   cursor: pointer;
   height: var(--button-height);
   text-decoration: none;
+  border-radius: var(--radius-2);
 }
 
-.button.round {
+.c-button.round {
   border-radius: 63px;
 }
 
-.button.primary {
+.c-button-primary {
   color: var(--white);
-  box-shadow: 0px 4px 6px var(--green-shadow);
-  background-color: var(--green);
+  box-shadow: 0px 4px 6px var(--color-primary-shadow);
+  background-color: var(--color-primary);
+}
+
+.c-button-danger {
+  color: var(--color-warning);
+  box-shadow: 0px 4px 6px var(--color-danger-shadow);
+  background-color: var(--color-danger);
 }

@@ -1,9 +1,11 @@
 :root {
-  --main-content-padding: var(--s-3);
+  --main-content-padding: calc(100% * 320 / 1920);
   --main-max-width: 1400px;
   --main-min-height: 500px;
 
   --button-height: 54px;
+
+  --menu-height: 122px;
 }
 body {
   font-family: "Montserrat", sans-serif;
@@ -17,4 +19,28 @@ body {
 
 * {
   font-family: "Montserrat", sans-serif;
+}
+
+@media (max-width: 1536px) {
+}
+
+@media (max-width: 1280px) {
+  :root {
+    --main-content-padding: 10%;
+  }
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --main-content-padding: var(--s-8);
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --main-content-padding: var(--s-6);
+  }
+}
+
+@media (max-width: 640px) {
 }
