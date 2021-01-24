@@ -1,5 +1,6 @@
 :root {
   --beige: #fffcf1;
+  --beige-dark: #e8ddb8;
   --black: #323232;
   --green: #77c03d;
   --green-shadow: rgba(150, 249, 71, 0.35);
@@ -21,10 +22,11 @@
   --color-text-darker: var(--black);
 
   --color-primary: var(--green);
-
   --color-success: var(--green);
   --color-warning: var(--yellow);
   --color-danger: var(--red);
+  --color-faded: var(--beige);
+  --color-faded-dark: var(--beige-dark);
 
   --color-bg-progress: var(--grey-dark);
 }

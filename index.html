@@ -45,6 +45,7 @@
     <link rel="stylesheet" href="styles/config/typography.css" />
     <link rel="stylesheet" href="styles/elements/buttons.css" />
     <link rel="stylesheet" href="styles/elements/dropdowns.css" />
+    <link rel="stylesheet" href="styles/elements/highlighted-text.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="styles/partials/menu.css" />
     <link rel="stylesheet" href="styles/partials/intro.css" />
@@ -86,14 +87,11 @@
     <main>
       <section class="c-intro">
         <img class="c-intro__bg" src="assets/images/intro/bg.png" alt="Criança sertaneja" />
-        <article class="c-intro__title c-highlightedText">
-          <h1 class="c-highlightedText__text">Doações ajudam</h1>
-          <text-highlight-svg class="c-highlightedText__bg c-highlightedText__bg-warning"></text-highlight-svg>
-        </article>
-        <article class="c-intro__title c-highlightedText c-highlightedText-second">
-          <h1 class="c-highlightedText__text">moradores de Ibimirim</h1>
-          <text-highlight-svg class="c-highlightedText__bg c-highlightedText__bg-warning"></text-highlight-svg>
-        </article>
+        <text-highlight class="c-intro__title" color="warning" text="Doações ajudam"></text-highlight>
+        <div class="c-intro__secondTitle">
+          <text-highlight class="c-intro__title" color="warning" text="moradores"></text-highlight>
+          <text-highlight class="c-intro__title" color="warning" text="de Ibimirim"></text-highlight>
+        </div>
         <button class="c-button c-button-danger c-intro__readMore">Saiba mais</button>
         <img class="c-intro__bottom" src="assets/images/intro/paper-effect.svg" alt="Efeito de papel rasgado" />
         <img class="c-intro__flowerTopLeft" src="assets/images/intro/green-flower.svg" alt="Desenho de flor verde" />
@@ -420,6 +418,7 @@
     </main>
 
     <script defer src="scripts/elements/text-highlight-svg.js"></script>
+    <script defer src="scripts/elements/text-highlight.js"></script>
     <script defer src="scripts/elements/currency-mask.js"></script>
     <script defer src="scripts/elements/menu.js"></script>
     <script defer src="scripts/elements/dropdowns.js"></script>
