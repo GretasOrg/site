@@ -40,10 +40,6 @@ right flower */
   flex-wrap: wrap;
 }
 
-.c-intro__secondTitle .c-intro__title {
-  margin-top: calc(-1 * var(--font-2xl));
-}
-
 .c-intro__secondTitle .c-intro__title:not(:first-of-type) {
   margin-left: calc(-1 * var(--font-3xl));
 }
@@ -95,7 +91,7 @@ right flower */
 
 @media (max-width: 640px) {
   .c-intro__secondTitle .c-intro__title {
-    margin-top: calc(-1 * var(--font-5xl));
+    margin-top: calc(-1 * var(--font-lg));
   }
   .c-intro__readMore {
     width: unset;

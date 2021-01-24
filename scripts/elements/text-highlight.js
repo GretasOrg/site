@@ -8,7 +8,7 @@
   <article class="c-highlightedText">
     <h1 class="c-highlightedText__text"></h1>
     <text-highlight-svg class="c-highlightedText__bg"></text-highlight-svg>
-  </article>;
+  </article>
 `;
 
   class TextHighlight extends HTMLElement {
