@@ -23,10 +23,7 @@
       property="og:description"
       content="Trabalhamos com as comunidades rurais de Ibimirim no estímulo à autonomia e empoderamento de todos que nelas fazem morada, através de programas focados em saúde, segurança alimentar, educação e fonte de renda. Contribuímos para a diminuição das desigualdades sociais e promoção da dignidade humana."
     />
-    <meta
-      property="og:image"
-      content="https://gretas.org/assets/images/mulher-simbolo.jpg"
-    />
+    <meta property="og:image" content="https://gretas.org/assets/images/mulher-simbolo.jpg" />
     <meta property="og:url" content="https://www.gretas.org/" />
     <meta property="og:site_name" content="Projeto Gretas" />
 
@@ -35,21 +32,12 @@
       name="twitter:description"
       content="Trabalhamos com as comunidades rurais de Ibimirim no estímulo à autonomia e empoderamento de todos que nelas fazem morada, através de programas focados em saúde, segurança alimentar, educação e fonte de renda. Contribuímos para a diminuição das desigualdades sociais e promoção da dignidade humana."
     />
-    <meta
-      name="twitter:image"
-      content="https://gretas.org/assets/images/mulher-simbolo.jpg"
-    />
+    <meta name="twitter:image" content="https://gretas.org/assets/images/mulher-simbolo.jpg" />
     <meta name="twitter:site" content="Projeto Gretas" />
     <meta name="twitter:creator" content="Projeto Gretas" />
 
-    <link
-      href="https://unpkg.com/sanitize.css@12.0.1/sanitize.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://unpkg.com/sanitize.css@12.0.1/sanitize.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles/fonts/beautiful-mess.css" />
     <link rel="stylesheet" href="styles/config/borders.css" />
     <link rel="stylesheet" href="styles/config/colors.css" />
@@ -62,16 +50,14 @@
     <link rel="stylesheet" href="styles/large.css" />
     <link rel="stylesheet" href="styles/medium.css" />
     <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/partials/menu.css" />
     <link rel="stylesheet" href="styles/partials/intro.css" />
     <link rel="stylesheet" href="styles/partials/meals.css" />
     <link rel="stylesheet" href="styles/partials/footer.css" />
     <link rel="stylesheet" href="styles/partials/campaign-goal.css" />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-JPPKT8VV1G"
-    ></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JPPKT8VV1G"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -83,13 +69,20 @@
     </script>
   </head>
   <body>
+    <header class="c-menu">
+      <img class="c-menu__logo" src="assets/images/menu/logo.svg" alt="Logo Gretas" />
+      <ul class="l-menu__items">
+        <a class="c-menu__item" href="">Home</a>
+        <a class="c-menu__item" href="">Sobre nós</a>
+        <a class="c-menu__item" href="">Ações</a>
+        <a class="c-menu__item" href="">Apoiadores</a>
+      </ul>
+      <button class="c-button c-button-danger c-button-sm-xs c-menu__action">Doe agora!</button>
+      <button class="c-menu__btn"></button>
+    </header>
     <main>
       <section class="c-intro">
-        <img
-          class="c-intro__bg"
-          src="assets/images/intro/bg.png"
-          alt="Criança sertaneja"
-        />
+        <img class="c-intro__bg" src="assets/images/intro/bg.png" alt="Criança sertaneja" />
         <article class="c-intro__title c-highlightedText">
           <h1 class="c-highlightedText__text">Doações ajudam</h1>
           <svg
@@ -107,9 +100,7 @@
             />
           </svg>
         </article>
-        <article
-          class="c-intro__title c-highlightedText c-highlightedText-second"
-        >
+        <article class="c-intro__title c-highlightedText c-highlightedText-second">
           <h1 class="c-highlightedText__text">moradores de Ibimirim</h1>
           <svg
             class="c-highlightedText__bg c-highlightedText__bg-warning"
@@ -126,19 +117,9 @@
             />
           </svg>
         </article>
-        <button class="c-button c-button-danger c-intro__readMore">
-          Saiba mais
-        </button>
-        <img
-          class="c-intro__bottom"
-          src="assets/images/intro/paper-effect.svg"
-          alt="Efeito de papel rasgado"
-        />
-        <img
-          class="c-intro__flowerTopLeft"
-          src="assets/images/intro/green-flower.svg"
-          alt="Desenho de flor verde"
-        />
+        <button class="c-button c-button-danger c-intro__readMore">Saiba mais</button>
+        <img class="c-intro__bottom" src="assets/images/intro/paper-effect.svg" alt="Efeito de papel rasgado" />
+        <img class="c-intro__flowerTopLeft" src="assets/images/intro/green-flower.svg" alt="Desenho de flor verde" />
       </section>
       <!-- <section class="intro">
         <img

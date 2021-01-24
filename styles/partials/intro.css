@@ -11,7 +11,7 @@ left flower
 right flower */
 
 .c-intro {
-  --intro-min-height: 550px;
+  --intro-min-height: 520px;
   --intro-max-height: 755px;
   padding: 0 var(--main-content-padding);
   position: relative;
@@ -49,6 +49,7 @@ right flower */
   font-weight: normal;
   font-size: var(--font-17xl);
   line-height: var(--font-9xl);
+  color: var(--color-text-darker);
   z-index: 2;
 }
 

@@ -3,16 +3,17 @@
   --main-max-width: 1400px;
   --main-min-height: 500px;
 
-  --button-height: 54px;
+  --button-height: var(--font-6xl);
+  --button-sm-height: var(--font-4xl);
 
-  --menu-height: 122px;
+  --menu-height: var(--s-10);
 }
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
   display: flex;
   justify-content: center;
-  color: var(--black);
+  color: var(--color-text-dark);
   background-color: var(--color-bg);
   display: block;
 }
@@ -22,6 +23,9 @@ body {
 }
 
 @media (max-width: 1536px) {
+  :root {
+    --main-content-padding: 10%;
+  }
 }
 
 @media (max-width: 1280px) {
@@ -39,6 +43,7 @@ body {
 @media (max-width: 768px) {
   :root {
     --main-content-padding: var(--s-6);
+    --menu-height: var(--s-8);
   }
 }
 

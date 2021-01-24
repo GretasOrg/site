@@ -1,0 +1,134 @@
+/* 
+# height
+Idealmente, num desktop, ocuparia a altura inteira (descontando o tamanho do menu é claro). No entanto, precisa ter um limite inferior, para que não fique tão pequena, e um limite superior, para que também não fique gigante na tela.
+O limite inferior pode ser 550px e o superior o tamanho da imagem, que é 755px
+
+# margin left
+É definida uma variável global "--main-content-padding" que será utilizada por todos os componentes que tiverem que respeitar margem lateral.
+
+central position
+left flower
+right flower */
+
+.c-menu {
+  padding: var(--s-4) var(--main-content-padding);
+  height: var(--menu-height);
+
+  display: flex;
+  align-items: center;
+
+  --menu-items-margin: var(--s-4);
+}
+
+.c-menu__logo {
+  margin-right: auto;
+}
+
+.l-menu__items {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+.c-menu__item {
+  margin-right: var(--menu-items-margin);
+  text-decoration: none;
+  color: var(--color-text-dark);
+  font-size: var(--font-base);
+  text-transform: uppercase;
+}
+.c-menu__item.c-menu__item-active {
+  font-weight: bold;
+}
+.c-menu__item:last-of-type {
+  margin-right: 0;
+}
+
+/* .c-menu__item:first-of-type {
+}
+.c-menu__item:last-of-type {
+  margin-right: auto;
+} */
+
+.c-menu__action {
+  margin-left: auto;
+}
+
+.c-menu__btn {
+  display: none;
+}
+
+/* extra large */
+@media (max-width: 1536px) {
+}
+
+/* large */
+@media (max-width: 1280px) {
+}
+
+/* medium */
+@media (max-width: 1024px) {
+  .c-menu__logo {
+    margin-right: 0;
+  }
+  .l-menu__items {
+    display: none;
+  }
+  .c-menu__btn {
+    display: inline-block;
+    margin-left: auto;
+    border: none;
+    padding: var(--s-3);
+    background-color: var(--color-bg);
+    transition: background-color 0.2s ease;
+  }
+  .c-menu__btn:hover {
+    background-color: var(--color-danger);
+    box-shadow: 0px 0px 6px 2px rgb(0 0 0 / 15%);
+  }
+  .c-menu__btn:focus {
+    outline: none;
+  }
+  .c-menu__btn::after,
+  .c-menu__btn::before {
+    content: "-";
+    width: var(--font-lg);
+    height: var(--s-01);
+    background-color: var(--color-text-darker);
+    font-size: 0;
+    display: block;
+    transition: background-color 0.1s ease;
+  }
+  .c-menu__btn:hover:after,
+  .c-menu__btn:hover:before {
+    background-color: var(--color-warning);
+  }
+  .c-menu__btn::before {
+    margin-bottom: var(--s-1);
+  }
+  .c-menu__action {
+    margin-left: var(--s-4);
+  }
+}
+
+/* small */
+@media (max-width: 768px) {
+  .c-menu {
+    padding: var(--s-2) var(--main-content-padding);
+  }
+  .c-menu__logo {
+    height: var(--s-7);
+  }
+}
+
+/* extra small */
+@media (max-width: 640px) {
+  /* .c-menu__action {
+    font-size: var(--font-sm);
+    height: var(--button-sm-height);
+  } */
+}
+
+/* tiny */
+@media (max-width: 359px) {
+}

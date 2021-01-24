@@ -1,5 +1,6 @@
 :root {
   --s-0: 0;
+  --s-01: calc(2rem / 16);
   --s-1: calc(4rem / 16);
   --s-2: calc(8rem / 16);
   --s-3: 1rem;

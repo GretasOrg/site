@@ -4,16 +4,19 @@
   --green-shadow: rgba(150, 249, 71, 0.35);
   --grey: #f6f6f6;
   --grey-light: #f8f8f8;
-  --grey-dark: #e4e4e4;
+  --grey-dark: #707070;
   --red: #f02d35;
   --red-dark: #c12438;
   --white: white;
   --yellow: #fbd134;
 
   --color-bg: var(--grey);
+  --color-bg-hover: var(--grey-dark);
   --color-card-bg: var(--grey-light);
 
   --color-text-light: var(--white);
+  --color-text-dark: var(--grey-dark);
+  --color-text-darker: var(--black);
 
   --color-primary: var(--green);
 
