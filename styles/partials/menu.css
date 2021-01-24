@@ -33,9 +33,9 @@ right flower */
 .c-menu__item {
   margin-right: var(--menu-items-margin);
   text-decoration: none;
+  text-transform: uppercase;
   color: var(--color-text-dark);
   font-size: var(--font-base);
-  text-transform: uppercase;
 }
 .c-menu__item.c-menu__item-active {
   font-weight: bold;
@@ -81,6 +81,8 @@ right flower */
     padding: var(--s-3);
     background-color: var(--color-bg);
     transition: background-color 0.2s ease;
+    cursor: pointer;
+    z-index: 101;
   }
   .c-menu__btn:hover {
     background-color: var(--color-danger);
@@ -97,7 +99,7 @@ right flower */
     background-color: var(--color-text-darker);
     font-size: 0;
     display: block;
-    transition: background-color 0.1s ease;
+    transition: all 0.2s ease;
   }
   .c-menu__btn:hover:after,
   .c-menu__btn:hover:before {
@@ -106,8 +108,50 @@ right flower */
   .c-menu__btn::before {
     margin-bottom: var(--s-1);
   }
+  .c-menu__btn.js-open {
+    box-shadow: none;
+    background-color: transparent;
+  }
+  .c-menu__btn.js-open::after,
+  .c-menu__btn.js-open::before {
+    background-color: var(--color-warning);
+  }
+  .c-menu__btn.js-open::before {
+    transform: translateY(3px) rotate(45deg) scale(2);
+  }
+  .c-menu__btn.js-open::after {
+    transform: translateY(-3px) rotate(-45deg) scale(2);
+  }
+
   .c-menu__action {
     margin-left: var(--s-4);
+  }
+
+  .c-mobileMenu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 90vh;
+    width: 100vw;
+    background-color: var(--color-danger);
+    z-index: 100;
+    padding: var(--s-9) var(--s-7);
+  }
+  .c-mobileMenu.js-open {
+    display: block;
+  }
+  .c-mobileMenu__item {
+    font-size: var(--font-4xl);
+    color: var(--color-warning);
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    margin-top: var(--s-3);
+  }
+  .c-mobileMenu__item:hover {
+    text-decoration: underline;
+    cursor: pointer;
   }
 }
 
@@ -123,12 +167,14 @@ right flower */
 
 /* extra small */
 @media (max-width: 640px) {
-  /* .c-menu__action {
-    font-size: var(--font-sm);
-    height: var(--button-sm-height);
-  } */
 }
 
 /* tiny */
 @media (max-width: 359px) {
+  .c-menu__logo {
+    height: var(--s-5);
+  }
+  .c-mobileMenu__item {
+    font-size: var(--font-2xl);
+  }
 }
