@@ -45,6 +45,7 @@
     <link rel="stylesheet" href="styles/config/typography.css" />
     <link rel="stylesheet" href="styles/elements/buttons.css" />
     <link rel="stylesheet" href="styles/elements/dropdowns.css" />
+    <link rel="stylesheet" href="styles/elements/highlighted-stats.css" />
     <link rel="stylesheet" href="styles/elements/highlighted-text.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="styles/partials/menu.css" />
@@ -96,7 +97,37 @@
         <img class="c-intro__bottom" src="assets/images/intro/paper-effect.svg" alt="Efeito de papel rasgado" />
         <img class="c-intro__flowerTopLeft" src="assets/images/intro/green-flower.svg" alt="Desenho de flor verde" />
       </section>
-      <section class="c-about"></section>
+      <section class="c-about">
+        <div class="l-about__col1">
+          <text-highlight class="c-about__title" color="faded-dark" text="Nós somos o Gretas!"></text-highlight>
+          <p class="c-about__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt pretium ante, a efficitur turpis varius ullamcorper.
+            Fusce in pellentesque augue, sit amet efficitur purus. Mauris vel libero vel justo feugiat suscipit quis et turpis. Maecenas
+            ante purus, lacinia vel eros non, dapibus volutpat nulla. Aliquam finibus efficitur tortor eu dapibus. <br />
+            <br />
+            Ut dignissim purus eget eros cursus, ac tristique purus ullamcorper. Sed dignissim, neque in lacinia interdum, turpis nisi
+            ullamcorper est, et venenatis lectus tellus ac massa. Donec sagittis, nisi in hendrerit dictum, nisl nisi ornare ex, sed blandit
+            justo ex Donec sagittis, nisi in hendrerit dictum, nisl nisi ornare ex, sed blandit justo ex vel lacus. Quisque ac elementum
+            justo.
+          </p>
+          <a class="c-about__joinUs" href="">Junte-se a nós!</a>
+        </div>
+        <div class="l-about__col2">
+          <ul class="l-about__stats">
+            <stats-highlight number="17" color="tertiary">
+              Anos de <br />
+              experiência
+            </stats-highlight>
+            <stats-highlight number="24" color="success"> Voluntários </stats-highlight>
+            <stats-highlight number="120" color="danger"> Ações realizadas </stats-highlight>
+            <stats-highlight number="2000+" color="faded-dark">
+              Pessoas que <br />
+              foram ajudadas
+            </stats-highlight>
+          </ul>
+        </div>
+        <div class="l-about__col3"></div>
+      </section>
       <!-- <section class="intro">
         <img
           class="intro__bg"
@@ -417,6 +448,8 @@
       </section> -->
     </main>
 
+    <script defer src="scripts/elements/stats-highlight-svg.js"></script>
+    <script defer src="scripts/elements/stats-highlight.js"></script>
     <script defer src="scripts/elements/text-highlight-svg.js"></script>
     <script defer src="scripts/elements/text-highlight.js"></script>
     <script defer src="scripts/elements/currency-mask.js"></script>

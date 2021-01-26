@@ -7,6 +7,7 @@
   --grey: #f6f6f6;
   --grey-light: #f8f8f8;
   --grey-dark: #707070;
+  --orange: #ff9533;
   --red: #f02d35;
   --red-dark: #c12438;
   --white: white;
@@ -22,6 +23,8 @@
   --color-text-darker: var(--black);
 
   --color-primary: var(--green);
+  --color-secondary: var(--yellow);
+  --color-tertiary: var(--orange);
   --color-success: var(--green);
   --color-warning: var(--yellow);
   --color-danger: var(--red);

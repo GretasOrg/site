@@ -1,7 +1,7 @@
 .c-highlightedText {
   position: relative;
   margin: 0;
-  width: fit-content;
+  display: inline-block;
 }
 
 .c-highlightedText__text {
@@ -22,7 +22,7 @@
   top: 15%;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: 0;
 }
 .c-highlightedText__bg.c-highlightedText__bg-warning {
   fill: var(--color-warning);
