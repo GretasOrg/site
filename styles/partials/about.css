@@ -1,5 +1,5 @@
 .c-about {
-  padding: 0 var(--main-content-padding);
+  padding: var(--s-9) var(--main-content-padding);
   background-color: var(--color-faded);
   display: flex;
   flex-wrap: wrap;
@@ -37,6 +37,7 @@
 
 .c-about__joinUs {
   width: fit-content;
+  margin-top: var(--s-3);
   color: var(--color-danger);
   font-weight: bold;
   text-decoration: none;
