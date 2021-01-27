@@ -3,18 +3,18 @@
   background-color: var(--color-faded);
   display: flex;
   flex-wrap: wrap;
-  /* display: grid;
-  grid-template-columns: auto auto var(--s-3) 1fr;
-  grid-template-rows: var(--s-3) auto var(--s-3) auto var(--s-2) auto var(--s-3); */
 }
 .l-about__col1 {
+  --col1-font-multiplier: 5.8;
   flex: 40;
+  min-width: calc(var(--col1-font-multiplier) * var(--font-15xl));
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 .l-about__col2 {
   flex: 25;
+  min-width: var(--s-15);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -22,18 +22,17 @@
 }
 .l-about__col3 {
   flex: 35;
+  min-width: 471px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
-.c-about__title {
-  /* flex */
-}
 
 .c-about__text {
   font-size: var(--font-sm);
   line-height: var(--font-3xl);
+  margin-top: var(--s-6);
 }
 
 .c-about__joinUs {
@@ -48,4 +47,99 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0;
+  margin-top: var(--s-5);
+  padding: 0;
+}
+
+.c-about__banner {
+  position: relative;
+  margin-top: var(--s-5);
+}
+
+.c-about__bannerBg {
+  width: 100%;
+}
+.c-about__volunteer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 66%;
+}
+.c-about__helpText {
+  position: absolute;
+  left: 15%;
+  top: 20%;
+  font-family: var(--family-bm);
+  font-size: var(--font-6xl);
+  line-height: var(--font-4xl);
+  color: var(--color-text-darker);
+  margin-top: var(--s-5);
+}
+.c-about__video {
+  width: 100%;
+  margin-top: var(--s-5);
+}
+
+@media (max-width: 1536px) {
+  .l-about__col1 {
+    --col1-font-multiplier: 4.72;
+  }
+}
+
+@media (max-width: 1280px) {
+}
+
+@media (max-width: 1024px) {
+  .l-about__col1,
+  .l-about__col2,
+  .l-about__col3 {
+    flex: 0 0 100%;
+  }
+
+  .l-about__col1 {
+    align-items: center;
+    min-width: 100%;
+    margin-bottom: var(--s-3);
+  }
+
+  .c-about__text {
+    margin-top: var(--s-3);
+  }
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 640px) {
+  .l-about__col3 {
+    min-width: 100%;
+  }
+  .c-about__volunteer {
+    width: 50%;
+  }
+}
+
+@media (max-width: 479px) {
+  .c-about__title .c-highlightedText__text {
+    font-size: var(--font-7xl);
+  }
+  .c-about__volunteer {
+    width: 40%;
+  }
+}
+@media (max-width: 380px) {
+  .c-about__volunteer {
+    width: 33%;
+  }
+}
+
+@media (max-width: 359px) {
+  .c-about__title .c-highlightedText__text {
+    font-size: var(--font-6xl);
+  }
+  .c-about__helpText {
+    font-size: var(--font-5xl);
+    line-height: var(--font-3xl);
+  }
 }
