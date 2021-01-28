@@ -33,6 +33,9 @@
 .c-highlightedText__bg.c-highlightedText__bg-faded-dark {
   fill: var(--color-faded-dark);
 }
+.c-highlightedText__bg.c-highlightedText__bg-faded-darker {
+  fill: var(--color-faded-darker);
+}
 
 @media (max-width: 1536px) {
   .c-highlightedText__text {

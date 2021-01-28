@@ -45,12 +45,15 @@
     <link rel="stylesheet" href="styles/config/typography.css" />
     <link rel="stylesheet" href="styles/elements/buttons.css" />
     <link rel="stylesheet" href="styles/elements/dropdowns.css" />
+    <link rel="stylesheet" href="styles/elements/inputs.css" />
     <link rel="stylesheet" href="styles/elements/highlighted-stats.css" />
     <link rel="stylesheet" href="styles/elements/highlighted-text.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="styles/partials/menu.css" />
     <link rel="stylesheet" href="styles/partials/intro.css" />
     <link rel="stylesheet" href="styles/partials/about.css" />
+    <link rel="stylesheet" href="styles/partials/donation.css" />
+    <link rel="stylesheet" href="styles/partials/donations.css" />
     <link rel="stylesheet" href="styles/partials/meals.css" />
     <link rel="stylesheet" href="styles/partials/footer.css" />
     <link rel="stylesheet" href="styles/partials/campaign-goal.css" />
@@ -143,6 +146,37 @@
             src="https://instagram.frec8-1.fna.fbcdn.net/v/t50.16885-16/10000000_130463038398914_6109371181312891968_n.mp4?efg=eyJ2ZW5jb2RlX3RhZyI6InZ0c192b2RfdXJsZ2VuLjEyODAuaWd0di5kZWZhdWx0IiwicWVfZ3JvdXBzIjoiW1wiaWdfd2ViX2RlbGl2ZXJ5X3Z0c19vdGZcIl0ifQ&_nc_ht=instagram.frec8-1.fna.fbcdn.net&_nc_cat=102&_nc_ohc=aVkEpZzgOkIAX8yT7Yg&vs=17849121304754306_1997552222&_nc_vs=HBksFQAYJEdJQ1dtQURDWVEtTHAzWUFBRURjS1hlNDJNaFVidlZCQUFBRhUAAsgBABUAGCRHT3FreWdUUjJrYy1mM3NKQUlmQnpZOURzQXdHYnZWQkFBQUYVAgLIAQAoABgAGwGIB3VzZV9vaWwBMRUAACaEsOz3xeu0PxUCKAJDMywXQGZt2yLQ5WAYEmRhc2hfYmFzZWxpbmVfMV92MREAdewHAA%3D%3D&oe=60137C07&oh=732a56c21f061d5812e3802b470798e0"
           ></video>
         </div>
+      </section>
+      <section class="c-donations">
+        <img class="c-donations__top" src="assets/images/donations/paper-effect.svg" alt="Efeito de papel rasgado" />
+        <text-highlight class="c-donations__title" color="faded-dark" text="Nossas Ações"></text-highlight>
+        <img class="c-donations__bgLeft" src="assets/images/donations/bg-verde.png" alt="Senhor sertanejo apoiado numa vassoura" />
+        <img
+          class="c-donations__bgRight"
+          src="assets/images/donations/bg-amarelo.png"
+          alt="Menina sertaneja sorridente debruçada numa janela"
+        />
+        <button class="c-button c-button-danger c-donations__action">Todas as ações</button>
+        <ul class="l-donations__list">
+          <article class="c-donation">
+            <div class="l-donation__header">
+              <img class="c-donation__img" src="assets/images/donations/meal-acao-de-saude-2.jpg" alt="" />
+            </div>
+            <div class="l-donation__body">
+              <h3 class="c-donation__title">Ação de Saúde</h3>
+              <p class="c-donation__text">Leve a oportunidade de uma consulta médica a uma família do Sertão</p>
+              <div class="c-donation__price">
+                <span class="c-donation__currency">R$</span>
+                <input value="0.00" class="c-donation__input c-input c-input-success c-input-noControls c-input-big" type="number" />
+              </div>
+              <p class="c-donation__description">
+                Consulta por família em uma destas especialidades médicas: ginecologista, cardiologista, dermatologista, dentista, clínico
+                geral, médico da família ou pediatra.
+              </p>
+              <a class="c-donation__action c-button c-button-success c-button-round">Doar</a>
+            </div>
+          </article>
+        </ul>
       </section>
       <!-- <section class="intro">
         <img

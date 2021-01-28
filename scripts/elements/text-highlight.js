@@ -32,6 +32,8 @@
         bgEl.classList.add(`c-highlightedText__bg-faded`);
       } else if (color === "faded-dark") {
         bgEl.classList.add(`c-highlightedText__bg-faded-dark`);
+      } else if (color === "faded-darker") {
+        bgEl.classList.add(`c-highlightedText__bg-faded-darker`);
       }
     }
   }

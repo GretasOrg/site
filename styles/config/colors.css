@@ -1,6 +1,7 @@
 :root {
   --beige: #fffcf1;
   --beige-dark: #e8ddb8;
+  --beige-darker: #c7be9e;
   --black: #323232;
   --green: #77c03d;
   --green-shadow: rgba(150, 249, 71, 0.35);
@@ -14,6 +15,7 @@
   --yellow: #fbd134;
 
   --color-bg: var(--grey);
+  --color-bg-lightest: var(--white);
   --color-bg-hover: var(--grey-dark);
   --color-bg-faded: var(--beige);
   --color-card-bg: var(--grey-light);
@@ -21,6 +23,8 @@
   --color-text-light: var(--white);
   --color-text-dark: var(--grey-dark);
   --color-text-darker: var(--black);
+
+  --color-input-border: var(--grey-dark);
 
   --color-primary: var(--green);
   --color-secondary: var(--yellow);
@@ -30,6 +34,9 @@
   --color-danger: var(--red);
   --color-faded: var(--beige);
   --color-faded-dark: var(--beige-dark);
+  --color-faded-darker: var(--beige-darker);
 
   --color-bg-progress: var(--grey-dark);
+
+  --shadow-regular: 0px 3px 16px #00000029;
 }
