@@ -1,16 +1,16 @@
 (function () {
-  const meals = document.querySelectorAll(".meals__item");
-  meals.forEach((meal) => {
-    const dropdown = meal.querySelector(".dropdown");
-    const link = meal.querySelector(".meals__item-button a");
+  const donations = document.querySelectorAll(".c-donation");
+  donations.forEach((donation) => {
+    const dropdown = donation.querySelector(".c-donation .c-dropdown");
+    const link = donation.querySelector(".c-donation__action");
 
-    const plan = meal.getAttribute("data-plan");
+    const plan = donation.getAttribute("data-plan");
 
     dropdown &&
       dropdown.addEventListener("dropdown::select", (ev) => {
         const frequency = ev.detail.value;
-        meal.setAttribute("data-frequency", frequency);
-        const price = meal.getAttribute("data-price");
+        donation.setAttribute("data-frequency", frequency);
+        const price = donation.getAttribute("data-price");
         const newLink = `https://gretas.faturasimples.com.br/contratar/gretas?plano=${plan}&valor=${price}.00&recorrencia=${frequency}`;
         link.href = newLink;
       });
@@ -19,19 +19,17 @@
 
 (async function () {
   document.addEventListener("DOMContentLoaded", (ev) => {
-    const planInputEl = document.querySelector(
-      ".meals__item-price .price.input"
-    );
-    const mealEl = document.querySelector("#mealCustom");
-    const link = mealEl.querySelector(".meals__item-button a");
-    const plan = mealEl.getAttribute("data-plan");
+    const planInputEl = document.querySelector("#donationCustom .c-donation__input");
+    const donationEl = document.querySelector("#donationCustom");
+    const link = donationEl.querySelector(".c-donation__action");
+    const plan = donationEl.getAttribute("data-plan");
 
     planInputEl.addEventListener("change", (ev) => {
-      const frequency = mealEl.getAttribute("data-frequency");
+      const frequency = donationEl.getAttribute("data-frequency");
       const price = ev.target.value;
-      mealEl.setAttribute("data-price", price);
+      donationEl.setAttribute("data-price", price);
 
-      const newLink = `https://gretas.faturasimples.com.br/contratar/gretas?plano=${plan}&valor=${price}.00&recorrencia=${frequency}`;
+      const newLink = `https://gretas.faturasimples.com.br/contratar/gretas?plano=${plan}&valor=${price}&recorrencia=${frequency}`;
       link.href = newLink;
     });
     planInputEl.addEventListener("focus", (_) => {

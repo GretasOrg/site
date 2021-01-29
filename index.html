@@ -156,27 +156,230 @@
           src="assets/images/donations/bg-amarelo.png"
           alt="Menina sertaneja sorridente debruçada numa janela"
         />
-        <button class="c-button c-button-danger c-donations__action">Todas as ações</button>
         <ul class="l-donations__list">
-          <article class="c-donation">
+          <article class="c-donation" id="donationCustom" data-plan="9" data-price="0" data-frequency="0">
             <div class="l-donation__header">
-              <img class="c-donation__img" src="assets/images/donations/meal-acao-de-saude-2.jpg" alt="" />
+              <img
+                class="c-donation__img"
+                src="assets/images/donations/meal-acao-de-saude-2.jpg"
+                alt="Árvore seca numa região semi-árida ao lado de uma consulta médica com uma paciente"
+              />
+            </div>
+            <div class="l-donation__body">
+              <h3 class="c-donation__title">Doe o quanto quiser!</h3>
+              <p class="c-donation__text">
+                Sua contribuição auxilia o Gretas a levar benefícios de alimentação e cuidados básicos, acesso à saúde e educação para a
+                população de Ibimirim.
+              </p>
+              <div class="c-donation__price">
+                <span class="c-donation__currency">R$</span>
+                <input value="0.00" class="c-donation__input c-input c-input-success c-input-noControls c-input-big" type="number" />
+              </div>
+              <div class="c-donation__plan c-dropdown js-closed">
+                <span class="c-dropdown__selected" data-value="0"> Somente uma vez </span>
+                <ul class="c-dropdown__menu">
+                  <li class="c-dropdown__option" data-value="0">Somente uma vez</li>
+                  <li class="c-dropdown__option" data-value="1">Por mês</li>
+                </ul>
+              </div>
+              <p class="c-donation__description">
+                Toda valor doado será direcionado para a Ação Ibimirim que acontecerá em Janeiro de 2021.
+              </p>
+              <a
+                class="c-donation__action c-button c-button-success c-button-round"
+                href="https://gretas.faturasimples.com.br/contratar/gretas?plano=9&valor=10.00&recorrencia=0"
+                target="_blank"
+                rel="noopener"
+                >Doar</a
+              >
+            </div>
+          </article>
+          <article class="c-donation" data-plan="2" data-price="100" data-frequency="0">
+            <div class="l-donation__header">
+              <img
+                class="c-donation__img"
+                src="assets/images/donations/meal-acao-de-saude.jpg"
+                alt="Casa simples numa região semi-árida ao lado de um bebê recebendo uma consulta médica"
+              />
             </div>
             <div class="l-donation__body">
               <h3 class="c-donation__title">Ação de Saúde</h3>
               <p class="c-donation__text">Leve a oportunidade de uma consulta médica a uma família do Sertão</p>
               <div class="c-donation__price">
                 <span class="c-donation__currency">R$</span>
-                <input value="0.00" class="c-donation__input c-input c-input-success c-input-noControls c-input-big" type="number" />
+                <label class="c-donation__label" for="price">Preço</label>
+                <input
+                  value="100.00"
+                  class="c-donation__input c-input c-input-success c-input-noControls c-input-big c-input-disabledDiscrete"
+                  type="number"
+                  name="price"
+                  disabled
+                />
+              </div>
+              <div class="c-donation__plan c-dropdown js-closed">
+                <span class="c-dropdown__selected" data-value="0"> Somente uma vez </span>
+                <ul class="c-dropdown__menu">
+                  <li class="c-dropdown__option" data-value="0">Somente uma vez</li>
+                  <li class="c-dropdown__option" data-value="1">Por mês</li>
+                </ul>
               </div>
               <p class="c-donation__description">
                 Consulta por família em uma destas especialidades médicas: ginecologista, cardiologista, dermatologista, dentista, clínico
                 geral, médico da família ou pediatra.
               </p>
-              <a class="c-donation__action c-button c-button-success c-button-round">Doar</a>
+              <a
+                class="c-donation__action c-button c-button-success c-button-round"
+                href="https://gretas.faturasimples.com.br/contratar/gretas?plano=2&valor=100.00&recorrencia=0"
+                target="_blank"
+                rel="noopener"
+                >Doar</a
+              >
+            </div>
+          </article>
+          <article class="c-donation" data-plan="3" data-price="80" data-frequency="0">
+            <div class="l-donation__header">
+              <img
+                class="c-donation__img"
+                src="assets/images/donations/meal-alimentacao.jpg"
+                alt="Pessoa guiando um carrinho de compras num supermercado ao lado de um conjunto de frutas e verduras diversas"
+              />
+            </div>
+            <div class="l-donation__body">
+              <h3 class="c-donation__title">Vale Alimentação</h3>
+              <p class="c-donation__text">
+                Todo ser humano precisa de alimento. Compre o Vale e fortaleça uma família em estado de vulnerabilidade.
+              </p>
+              <div class="c-donation__price">
+                <span class="c-donation__currency">R$</span>
+                <input value="80.00" class="c-donation__input c-input c-input-success c-input-noControls c-input-big" type="number" />
+              </div>
+              <div class="c-donation__plan c-dropdown js-closed">
+                <span class="c-dropdown__selected" data-value="0"> Somente uma vez </span>
+                <ul class="c-dropdown__menu">
+                  <li class="c-dropdown__option" data-value="0">Somente uma vez</li>
+                  <li class="c-dropdown__option" data-value="1">Por mês</li>
+                </ul>
+              </div>
+              <p class="c-donation__description">
+                Com este valor uma família pode levar para casa: feijão, arroz, macarrão, farinha, açúcar, óleo, vinagre, leite em pó,
+                extrato de tomate, fubá, café, doce de goiabada, tempero, sal, bolacha doce/salgada, verduras e ovos.
+              </p>
+              <a
+                class="c-donation__action c-button c-button-success c-button-round"
+                href="https://gretas.faturasimples.com.br/contratar/gretas?plano=3&valor=80.00&recorrencia=0"
+                target="_blank"
+                rel="noopener"
+                >Doar</a
+              >
+            </div>
+          </article>
+          <article class="c-donation" data-plan="4" data-price="50" data-frequency="0">
+            <div class="l-donation__header">
+              <img
+                class="c-donation__img"
+                src="assets/images/donations/meal-educacao-para-saude-2.jpg"
+                alt="Sala de aula com uma professora e alguns alunos ao lado de um profissional de saúda ajeitando suas luvas"
+              />
+            </div>
+            <div class="l-donation__body">
+              <h3 class="c-donation__title">Educação para Saúde</h3>
+              <p class="c-donation__text">
+                A pandemia atinge o mundo todo, mas a educação é limitada. Incentive a divulgação sobre cuidados básicos de doenças comuns
+                na região e como combatê-las.
+              </p>
+              <div class="c-donation__price">
+                <span class="c-donation__currency">R$</span>
+                <input value="50.00" class="c-donation__input c-input c-input-success c-input-noControls c-input-big" type="number" />
+              </div>
+              <div class="c-donation__plan c-dropdown js-closed">
+                <span class="c-dropdown__selected" data-value="0"> Somente uma vez </span>
+                <ul class="c-dropdown__menu">
+                  <li class="c-dropdown__option" data-value="0">Somente uma vez</li>
+                  <li class="c-dropdown__option" data-value="1">Por mês</li>
+                </ul>
+              </div>
+              <p class="c-donation__description">Itens: vídeos educativos e programas de rádio por 2 meses em toda região.</p>
+              <a
+                class="c-donation__action c-button c-button-success c-button-round"
+                href="https://gretas.faturasimples.com.br/contratar/gretas?plano=4&valor=50.00&recorrencia=0"
+                target="_blank"
+                rel="noopener"
+                >Doar</a
+              >
+            </div>
+          </article>
+          <article class="c-donation" data-plan="5" data-price="24" data-frequency="0">
+            <div class="l-donation__header">
+              <img
+                class="c-donation__img"
+                src="assets/images/donations/meal-vermifugacao-2.jpg"
+                alt="Criança recebendo tratamento dental de um voluntário ao lado de cartelos de comprimidos"
+              />
+            </div>
+            <div class="l-donation__body">
+              <h3 class="c-donation__title">Tratamento de Verminoses</h3>
+              <p class="c-donation__text">
+                A falta de saneamento básico provoca o surgimento de doenças de verminoses. Contribua com nossa ação de tratamento de
+                verminoses!
+              </p>
+              <div class="c-donation__price">
+                <span class="c-donation__currency">R$</span>
+                <input value="24.00" class="c-donation__input c-input c-input-success c-input-noControls c-input-big" type="number" />
+              </div>
+              <div class="c-donation__plan c-dropdown js-closed">
+                <span class="c-dropdown__selected" data-value="0"> Somente uma vez </span>
+                <ul class="c-dropdown__menu">
+                  <li class="c-dropdown__option" data-value="0">Somente uma vez</li>
+                  <li class="c-dropdown__option" data-value="1">Por mês</li>
+                </ul>
+              </div>
+              <p class="c-donation__description">Itens: Remédio (R$4,00) X família (6 pessoas).</p>
+              <a
+                class="c-donation__action c-button c-button-success c-button-round"
+                href="https://gretas.faturasimples.com.br/contratar/gretas?plano=5&valor=24.00&recorrencia=0"
+                target="_blank"
+                rel="noopener"
+                >Doar</a
+              >
+            </div>
+          </article>
+          <article class="c-donation" data-plan="6" data-price="10" data-frequency="0">
+            <div class="l-donation__header">
+              <img
+                class="c-donation__img"
+                src="assets/images/donations/meal-kit-higiene.jpg"
+                alt="Pessoa usando álcool gel nas mãos ao lado de uma cesta com itens diversos para higiene pessoal"
+              />
+            </div>
+            <div class="l-donation__body">
+              <h3 class="c-donation__title">Kit Higiene</h3>
+              <p class="c-donation__text">Invista nos cuidados básicos da higiene pessoal e do combate ao novo coronavírus.</p>
+              <div class="c-donation__price">
+                <span class="c-donation__currency">R$</span>
+                <input value="10.00" class="c-donation__input c-input c-input-success c-input-noControls c-input-big" type="number" />
+              </div>
+              <div class="c-donation__plan c-dropdown js-closed">
+                <span class="c-dropdown__selected" data-value="0"> Somente uma vez </span>
+                <ul class="c-dropdown__menu">
+                  <li class="c-dropdown__option" data-value="0">Somente uma vez</li>
+                  <li class="c-dropdown__option" data-value="1">Por mês</li>
+                </ul>
+              </div>
+              <p class="c-donation__description">
+                Itens: papel higiênico, sabonete, água sanitária, sabão em barra, creme dental, escova de dente, cloro, máscara e álcool
+                líquido.
+              </p>
+              <a
+                class="c-donation__action c-button c-button-success c-button-round"
+                href="https://gretas.faturasimples.com.br/contratar/gretas?plano=6&valor=10.00&recorrencia=0"
+                target="_blank"
+                rel="noopener"
+                >Doar</a
+              >
             </div>
           </article>
         </ul>
+        <button class="c-button c-button-danger c-donations__action">Todas as ações</button>
       </section>
       <!-- <section class="intro">
         <img
@@ -228,7 +431,7 @@
         />
         <div class="meals__container">
           <div class="meals__item-container">
-            <div id="mealCustom" class="meals__item" data-plan="9" data-price="0" data-frequency="0">
+            <div id="donationCustom" class="meals__item" data-plan="9" data-price="0" data-frequency="0">
               <img
                 class="meals__item-image"
                 src="assets/images/meals/meal-acao-de-saude-2.jpg"
