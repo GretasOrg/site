@@ -42,6 +42,12 @@
 
 .l-donations__list > * {
   z-index: 1;
+  margin-top: var(--s-4);
+  margin-right: var(--s-4);
+}
+
+.c-donations__action {
+  margin-top: var(--s-8);
 }
 
 @media (max-width: 1536px) {

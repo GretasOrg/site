@@ -5,7 +5,7 @@
   box-shadow: var(--shadow-regular);
   background-color: var(--color-bg-lightest);
   width: calc(100vh * 401 / 1920);
-  min-width: calc(350rem / 16);
+  min-width: calc(322rem / 16);
   height: calc(600rem / 16);
 }
 
