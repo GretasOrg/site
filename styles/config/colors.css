@@ -5,8 +5,8 @@
   --black: #323232;
   --green: #77c03d;
   --green-shadow: rgba(150, 249, 71, 0.35);
-  --grey: #f6f6f6;
   --grey-light: #f8f8f8;
+  --grey: #e4e4e4;
   --grey-dark: #707070;
   --orange: #ff9533;
   --red: #f02d35;
@@ -19,6 +19,8 @@
   --color-bg-hover: var(--grey-dark);
   --color-bg-faded: var(--beige);
   --color-card-bg: var(--grey-light);
+
+  --color-dropdown-bg: var(--grey);
 
   --color-text-light: var(--white);
   --color-text-dark: var(--grey-dark);

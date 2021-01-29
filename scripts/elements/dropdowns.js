@@ -1,9 +1,9 @@
 (function () {
-  const DROPDOWN_SELECTOR = ".dropdown";
-  const DROPDOWN_CLOSED_CLASS = "closed";
-  const OPTION_SELECTOR = ".dropdown__option";
-  const OPTION_SELECTED_CLASS = "selected";
-  const SELECTED_OPTION_SELECTOR = ".dropdown__selected";
+  const DROPDOWN_SELECTOR = ".c-dropdown";
+  const DROPDOWN_CLOSED_CLASS = "js-closed";
+  const OPTION_SELECTOR = ".c-dropdown__option";
+  const OPTION_SELECTED_CLASS = "js-selected";
+  const SELECTED_OPTION_SELECTOR = ".c-dropdown__selected";
   const VALUE_ATTRIBUTE = "data-value";
 
   const dropdowns = document.querySelectorAll(DROPDOWN_SELECTOR);
@@ -11,7 +11,7 @@
   dropdowns.forEach((dropdown) => {
     const options = dropdown.querySelectorAll(OPTION_SELECTOR);
     const selectedOption = dropdown.querySelector(SELECTED_OPTION_SELECTOR);
-    const menu = dropdown.querySelector(".dropdown__menu");
+    const menu = dropdown.querySelector(".c-dropdown__menu");
 
     dropdown.addEventListener("click", (e) => {
       toggleDropdown(dropdown);
