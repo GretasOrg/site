@@ -1,5 +1,6 @@
 .c-about {
-  padding: var(--s-9) var(--main-content-padding);
+  --padding-top: var(--s-9);
+  padding: var(--padding-top) var(--main-content-padding);
   background-color: var(--color-faded);
   display: flex;
   flex-wrap: wrap;
@@ -83,6 +84,9 @@
 }
 
 @media (max-width: 1536px) {
+  .c-about {
+    --padding-top: var(--s-7);
+  }
   .l-about__col1 {
     --col1-font-multiplier: 4.72;
   }
@@ -92,6 +96,9 @@
 }
 
 @media (max-width: 1024px) {
+  .c-about {
+    --padding-top: var(--s-5);
+  }
   .l-about__col1,
   .l-about__col2,
   .l-about__col3 {
@@ -113,6 +120,9 @@
 }
 
 @media (max-width: 640px) {
+  .c-about {
+    --padding-top: var(--s-3);
+  }
   .l-about__col3 {
     min-width: 100%;
   }
