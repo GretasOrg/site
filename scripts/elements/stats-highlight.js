@@ -7,6 +7,7 @@
     <span class="c-stats__number"
       >
       <stats-highlight-svg class="c-stats__bg"></stats-highlight-svg>
+      <span class="c-stats__numberText"></span>
     </span>
     <span class="c-stats__text"
       ></span
@@ -26,10 +27,10 @@
 
       const bgEl = this.querySelector(".c-stats__bg");
       const textEl = this.querySelector(".c-stats__text");
-      const numberEl = this.querySelector(".c-stats__number");
+      const numberTextEl = this.querySelector(".c-stats__numberText");
 
       textEl.innerHTML = text;
-      numberEl.appendChild(document.createTextNode(number));
+      numberTextEl.innerHTML = number;
 
       if (color === "success") {
         bgEl.classList.add(`c-stats__bg-success`);

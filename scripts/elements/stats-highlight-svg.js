@@ -4,6 +4,9 @@
   var template = document.createElement("template");
   template.innerHTML = `
   <style>
+    :host {
+      display: flex;
+    }
     svg {
       width: 100%;
       height: 100%;

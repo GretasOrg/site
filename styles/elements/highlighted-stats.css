@@ -4,18 +4,24 @@
   align-items: center;
 }
 .c-stats__number {
-  font-family: var(--family-bm);
-  font-size: var(--font-19xl);
-  color: var(--color-text-darker);
   position: relative;
   z-index: 2;
-  line-height: var(--font-12xl);
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.c-stats__numberText {
+  font-family: var(--family-bm);
+  font-size: var(--font-19xl);
+  color: var(--color-text-darker);
+  line-height: var(--font-12xl);
+
+  position: relative;
+  top: var(--s-4);
+}
 .c-stats__text {
-  margin: var(--s-3) 0;
+  margin: 0;
+  margin-bottom: var(--s-3);
   display: block;
   color: var(--color-text-dark);
   font-size: var(--font-lg);
