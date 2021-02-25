@@ -21,11 +21,9 @@
 .c-highlightedText__bg {
   position: absolute;
   left: 0;
-  /* top: 15%; */
   top: -15%;
   width: 100%;
-  /* height: calc(100% * var(--font-17xl)); */
-  height: var(--line-height);
+  height: 104%; 
   z-index: 0;
 }
 .c-highlightedText__bg.c-highlightedText__bg-warning {
@@ -70,18 +68,25 @@
 
 @media (max-width: 640px) {
   .c-highlightedText {
-    --font-size: var(--font-9xl);
+    --font-size: var(--font-7xl);
+    --line-height: var(--font-5xl);
   }
   .c-highlightedText__bg {
-    height: 75%;
-    top: 8%;
+    height: 91%;
+    top: -1%;
   } 
 }
 
-@media (max-width: 359px) {
+@media (max-width: 400px) {
+  .c-highlightedText__text {
+    padding: 0 var(--s-3);
+  }
+}
+
+@media (max-width: 360px) {
   .c-highlightedText {
-    --font-size: var(--font-8xl);
-    --line-height: var(--font-8xl);
+    --font-size: var(--font-6xl);
+    --line-height: var(--font-5xl);
   }
   .c-highlightedText__text {
     padding: 0 var(--s-2);
