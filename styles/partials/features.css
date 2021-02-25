@@ -12,8 +12,8 @@
 
 .c-features__quotes {
   font-family: var(--family-bm);
-  font-size: var(--font-15xl);
-  line-height: var(--font-10xl);
+  font-size: var(--font-9xl);
+  line-height: var(--font-7xl);
   color: var(--color-faded-darker);
   text-align: center;
   margin: var(--s-9) 0 0 0;
@@ -57,6 +57,10 @@
   .l-features__list {
     justify-content: center;
   }
+  .c-features__quotes {
+    font-size: var(--font-7xl);
+    line-height: var(--font-6xl);
+  }
 }
 
 @media (max-width: 640px) {
@@ -65,11 +69,12 @@
   }
   .c-features__quotes {
     margin-top: var(--s-3);
-    font-size: var(--font-8xl);
-    line-height: var(--font-5xl);
+    font-size: var(--font-5xl);
+    line-height: var(--font-4xl);
   }
   .l-features__list {
     margin-right: 0;
+    margin-top: var(--s-4);
   }
 
   .l-features__list > * {
@@ -81,7 +86,7 @@
 
 @media (max-width: 359px) {
   .c-features__quotes {
-    font-size: var(--font-7xl);
+    font-size: var(--font-4xl);
     line-height: var(--font-4xl);
   }
 }
