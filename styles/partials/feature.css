@@ -20,7 +20,7 @@
   font-size: var(--font-sm);
   line-height: var(--font-2xl);
   margin: 0;
-  margin-top: var(--s-4);
+  margin-top: var(--s-2);
 }
 
 @media (max-width: 1536px) {
