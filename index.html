@@ -38,6 +38,7 @@
 
     <link href="https://unpkg.com/sanitize.css@12.0.1/sanitize.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/fonts/beautiful-mess.css" />
     <link rel="stylesheet" href="styles/config/borders.css" />
     <link rel="stylesheet" href="styles/config/colors.css" />
@@ -57,6 +58,7 @@
     <link rel="stylesheet" href="styles/partials/feature.css" />
     <link rel="stylesheet" href="styles/partials/features.css" />
     <link rel="stylesheet" href="styles/partials/join-us.css" />
+    <link rel="stylesheet" href="styles/partials/footer.css" />
     <!-- <link rel="stylesheet" href="styles/partials/footer.css" />
     <link rel="stylesheet" href="styles/partials/campaign-goal.css" /> -->
 
@@ -767,6 +769,53 @@
         </div>
       </section> -->
     </main>
+    <footer class="c-footer">
+      <img class="c-footer__paperEffect" src="assets/images/footer/paper-effect.svg" alt="Efeito de papel rasgado">
+      <img class="c-footer__logo" src="assets/images/footer/logo.svg" alt="Logo do Gretas - Fortalecendo o Sertão">
+      <ul class="c-footer__textLinks">
+        <li class="c-footer__link"><a>Sobre nós</a></li>
+        <li class="c-footer__link"><a>Contato</a></li>
+        <li class="c-footer__link"><a>Estatuto</a></li>
+      </ul>
+      <ul class="c-footer__socialLinks">
+        <li class="c-footer__link">
+          <a href="">
+            <img class="c-footer__linkImage" src="assets/images/footer/twitter.svg" alt="Logo Facebook">
+            Facebook
+          </a>
+        </li>
+        <li class="c-footer__link">
+          <a href="">
+            <img class="c-footer__linkImage" src="" alt="Logo Twitter">
+            Twitter
+          </a>
+        </li>
+        <li class="c-footer__link">
+          <a href="">
+            <img class="c-footer__linkImage" src="" alt="Logo Instagram">
+            Instagram
+          </a>
+        </li>
+      </ul>
+      <form class="c-footer__subscriptionForm">
+        <label class="c-footer__subscriptionLabel" for="email">Inscreva-se na nossa newsletter</label>
+        <div class="c-footer__inputGroup">
+          <input class="c-footer__subscriptionInput" type="email" name="email" placeholder="Seu e-mail">
+          <input class="c-footer__subscriptionSubmit c-button c-button-warning c-button-sm" type="submit" value="OK">
+        </div>
+      </form>
+      <ul class="c-footer__contact">
+        <li class="c-footer__link">
+          Rua Barão de Itamaracá, 98, Espinheiro, Recife-PE, Brasil
+        </li>
+        <li class="c-footer__link">
+          +55 (81) 9 9723-0560
+        </li>
+        <li class="c-footer__link">
+          contato@gretas.org
+        </li>
+      </ul>
+    </footer>
 
     <script defer src="scripts/elements/stats-highlight-svg.js"></script>
     <script defer src="scripts/elements/stats-highlight.js"></script>

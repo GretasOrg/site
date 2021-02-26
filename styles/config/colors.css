@@ -18,6 +18,8 @@
   --color-bg-lightest: var(--white);
   --color-bg-hover: var(--grey-dark);
   --color-bg-faded: var(--beige);
+  --color-bg-faded-dark: var(--beige-dark);
+  --color-bg-faded-darker: var(--beige-darker);
   --color-card-bg: var(--grey-light);
 
   --color-dropdown-bg: var(--grey);
@@ -27,6 +29,7 @@
   --color-text-darker: var(--black);
 
   --color-input-border: var(--grey-dark);
+  --color-input-border-lightest: var(--white);
 
   --color-primary: var(--green);
   --color-secondary: var(--yellow);
