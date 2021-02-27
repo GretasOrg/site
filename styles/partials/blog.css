@@ -19,6 +19,12 @@
 
 .c-blog__item-small, .c-blog__item-big {
     margin-bottom: var(--s-3);
+    min-height: 21rem;
+    max-height: 30rem;
+}
+
+.c-blog__item-small > *, .c-blog__item-big > * {
+    height: 100%;
 }
 
 .c-blog__item-small {
