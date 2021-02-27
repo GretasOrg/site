@@ -35,7 +35,7 @@
 .c-dropdown__menu .c-dropdown__option:hover,
 .c-dropdown__menu .c-dropdown__option.js-selected {
   background-color: var(--color-primary);
-  color: var(--color-text-light);
+  color: var(--color-text-lightest);
 }
 .c-dropdown.js-closed .c-dropdown__menu {
   height: 0px;

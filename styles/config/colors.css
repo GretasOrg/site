@@ -24,7 +24,9 @@
 
   --color-dropdown-bg: var(--grey);
 
-  --color-text-light: var(--white);
+  --color-text-lightest: var(--white);
+  --color-text-lighter: var(--grey);
+  --color-text-light: var(--grey);
   --color-text-dark: var(--grey-dark);
   --color-text-darker: var(--black);
 
