@@ -37,6 +37,7 @@
 }
 .c-miniArticle__date {
     font-size: var(--font-xs);
+    color: var(--color-text-dark);
 }
 
 .c-miniArticle__title {
