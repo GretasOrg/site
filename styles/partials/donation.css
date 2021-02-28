@@ -35,6 +35,10 @@
   line-height: var(--font-2xl);
   color: var(--color-text-darker);
   text-align: center;
+
+  /* correcao devido as irregularidades da fonte Beautiful Mess */
+  position: relative;
+  top: var(--s-2);
 }
 
 .c-donation__text {
