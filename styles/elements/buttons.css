@@ -39,6 +39,12 @@
   background-color: var(--color-danger);
 }
 
+.c-button.c-button-faded {
+  color: var(--color-text-dark);
+  box-shadow: 0px 4px 6px var(--color-success-shadow);
+  background-color: var(--color-faded);
+}
+
 .c-button.c-button-sm {
   font-size: var(--font-sm);
   height: var(--button-sm-height);
