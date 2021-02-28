@@ -1,5 +1,6 @@
 .c-donations {
-  padding: var(--s-9) var(--main-content-padding);
+  --padding: var(--s-9);
+  padding: var(--padding) var(--main-content-padding);
   background-color: var(--color-faded-darker);
   display: flex;
   justify-content: center;
@@ -15,8 +16,8 @@
 }
 
 .c-donations__title {
-  position: absolute;
-  top: calc(var(--font-9xl) / -2);
+  /* position: absolute;
+  top: calc(var(--font-9xl) / -2); */
 }
 
 .c-donations__bgLeft {
@@ -72,6 +73,9 @@
 }
 
 @media (max-width: 768px) {
+  .c-donations {
+    --padding: var(--s-6);
+  }
 }
 
 @media (max-width: 640px) {

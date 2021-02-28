@@ -21,19 +21,19 @@
   border-radius: 63px;
 }
 
-.c-button-primary {
+.c-button.c-button-primary {
   color: var(--white);
   box-shadow: 0px 4px 6px var(--color-primary-shadow);
   background-color: var(--color-primary);
 }
 
-.c-button-success {
+.c-button.c-button-success {
   color: var(--color-text-lightest);
   box-shadow: 0px 4px 6px var(--color-success-shadow);
   background-color: var(--color-success);
 }
 
-.c-button-danger {
+.c-button.c-button-danger {
   color: var(--color-warning);
   box-shadow: 0px 4px 6px var(--color-danger-shadow);
   background-color: var(--color-danger);
