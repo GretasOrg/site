@@ -1,8 +1,9 @@
 [x] testar beautiful mess com .woff
   O FontSquirrel permite ajustar o tamanho da fonte, o que permitiu chegar na correção ideal. No entanto, a font ainda aparecia deslocada para cima. O FontSquirrel também permite ajustar esse deslocamento, mas pelo [por esse link](https://glyphsapp.com/learn/vertical-metrics), parece ser super complicado e não dá muita segurança de que iria funcionar bem em todos os dispositivos.
-[] botar o esqueminha de mudar de cor em um componente separado
+[x] botar o esqueminha de mudar de cor em um componente separado
+[x] consertar seção 2
+[] consertar seção 3
 [] ajustar textos para a fonte Be Great
-[] consertar seção 2
 [] usar imagens de george
 [] revisar
 [] lançar assim mesmo

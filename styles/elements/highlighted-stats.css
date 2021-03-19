@@ -15,10 +15,12 @@
   font-size: var(--font-9xl);
   color: var(--color-text-darker);
   position: relative;
+  line-height: 1;
 }
 .c-stats__text {
   margin: 0;
-  margin-bottom: var(--s-3);
+  margin-top: var(--s-2);
+  margin-bottom: var(--s-4);
   display: block;
   color: var(--color-text-dark);
   font-size: var(--font-lg);
@@ -26,10 +28,9 @@
   text-align: center;
 }
 .c-stats__bg {
-  height: 100%;
-  width: 125%;
+  height: 160px;
+  width: 100px;
   position: absolute;
-  top: 0;
   z-index: -1;
 }
 
