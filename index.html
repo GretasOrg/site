@@ -40,6 +40,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/fonts/beautiful-mess.css" />
+    <link rel="stylesheet" href="styles/fonts/yellowtail.css" />
+    <link rel="stylesheet" href="styles/fonts/gochi-hand.css" />
+    <link rel="stylesheet" href="styles/fonts/sedwick-ave.css" />
+    <link rel="stylesheet" href="styles/fonts/hey-august.css" />
+    <link rel="stylesheet" href="styles/fonts/be-great.css" />
+    <link rel="stylesheet" href="styles/fonts/pastelyn.css" />
     <link rel="stylesheet" href="styles/config/borders.css" />
     <link rel="stylesheet" href="styles/config/colors.css" />
     <link rel="stylesheet" href="styles/config/spacing.css" />
@@ -548,10 +554,14 @@
       </ul>
     </footer>
 
-    <script defer src="scripts/elements/stats-highlight-svg.js"></script>
-    <script defer src="scripts/elements/stats-highlight.js"></script>
-    <script defer src="scripts/elements/text-highlight-svg.js"></script>
-    <script defer src="scripts/elements/text-highlight.js"></script>
+    <!-- visual elements that must be loaded before any rendering -->
+    <script src="scripts/elements/stats-highlight-svg.js"></script>
+    <script src="scripts/elements/stats-highlight.js"></script>
+    <script src="scripts/elements/text-highlight-svg.js"></script>
+    <script src="scripts/elements/text-highlight.js"></script>
+
+    <!-- lazy elements that can be deferred -->
+    <script defer src="scripts/elements/font-switch.js"></script>
     <script defer src="scripts/elements/currency-mask.js"></script>
     <script defer src="scripts/elements/menu.js"></script>
     <script defer src="scripts/elements/dropdowns.js"></script>

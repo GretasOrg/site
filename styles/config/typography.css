@@ -1,5 +1,13 @@
 :root {
-  --family-bm: "Beautiful Mess";
+
+  --family-yellow:Yellowtail;
+  --family-gochi:Gochi Hand;
+  --family-sedwick:Sedwick Ave;
+  --family-hey:Hey August;
+  --family-be:Be Great;
+  --family-pastelyn:Pastelyn;
+  --family-beautiful:Beautiful Mess;
+  --family-handwritten:var(--family-be);
 
   --font-4xs: 0.125rem;
   --font-3xs: 0.25rem;

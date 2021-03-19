@@ -11,13 +11,10 @@
   align-items: center;
 }
 .c-stats__numberText {
-  font-family: var(--family-bm);
-  font-size: var(--font-19xl);
+  font-family: var(--family-handwritten);
+  font-size: var(--font-9xl);
   color: var(--color-text-darker);
-  line-height: var(--font-12xl);
-
   position: relative;
-  top: var(--s-4);
 }
 .c-stats__text {
   margin: 0;

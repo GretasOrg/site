@@ -72,7 +72,7 @@
   position: absolute;
   left: 15%;
   top: 20%;
-  font-family: var(--family-bm);
+  font-family: var(--family-handwritten);
   font-size: var(--font-6xl);
   line-height: var(--font-4xl);
   color: var(--color-text-darker);

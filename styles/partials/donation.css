@@ -29,7 +29,7 @@
 
 .c-donation__title {
   margin: var(--s-2) auto 0 auto;
-  font-family: var(--family-bm);
+  font-family: var(--family-handwritten);
   font-weight: lighter;
   font-size: var(--font-7xl);
   line-height: var(--font-2xl);

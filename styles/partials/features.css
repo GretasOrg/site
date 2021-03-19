@@ -11,7 +11,7 @@
 }
 
 .c-features__quotes {
-  font-family: var(--family-bm);
+  font-family: var(--family-handwritten);
   font-size: var(--font-9xl);
   line-height: var(--font-7xl);
   color: var(--color-faded-darker);
