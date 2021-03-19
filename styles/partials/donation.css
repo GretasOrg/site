@@ -31,14 +31,18 @@
   margin: var(--s-2) auto 0 auto;
   font-family: var(--family-handwritten);
   font-weight: lighter;
-  font-size: var(--font-7xl);
-  line-height: var(--font-2xl);
+  font-size: var(--font-5xl);
+  line-height: 0.7;
   color: var(--color-text-darker);
   text-align: center;
-
+  
   /* correcao devido as irregularidades da fonte Beautiful Mess */
   position: relative;
   top: var(--s-2);
+}
+
+.c-donation__title.c-donation__title-small {
+  font-size: var(--font-4xl);
 }
 
 .c-donation__text {
@@ -120,5 +124,17 @@
     width: calc(100vh * 401 / 1920);
     min-width: calc(280rem / 16);
     height: calc(600rem / 16);
+  }
+
+  .l-donation__body {
+    padding-top: 0;
+  }
+
+  .c-donation__title {
+    font-size: var(--font-4xl);
+  }
+  
+  .c-donation__title.c-donation__title-small {
+    font-size: var(--font-3xl);
   }
 }
