@@ -142,9 +142,15 @@
   }
 }
 
+/* @media (max-width: 539px) {
+  .c-about__title .c-highlightedText__text {
+    font-size: var(--font-6xl);
+  }
+} */
+
 @media (max-width: 479px) {
   .c-about__title .c-highlightedText__text {
-    font-size: var(--font-7xl);
+    font-size: var(--font-6xl);
   }
   .c-about__helpText {
     left: 18%;
@@ -155,7 +161,7 @@
 
 @media (max-width: 359px) {
   .c-about__title .c-highlightedText__text {
-    font-size: var(--font-6xl);
+    font-size: var(--font-5xl);
   }
 
 }
