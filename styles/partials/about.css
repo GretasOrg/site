@@ -142,12 +142,6 @@
   }
 }
 
-/* @media (max-width: 539px) {
-  .c-about__title .c-highlightedText__text {
-    font-size: var(--font-6xl);
-  }
-} */
-
 @media (max-width: 479px) {
   .c-about__title .c-highlightedText__text {
     font-size: var(--font-6xl);
