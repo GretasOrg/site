@@ -4,12 +4,13 @@
   --flex-gap: var(--s-3);
   --item-gap: var(--s-2);
   padding: var(--padding-top) var(--s-8);
-  background-color: var(--color-bg-faded-darker);
+  background-color: var(--color-bg-faded-dark);
   position: relative;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
+  color: var(--color-text-darker);
 }
 
 .c-footer__paperEffect {
@@ -32,7 +33,7 @@
 .c-footer__link a {
   text-decoration: none;
   font-size: var(--general-font-size);
-  color: var(--color-text-lightest);
+  color: var(--color-text-darkest);
 }
 
 .c-footer__link:not(:last-of-type) {
@@ -70,13 +71,13 @@
   display: block;
   text-decoration: none;
   font-size: var(--general-font-size);
-  color: var(--color-text-lightest);
+  /* color: var(--color-text-lightest); */
 }
 
 .c-footer__subscriptionInput {
   background-color: transparent;
   border: 1px solid var(--color-input-border-lightest);
-  color: var(--color-text-lightest);
+  /* color: var(--color-text-lightest); */
   padding: var(--s-2);
 }
 .c-footer__subscriptionInput:focus {
