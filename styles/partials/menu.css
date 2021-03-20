@@ -21,7 +21,7 @@ right flower */
 }
 
 .c-menu__logo {
-  margin-right: auto;
+  margin-right: var(--s-7);
 }
 
 .l-menu__items {
