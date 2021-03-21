@@ -11,9 +11,7 @@
 }
 
 .c-features__quotes {
-  font-family: var(--family-handwritten);
-  font-size: var(--font-9xl);
-  line-height: var(--font-7xl);
+  font-size: var(--font-4xl);
   color: var(--color-faded-darker);
   text-align: center;
   margin: var(--s-9) 0;
@@ -46,7 +44,7 @@
   }
   .c-features__quotes {
     margin: var(--s-5) 0;
-    font-size: var(--font-5xl);
+    font-size: var(--font-2xl);
   }
 }
 
@@ -58,8 +56,7 @@
     justify-content: center;
   }
   .c-features__quotes {
-    font-size: var(--font-5xl);
-    line-height: 1;
+    font-size: var(--font-lg);
   }
 }
 
@@ -69,7 +66,7 @@
   }
   .c-features__quotes {
     margin: var(--s-3) 0;
-    font-size: var(--font-2xl);
+    font-size: var(--font-base);
   }
   .l-features__list {
     margin-right: 0;
