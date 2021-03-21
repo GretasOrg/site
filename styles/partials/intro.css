@@ -31,7 +31,7 @@ right flower */
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: bottom right;
+  object-position: center;
   z-index: -1;
 }
 
@@ -74,6 +74,9 @@ right flower */
     top: calc(-1 * var(--s-4));
     height: var(--s-10);
   }
+  .c-intro__bg {
+    object-position: right;
+  }
 }
 
 @media (max-width: 768px) {
@@ -89,6 +92,9 @@ right flower */
 @media (max-width: 640px) {
   .c-intro__readMore {
     width: unset;
+  }
+  .c-intro__bg {
+    object-position: center;
   }
 }
 
