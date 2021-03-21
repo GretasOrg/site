@@ -91,8 +91,8 @@
         <a class="c-menu__item" href="">Home</a>
         <a class="c-menu__item" href="">Sobre nós</a>
       </ul>
-      <button class="c-button c-button-danger c-button-sm-xs c-menu__action">Doe agora!</button>
-      <button class="c-menu__btn"></button>
+      <button class="c-button c-button-danger c-button-sm-xs c-menu__action" aria-label="Doe Agora!">Doe agora!</button>
+      <button class="c-menu__btn" aria-label="Menu"></button>
       <nav class="c-mobileMenu">
         <a class="c-mobileMenu__item" href="">Home</a>
         <a class="c-mobileMenu__item" href="">Sobre nós</a>
@@ -119,16 +119,22 @@
         </div>
         <div class="l-about__col2">
           <ul class="l-about__stats">
-            <stats-highlight number="10" color="tertiary">
-              Anos de <br />
-              atuação
-            </stats-highlight>
-            <stats-highlight number="40" color="success"> Voluntários </stats-highlight>
+            <li>
+              <stats-highlight number="10" color="tertiary">
+                Anos de <br />
+                atuação
+              </stats-highlight>
+            </li>
+            <li>
+              <stats-highlight number="40" color="success"> Voluntários </stats-highlight>
+            </li>
+            <li>
+              <stats-highlight number="5.500+" color="faded-dark">
+                Pessoas impactadas <br />
+                diretamente
+              </stats-highlight>
+            </li>
             <!-- <stats-highlight number="120" color="danger"> Ações realizadas </stats-highlight> -->
-            <stats-highlight number="5.500+" color="faded-dark">
-              Pessoas impactadas <br />
-              diretamente
-            </stats-highlight>
           </ul>
         </div>
         <div class="l-about__col3">
@@ -175,7 +181,7 @@
               </p>
               <div class="c-donation__price">
                 <span class="c-donation__currency">R$</span>
-                <input value="0.00" class="c-donation__input c-input c-input-success c-input-noControls c-input-big" type="number" />
+                <input value="0.00" class="c-donation__input c-input c-input-success c-input-noControls c-input-big" type="number" aria-label="Valor do Doe o quanto quiser!" />
               </div>
               <div class="c-donation__plan c-dropdown js-closed">
                 <span class="c-dropdown__selected" data-value="0"> Somente uma vez </span>
@@ -216,6 +222,7 @@
                   type="number"
                   name="price"
                   disabled
+                  aria-label="Valor de R$100"
                 />
               </div>
               <div class="c-donation__plan c-dropdown js-closed">
@@ -253,7 +260,7 @@
               </p>
               <div class="c-donation__price">
                 <span class="c-donation__currency">R$</span>
-                <input value="80.00" class="c-donation__input c-input c-input-success c-input-noControls c-input-big" type="number" />
+                <input value="80.00" class="c-donation__input c-input c-input-success c-input-noControls c-input-big" type="number" aria-label="Valor de R$80" />
               </div>
               <div class="c-donation__plan c-dropdown js-closed">
                 <span class="c-dropdown__selected" data-value="0"> Somente uma vez </span>
@@ -291,7 +298,7 @@
               </p>
               <div class="c-donation__price">
                 <span class="c-donation__currency">R$</span>
-                <input value="50.00" class="c-donation__input c-input c-input-success c-input-noControls c-input-big" type="number" />
+                <input value="50.00" class="c-donation__input c-input c-input-success c-input-noControls c-input-big" type="number" aria-label="Valor de R$50" />
               </div>
               <div class="c-donation__plan c-dropdown js-closed">
                 <span class="c-dropdown__selected" data-value="0"> Somente uma vez </span>
@@ -326,7 +333,7 @@
               </p>
               <div class="c-donation__price">
                 <span class="c-donation__currency">R$</span>
-                <input value="24.00" class="c-donation__input c-input c-input-success c-input-noControls c-input-big" type="number" />
+                <input value="24.00" class="c-donation__input c-input c-input-success c-input-noControls c-input-big" type="number" aria-label="Valor de R$24" />
               </div>
               <div class="c-donation__plan c-dropdown js-closed">
                 <span class="c-dropdown__selected" data-value="0"> Somente uma vez </span>
@@ -358,7 +365,7 @@
               <p class="c-donation__text">Invista nos cuidados básicos da higiene pessoal e do combate ao novo coronavírus.</p>
               <div class="c-donation__price">
                 <span class="c-donation__currency">R$</span>
-                <input value="10.00" class="c-donation__input c-input c-input-success c-input-noControls c-input-big" type="number" />
+                <input value="10.00" class="c-donation__input c-input c-input-success c-input-noControls c-input-big" type="number" aria-label="Valor de R$10" />
               </div>
               <div class="c-donation__plan c-dropdown js-closed">
                 <span class="c-dropdown__selected" data-value="0"> Somente uma vez </span>
