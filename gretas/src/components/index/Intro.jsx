@@ -1,7 +1,8 @@
-import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
+import FlowerEffect from "../shared/FlowerEffect"
 import HighlightedText from "../shared/HighlightedText"
+import PaperEffect from "../shared/PaperEffect"
 
 export default function Intro() {
   return (
@@ -39,16 +40,8 @@ export default function Intro() {
       >
         Saiba mais
       </a>
-      <img
-        className="c-intro__bottom"
-        src="assets/images/intro/paper-effect.svg"
-        alt="Efeito de papel rasgado"
-      />
-      <img
-        className="c-intro__flowerTopLeft"
-        src="assets/images/intro/green-flower.svg"
-        alt="Desenho de flor verde"
-      />
+      <PaperEffect className="c-intro__bottom" />
+      <FlowerEffect className="c-intro__flowerTopLeft" />
     </section>
   )
 }

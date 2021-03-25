@@ -22,6 +22,7 @@ right flower */
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow: hidden;
 }
 
 .c-intro__bg {
@@ -46,6 +47,7 @@ right flower */
   left: 0;
   bottom: -1px;
   width: 100%;
+  fill: var(--color-bg-faded-dark);
 }
 
 .c-intro__flowerTopLeft {
@@ -53,6 +55,10 @@ right flower */
   left: calc(-1 * var(--s-8));
   top: calc(-1 * var(--s-8));
   height: var(--s-15);
+}
+
+.c-intro__flowerTopLeft .flowerSvg__background {
+  fill: var(--color-success);
 }
 
 @media (max-width: 1536px) {
