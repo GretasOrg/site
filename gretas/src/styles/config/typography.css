@@ -1,0 +1,64 @@
+:root {
+
+  --family-yellow:Yellowtail;
+  --family-gochi:Gochi Hand;
+  --family-sedwick:Sedwick Ave;
+  --family-hey:Hey August;
+  --family-be:Be Great;
+  --family-pastelyn:Pastelyn;
+  --family-beautiful:Beautiful Mess;
+  --family-handwritten:var(--family-be);
+
+  --font-4xs: 0.125rem;
+  --font-3xs: 0.25rem;
+  --font-2xs: 0.5rem;
+  --font-xs: 0.75rem;
+  --font-sm: 0.875rem;
+  --font-base: 1rem;
+  --font-lg: 1.125rem;
+  --font-xl: 1.25rem;
+  --font-2xl: 1.5rem;
+  --font-3xl: 1.875rem;
+  --font-4xl: 2.25rem;
+  --font-5xl: 3rem;
+  --font-6xl: 3.5rem;
+  --font-7xl: 4rem;
+  --font-8xl: 4.5rem;
+  --font-9xl: 5rem;
+  --font-10xl: 5.5rem;
+  --font-11xl: 6rem;
+  --font-12xl: 6.5rem;
+  --font-13xl: 7rem;
+  --font-14xl: 7.5rem;
+  --font-15xl: 8rem;
+  --font-16xl: 9rem;
+  --font-17xl: 10rem;
+  --font-18xl: 11rem;
+  --font-19xl: 12rem;
+  --font-20xl: 13rem;
+
+  --font-4xs-em: 0.125em;
+  --font-3xs-em: 0.25em;
+  --font-2xs-em: 0.5em;
+  --font-xs-em: 0.75em;
+  --font-sm-em: 0.875em;
+  --font-base-em: 1em;
+  --font-lg-em: 1.125em;
+  --font-xl-em: 1.25em;
+  --font-2xl-em: 1.5em;
+  --font-3xl-em: 1.875em;
+  --font-4xl-em: 2.25em;
+  --font-5xl-em: 3em;
+  --font-6xl-em: 3.5em;
+  --font-7xl-em: 4em;
+  --font-8xl-em: 4.5em;
+  --font-9xl-em: 5em;
+  --font-10xl-em: 5.5em;
+  --font-11xl-em: 6em;
+  --font-12xl-em: 6.5em;
+  --font-13xl-em: 7em;
+  --font-14xl-em: 7.5em;
+  --font-15xl-em: 8em;
+  --font-16xl-em: 9em;
+  --font-17xl-em: 10em;
+}
