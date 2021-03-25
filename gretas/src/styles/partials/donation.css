@@ -1,0 +1,140 @@
+.c-donation {
+  display: block;
+  box-shadow: var(--shadow-regular);
+  background-color: var(--color-bg-lightest);
+  width: calc(100vh * 401 / 1920);
+  min-width: calc(322rem / 16);
+  height: calc(600rem / 16);
+}
+
+.l-donation__header {
+  height: 28%;
+  width: 100%;
+  margin: 0;
+  display: block;
+}
+
+.l-donation__body {
+  height: 72%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--s-3) var(--s-3);
+}
+
+.c-donation__img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.c-donation__title {
+  margin: var(--s-2) auto 0 auto;
+  font-family: var(--family-handwritten);
+  font-weight: lighter;
+  font-size: var(--font-5xl);
+  line-height: 0.7;
+  color: var(--color-text-darker);
+  text-align: center;
+  
+  /* correcao devido as irregularidades da fonte Beautiful Mess */
+  position: relative;
+  top: var(--s-2);
+}
+
+.c-donation__title.c-donation__title-small {
+  font-size: var(--font-4xl);
+}
+
+.c-donation__text {
+  --lines: 2;
+  --line-height: var(--font-lg);
+  margin: var(--s-5) auto 0 auto;
+  font-size: var(--font-sm);
+  line-height: var(--line-height);
+  height: calc(var(--lines) * var(--line-height));
+  overflow: hidden;
+  text-align: center;
+}
+
+.c-donation__price {
+  display: grid;
+  grid-template-columns: 1fr calc(175rem / 16) 1fr;
+  margin: var(--s-3) auto 0 auto;
+}
+.c-donation__input {
+  grid-column: 2 / 3;
+  width: 100%;
+  padding: 0;
+  text-align: center;
+  background-color: transparent;
+}
+.c-donation__label {
+  display: none;
+}
+.c-donation__currency {
+  grid-column: 1 / 2;
+  justify-self: flex-end;
+  align-self: center;
+  margin-right: var(--s-2);
+  font-size: var(--font-lg);
+  font-weight: bold;
+  color: var(--color-success);
+}
+
+.c-donation__plan {
+  min-width: calc(240rem / 16);
+  margin: var(--s-4) auto 0 auto;
+}
+
+.c-donation__description {
+  --lines: 4;
+  --line-height: var(--font-xl);
+  margin: var(--s-2) auto 0 auto;
+  font-size: var(--font-xs);
+  font-weight: bold;
+  line-height: var(--line-height);
+  height: calc(var(--lines) * var(--line-height));
+  overflow: hidden;
+  text-align: center;
+}
+
+.c-donation__action {
+  min-width: calc(189rem / 16);
+  margin-top: auto;
+}
+
+@media (max-width: 1536px) {
+}
+
+@media (max-width: 1280px) {
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 640px) {
+}
+
+@media (max-width: 359px) {
+  .c-donation {
+    display: block;
+    width: calc(100vh * 401 / 1920);
+    min-width: calc(280rem / 16);
+    height: calc(600rem / 16);
+  }
+
+  .l-donation__body {
+    padding-top: 0;
+  }
+
+  .c-donation__title {
+    font-size: var(--font-4xl);
+  }
+  
+  .c-donation__title.c-donation__title-small {
+    font-size: var(--font-3xl);
+  }
+}

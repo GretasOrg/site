@@ -1,0 +1,48 @@
+.c-stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.c-stats__number {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.c-stats__numberText {
+  font-family: var(--family-handwritten);
+  font-size: var(--font-9xl);
+  color: var(--color-text-darker);
+  position: relative;
+  line-height: 1;
+}
+.c-stats__text {
+  margin: 0;
+  margin-top: var(--s-2);
+  margin-bottom: var(--s-4);
+  display: block;
+  color: var(--color-text-dark);
+  font-size: var(--font-lg);
+  font-weight: bold;
+  text-align: center;
+}
+.c-stats__bg {
+  height: 160px;
+  width: 100px;
+  position: absolute;
+  z-index: -1;
+}
+
+.c-stats__bg.c-stats__bg-success {
+  fill: var(--color-success);
+}
+.c-stats__bg.c-stats__bg-danger {
+  fill: var(--color-danger);
+}
+.c-stats__bg.c-stats__bg-faded-dark {
+  fill: var(--color-faded-dark);
+}
+.c-stats__bg.c-stats__bg-tertiary {
+  fill: var(--color-tertiary);
+}

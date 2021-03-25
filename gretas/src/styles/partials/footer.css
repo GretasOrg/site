@@ -1,0 +1,127 @@
+.c-footer {
+  --padding-top: var(--s-9);
+  --general-font-size: var(--font-lg);
+  --flex-gap: var(--s-3);
+  --item-gap: var(--s-2);
+  padding: var(--padding-top) var(--s-8);
+  background-color: var(--color-bg-faded-dark);
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  color: var(--color-text-darker);
+}
+
+.c-footer__paperEffect {
+  position: absolute;
+  top: -1rem;
+  left: 0;
+  width: 100%;
+}
+
+.c-footer__logo {
+  margin-bottom: var(--flex-gap);
+}
+
+.c-footer__textLinks {
+  list-style: none;
+  margin-bottom: var(--flex-gap);
+}
+
+.c-footer__link,
+.c-footer__link a {
+  text-decoration: none;
+  font-size: var(--general-font-size);
+  color: var(--color-text-darkest);
+}
+
+.c-footer__link:not(:last-of-type) {
+  margin-bottom: var(--item-gap);
+}
+
+.c-footer__linkImage {
+  height: var(--general-font-size);
+  max-height: var(--general-font-size);
+  max-width: var(--font-3xl);
+  object-fit: contain;
+  margin-right: var(--s-1);
+  overflow: hidden;
+}
+
+.c-footer__socialLinks {
+  list-style: none;
+  margin-bottom: var(--flex-gap);
+}
+.c-footer__contact {
+  list-style: none;
+  max-width: 25rem;
+  margin-bottom: var(--flex-gap);
+}
+
+.c-footer__inputGroup {
+  display: flex;
+}
+
+.c-footer__subscriptionForm {
+  margin-bottom: var(--flex-gap);
+}
+
+.c-footer__subscriptionLabel {
+  display: block;
+  text-decoration: none;
+  font-size: var(--general-font-size);
+  /* color: var(--color-text-lightest); */
+}
+
+.c-footer__subscriptionInput {
+  background-color: transparent;
+  border: 1px solid var(--color-input-border-lightest);
+  /* color: var(--color-text-lightest); */
+  padding: var(--s-2);
+}
+.c-footer__subscriptionInput:focus {
+  border: 1px solid var(--color-input-border-lightest);
+  outline: var(--color-input-border-lightest) auto 1px;
+}
+.c-footer__subscriptionSubmit {
+  margin-left: calc(-1 * var(--s-1));
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+@media (max-width: 1536px) {
+}
+
+@media (max-width: 1280px) {
+}
+
+@media (max-width: 1024px) {
+  .c-footer {
+    --padding-top: var(--s-6);
+  }
+
+  .c-footer__paperEffect {
+    top: -0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .c-footer {
+    --flex-gap: var(--s-4);
+  }
+  .c-footer__paperEffect {
+    top: -0.6rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .c-footer__logo {
+    width: 100%;
+  }
+  .c-footer__paperEffect {
+    top: -0.3rem;
+  }
+}
+@media (max-width: 359px) {
+}

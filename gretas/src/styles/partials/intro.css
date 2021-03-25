@@ -1,0 +1,107 @@
+/* 
+# height
+Idealmente, num desktop, ocuparia a altura inteira (descontando o tamanho do menu é claro). No entanto, precisa ter um limite inferior, para que não fique tão pequena, e um limite superior, para que também não fique gigante na tela.
+O limite inferior pode ser 550px e o superior o tamanho da imagem, que é 755px
+
+# margin left
+É definida uma variável global "--main-content-padding" que será utilizada por todos os componentes que tiverem que respeitar margem lateral.
+
+central position
+left flower
+right flower */
+
+.c-intro {
+  --intro-min-height: 520px;
+  --intro-max-height: 755px;
+  padding: 0 var(--main-content-padding);
+  position: relative;
+  min-height: var(--intro-min-height);
+  height: calc(100vh - var(--menu-height));
+  max-height: var(--intro-max-height);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.c-intro__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: -1;
+}
+
+.c-intro__readMore {
+  margin-top: var(--s-9);
+  width: fit-content;
+}
+
+.c-intro__bottom {
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+}
+
+.c-intro__flowerTopLeft {
+  position: absolute;
+  left: calc(-1 * var(--s-8));
+  top: calc(-1 * var(--s-8));
+  height: var(--s-15);
+}
+
+@media (max-width: 1536px) {
+  .c-intro__flowerTopLeft {
+    left: calc(-1 * var(--s-5));
+    top: calc(-1 * var(--s-7));
+    height: var(--s-13);
+  }
+}
+
+@media (max-width: 1280px) {
+  .c-intro__flowerTopLeft {
+    left: calc(-1 * var(--s-7));
+    top: calc(-1 * var(--s-7));
+  }
+}
+@media (max-width: 1024px) {
+  .c-intro__flowerTopLeft {
+    left: calc(-1 * var(--s-4));
+    top: calc(-1 * var(--s-4));
+    height: var(--s-10);
+  }
+  .c-intro__bg {
+    object-position: right;
+  }
+}
+
+@media (max-width: 768px) {
+  .c-intro {
+    /* --intro-min-height: 520px; */
+    --intro-max-height: 600px;
+  }
+
+  .c-intro__title:not(:first-of-type) {
+    margin-top: calc(-1 * var(--s-2));
+  }
+
+  .c-intro__flowerTopLeft {
+    top: calc(-1 * var(--s-2));
+  }
+}
+
+@media (max-width: 640px) {
+  .c-intro__readMore {
+    align-self: center;
+  }
+  .c-intro__bg {
+    object-position: center;
+  }
+}
+
+@media (max-width: 359px) {
+}
