@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
+import HighlightedText from "../shared/HighlightedText"
 
 export default function Intro() {
   return (
@@ -20,26 +21,18 @@ export default function Intro() {
         objectFit="cover"
         style={{ position: "absolute" }}
       />
-      <text-highlight
-        className="c-intro__title"
-        color="warning"
-        text="Desenvolver o Sertão"
-      ></text-highlight>
-      <text-highlight
-        className="c-intro__title"
-        color="warning"
-        text="é dar oportunidade"
-      ></text-highlight>
-      <text-highlight
-        className="c-intro__title"
-        color="warning"
-        text="de crescimento"
-      ></text-highlight>
-      <text-highlight
-        className="c-intro__title"
-        color="warning"
-        text="à sua riqueza"
-      ></text-highlight>
+      <HighlightedText className="c-intro__title" color="warning">
+        Desenvolver o Sertão
+      </HighlightedText>
+      <HighlightedText className="c-intro__title" color="warning">
+        é dar oportunidade
+      </HighlightedText>
+      <HighlightedText className="c-intro__title" color="warning">
+        de crescimento
+      </HighlightedText>
+      <HighlightedText className="c-intro__title" color="warning">
+        à sua riqueza
+      </HighlightedText>
       <a
         href="#features"
         className="c-button c-button-danger c-intro__readMore"
