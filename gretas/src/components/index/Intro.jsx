@@ -1,12 +1,24 @@
+import { Link } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
 
 export default function Intro() {
   return (
     <section className="c-intro">
-      <img
+      {/* <img
         className="c-intro__bg"
         src="assets/images/intro/bg.png"
         alt="Criança sertaneja"
+      /> */}
+      <StaticImage
+        className="c-intro__bg"
+        src="../../images/intro/bg.png"
+        alt="Criança Sertaneja"
+        loading="lazy"
+        placeholder="blurred"
+        layout="fullWidth"
+        objectFit="cover"
+        style={{ position: "absolute" }}
       />
       <text-highlight
         className="c-intro__title"

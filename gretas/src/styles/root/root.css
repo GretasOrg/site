@@ -6,7 +6,7 @@
   --button-height: var(--font-6xl);
   --button-sm-height: var(--font-4xl);
 
-  --menu-height: var(--s-10);
+  --menu-height: var(--s-7);
 }
 body {
   font-family: "Montserrat", sans-serif;

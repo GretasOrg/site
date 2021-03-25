@@ -32,12 +32,13 @@ right flower */
   height: 100%;
   object-fit: cover;
   object-position: center;
-  z-index: -1;
+  z-index: 0;
 }
 
 .c-intro__readMore {
   margin-top: var(--s-9);
   width: fit-content;
+  z-index: 0;
 }
 
 .c-intro__bottom {
