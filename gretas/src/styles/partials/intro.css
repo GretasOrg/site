@@ -45,9 +45,9 @@ right flower */
 .c-intro__bottom {
   position: absolute;
   left: 0;
-  bottom: -1px;
+  bottom: -2px;
   width: 100%;
-  fill: var(--color-bg-faded-dark);
+  fill: var(--color-bg-faded);
 }
 
 .c-intro__flowerTopLeft {

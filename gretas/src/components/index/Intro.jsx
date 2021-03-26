@@ -7,11 +7,6 @@ import PaperEffect from "../shared/PaperEffect"
 export default function Intro() {
   return (
     <section className="c-intro">
-      {/* <img
-        className="c-intro__bg"
-        src="assets/images/intro/bg.png"
-        alt="Criança sertaneja"
-      /> */}
       <StaticImage
         className="c-intro__bg"
         src="../../images/intro/bg.png"

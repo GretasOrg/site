@@ -1,7 +1,7 @@
 import React from "react"
 import HighlightedTextSVG from "./HighlightedTextSVG"
 
-export default function HighlightedText({ children, color }) {
+export default function HighlightedText({ children, color, className }) {
   let colorClass
   if (color === "warning") {
     colorClass = "c-highlightedText__bg-warning"
@@ -12,8 +12,11 @@ export default function HighlightedText({ children, color }) {
   } else if (color === "faded-darker") {
     colorClass = "c-highlightedText__bg-faded-darker"
   }
+  console.log("ei po", className)
+  const baseClass = "c-highlightedText"
+  const rootClass = className == null ? baseClass : `${baseClass} ${className}`
   return (
-    <article className="c-highlightedText">
+    <article className={rootClass}>
       <h1 className="c-highlightedText__text">{children}</h1>
       <HighlightedTextSVG
         className={"c-highlightedText__bg " + colorClass}

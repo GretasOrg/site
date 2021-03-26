@@ -14,6 +14,8 @@ right flower */
   padding: var(--s-4) var(--main-content-padding);
   height: var(--menu-height);
 
+  background-color: var(--color-bg-faded);
+
   display: flex;
   align-items: center;
 

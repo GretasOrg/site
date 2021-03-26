@@ -4,6 +4,7 @@
   background-color: var(--color-faded);
   display: flex;
   flex-wrap: wrap;
+  position: relative;
 }
 
 .c-about__title .c-highlightedText__text {
@@ -54,39 +55,61 @@
   padding: 0;
 }
 
+.c-about__stats-success {
+  fill: var(--color-success);
+}
+
+.c-about__stats-tertiary {
+  fill: var(--color-tertiary);
+}
+
+.c-about__stats-faded-dark {
+  fill: var(--color-faded-dark);
+}
+
 .c-about__banner {
   --gap: var(--s-1);
   position: relative;
-  flex: 0 0 calc(50% - var(--gap));
-  height: calc(50% - var(--gap));
-  max-height: 23rem;
-  max-width: 25rem;
+  flex: 0 0 16.25rem;
+  height: 16.25rem;
+  width: 16.875rem;
 }
 
 .c-about__bannerBg {
   width: 100%;
   height: 100%;
+  fill: var(--color-tertiary);
 }
+
 .c-about__volunteer {
   position: absolute;
   bottom: 0;
-  right: 0;
-  width: 66%;
+  right: 3.7%;
+  width: 51.5%;
 }
+
 .c-about__helpText {
   position: absolute;
-  left: 22%;
-  top: 4%;
+  left: 14.8%;
   font-family: var(--family-handwritten);
   font-size: var(--font-3xl);
   line-height: var(--font-2xl);
   color: var(--color-text-darker);
   margin-top: var(--s-5);
 }
+
 .c-about__video {
   width: 100%;
-  flex: 0 0 calc(50% - var(--s-1));
-  height: calc(50% - var(--s-1));
+  flex: 1;
+  margin-top: var(--s-3);
+}
+
+.c-about__bottom {
+  position: absolute;
+  width: 100%;
+  bottom: -2px;
+  left: 0;
+  fill: var(--color-bg-faded-dark);
 }
 
 @media (max-width: 1536px) {
@@ -99,9 +122,8 @@
 }
 
 @media (max-width: 1280px) {
-  .c-about__banner {
-    max-height: 18rem;
-    max-width: 23.5rem;
+  .c-about__title .c-highlightedText__text {
+    font-size: var(--font-5xl);
   }
 }
 
@@ -125,9 +147,6 @@
 }
 
 @media (max-width: 768px) {
-  .c-about__banner {
-    height: auto;
-  }
   .c-about__video {
     height: auto;
   }
@@ -146,9 +165,6 @@
   .c-about__title .c-highlightedText__text {
     font-size: var(--font-6xl);
   }
-  .c-about__helpText {
-    left: 18%;
-  }
 }
 @media (max-width: 380px) {
 }
@@ -157,5 +173,4 @@
   .c-about__title .c-highlightedText__text {
     font-size: var(--font-5xl);
   }
-
 }
