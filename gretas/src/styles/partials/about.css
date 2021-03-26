@@ -109,7 +109,7 @@
   width: 100%;
   bottom: -2px;
   left: 0;
-  fill: var(--color-bg-faded-dark);
+  fill: var(--color-bg-faded-darker);
 }
 
 @media (max-width: 1536px) {
