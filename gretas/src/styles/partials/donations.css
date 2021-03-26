@@ -1,6 +1,6 @@
 .c-donations {
   --padding: var(--s-9);
-  padding: var(--padding) var(--main-content-padding);
+  padding: var(--padding) var(--main-content-padding-small);
   background-color: var(--color-faded-darker);
   display: flex;
   justify-content: center;

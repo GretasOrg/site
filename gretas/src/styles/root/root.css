@@ -1,5 +1,6 @@
 :root {
   --main-content-padding: calc(100% * 320 / 1920);
+  --main-content-padding-small: calc(0.75 * var(--main-content-padding));
   --main-max-width: 1400px;
   --main-min-height: 500px;
 
@@ -9,7 +10,7 @@
   --menu-height: var(--s-7);
 }
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   display: flex;
   justify-content: center;
@@ -19,7 +20,7 @@ body {
 }
 
 * {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 @media (max-width: 1536px) {
