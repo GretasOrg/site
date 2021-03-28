@@ -21,7 +21,7 @@ export default function Features() {
             alt="Erradicação da Pobreza"
             loading="lazy"
             placeholder="tracedSVG"
-            width="88"
+            width={88}
             objectFit="cover"
           />
           <div className="l-feature__content">
@@ -38,7 +38,7 @@ export default function Features() {
             alt="Fome Zero"
             loading="lazy"
             placeholder="tracedSVG"
-            width="88"
+            width={88}
             objectFit="cover"
           />
           <div className="l-feature__content">
@@ -56,7 +56,7 @@ export default function Features() {
             alt="Educação de Qualidade"
             loading="lazy"
             placeholder="tracedSVG"
-            width="88"
+            width={88}
             objectFit="cover"
           />
           <div className="l-feature__content">
@@ -74,7 +74,7 @@ export default function Features() {
             alt="Água potável e Saneamento"
             loading="lazy"
             placeholder="tracedSVG"
-            width="88"
+            width={88}
             objectFit="cover"
           />
           <div className="l-feature__content">
@@ -92,7 +92,7 @@ export default function Features() {
             alt="Trabalho decente e Crescimento econômico"
             loading="lazy"
             placeholder="tracedSVG"
-            width="88"
+            width={88}
             objectFit="cover"
           />
           <div className="l-feature__content">
@@ -112,7 +112,7 @@ export default function Features() {
             alt="Redução das Desigualdades"
             loading="lazy"
             placeholder="tracedSVG"
-            width="88"
+            width={88}
             objectFit="cover"
           />
           <div className="l-feature__content">

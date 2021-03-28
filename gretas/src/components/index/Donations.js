@@ -2,6 +2,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 import { getImage, StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
 import HighlightedText from '../shared/HighlightedText';
+import PaperEffect from '../shared/PaperEffect';
 import Donation from './Donation';
 
 export const donationImage = graphql`
@@ -178,6 +179,7 @@ export default function Donations() {
       >
         Todas as ações
       </a>
+      <PaperEffect className="c-donations__bottom" />
     </section>
   );
 }
