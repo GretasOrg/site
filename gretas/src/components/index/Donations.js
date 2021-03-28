@@ -98,7 +98,7 @@ export default function Donations() {
         <li>
           <Donation
             plan="2"
-            price={100.0}
+            price={100}
             title="Ação de Saúde"
             description="Leve a oportunidade de uma consulta médica a uma família do
             Sertão."
@@ -113,7 +113,7 @@ export default function Donations() {
         <li>
           <Donation
             plan="3"
-            price={80.0}
+            price={80}
             title="Vale Alimentação"
             description="Todo ser humano precisa de alimento. Compre o Vale e fortaleça
             uma família em estado de vulnerabilidade."
@@ -129,7 +129,7 @@ export default function Donations() {
         <li>
           <Donation
             plan="4"
-            price={50.0}
+            price={50}
             title="Educação para Saúde"
             description="A pandemia atinge o mundo todo, mas a educação é limitada.
             Incentive a divulgação sobre cuidados básicos de doenças comuns
@@ -145,7 +145,7 @@ export default function Donations() {
           <Donation
             titleSmall={true}
             plan="5"
-            price={24.0}
+            price={24}
             title="Tratamento de Verminoses"
             description="A falta de saneamento básico provoca o surgimento de doenças de
             verminoses. Contribua com nossa ação de tratamento de
@@ -159,7 +159,7 @@ export default function Donations() {
         <li>
           <Donation
             plan="6"
-            price={10.0}
+            price={10}
             title="Kit Higiene"
             description="Invista nos cuidados básicos da higiene pessoal e do combate ao
             novo coronavírus."

@@ -1,5 +1,7 @@
 import { GatsbyImage } from 'gatsby-plugin-image';
 import React, { useState } from 'react';
+import InputMask from 'react-input-mask';
+import CurrencyInput from '../shared/CurrencyInput';
 
 export default function Donation({
   className,
@@ -63,15 +65,13 @@ export default function Donation({
         <p className="c-donation__text">{description}</p>
         <div className="c-donation__price">
           <span className="c-donation__currency">R$</span>
-          <input
-            value={currentPrice}
+          <CurrencyInput
             className="c-donation__input c-input c-input-success c-input-noControls c-input-big"
-            type="number"
-            aria-label={'Valor do ' + title}
-            onChange={onChange}
-            readOnly={readonly === true}
-            disabled={readonly === true}
-          />
+            ariaTitle={title}
+            onChange={setPrice}
+            initialValue={price}
+            readonly={readonly}
+          ></CurrencyInput>
         </div>
         <div
           className={`c-donation__plan c-dropdown ${isOpen ? '' : 'js-closed'}`}
