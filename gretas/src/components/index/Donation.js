@@ -1,6 +1,5 @@
 import { GatsbyImage } from 'gatsby-plugin-image';
 import React, { useState } from 'react';
-import InputMask from 'react-input-mask';
 import CurrencyInput from '../shared/CurrencyInput';
 
 export default function Donation({
