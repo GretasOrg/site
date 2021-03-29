@@ -11,7 +11,7 @@ import Header from '../components/shared/Header';
 export default function Home() {
   return (
     <React.Fragment>
-      <Header></Header>
+      <Header />
       <main>
         <Intro />
         <AboutUs />
@@ -20,7 +20,7 @@ export default function Home() {
         <JoinUs />
         <MiniBlog />
       </main>
-      <Footer></Footer>
+      <Footer />
     </React.Fragment>
   );
 }

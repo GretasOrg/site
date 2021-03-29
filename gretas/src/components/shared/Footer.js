@@ -1,17 +1,19 @@
-import React from "react"
+import { StaticImage } from 'gatsby-plugin-image';
+import React from 'react';
+import InstagramSVG from '../../images/icons/instagram.inline.svg';
+import FacebookSVG from '../../images/icons/facebook.inline.svg';
 
 export default function Footer() {
   return (
     <footer className="c-footer">
-      <img
-        className="c-footer__paperEffect"
-        src="assets/images/footer/paper-effect.svg"
-        alt="Efeito de papel rasgado"
-      />
-      <img
+      <StaticImage
         className="c-footer__logo"
-        src="assets/images/footer/logo.svg"
+        src="../../images/footer/logo.png"
         alt="Logo do Gretas - Fortalecendo o Sertão"
+        loading="lazy"
+        placeholder="tracedSVG"
+        layout="fullWidth"
+        objectFit="contain"
       />
       <ul className="c-footer__textLinks">
         <li className="c-footer__link">
@@ -28,21 +30,23 @@ export default function Footer() {
       <ul className="c-footer__socialLinks">
         <li className="c-footer__link">
           <a href="https://www.facebook.com/projetogretas/" target="_blank">
-            <img
+            {/* <img
               className="c-footer__linkImage"
               src="assets/images/icons/facebook.svg"
               alt="Logo Facebook"
-            />
+            /> */}
+            <FacebookSVG className="c-footer__linkImage" />
             Facebook
           </a>
         </li>
         <li className="c-footer__link">
           <a href="https://instagram.com/gretas_org" target="_blank">
-            <img
+            {/* <img
               className="c-footer__linkImage"
               src="assets/images/icons/instagram.svg"
               alt="Logo Instagram"
-            />
+            /> */}
+            <InstagramSVG className="c-footer__linkImage" />
             Instagram
           </a>
         </li>
@@ -73,5 +77,5 @@ export default function Footer() {
         <li className="c-footer__link">contato@gretas.org</li>
       </ul>
     </footer>
-  )
+  );
 }
