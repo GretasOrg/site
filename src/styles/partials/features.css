@@ -7,9 +7,6 @@
   position: relative;
 }
 
-.c-features__title {
-}
-
 .c-features__quotes {
   font-size: var(--font-4xl);
   color: var(--color-faded-darker);
@@ -25,6 +22,7 @@
   margin: 0;
   padding: 0;
   margin-right: calc(-1 * var(--s-4));
+  max-width: 80rem;
 }
 
 .l-features__list > * {
