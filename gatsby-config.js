@@ -39,6 +39,7 @@ module.exports = {
     // <meta name="twitter:creator" content="Projeto Gretas" />
   },
   plugins: [
+    'gatsby-plugin-react-helmet',
     'gatsby-plugin-image',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp', // Needed for dynamic images
