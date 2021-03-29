@@ -8,7 +8,7 @@ import JoinUs from '../components/index/JoinUs';
 import MiniBlog from '../components/index/MiniBlog';
 import Footer from '../components/shared/Footer';
 import Header from '../components/shared/Header';
-import favicon from '../images/branding/favicon.ico';
+import favicon from '../images/branding/favicon.png';
 
 export default function Home() {
   return (
