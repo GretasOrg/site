@@ -1,5 +1,5 @@
 .c-joinUs {
-  --padding-top: var(--s-9);
+  --padding-top: 0;
   padding: var(--padding-top) var(--main-content-padding);
   background-color: var(--color-bg-lightest);
   display: flex;
@@ -40,6 +40,7 @@
 
 .c-joinUs__action {
   z-index: 1;
+  margin-bottom: var(--s-9);
 }
 
 .c-joinUs__bottom {
@@ -78,6 +79,10 @@
 @media (max-width: 400px) {
   .c-joinUs__title {
     font-size: var(--font-7xl);
+  }
+
+  .c-joinUs__action {
+    margin-bottom: 0;
   }
 }
 
