@@ -1,6 +1,6 @@
 .c-donations {
   --padding-top: var(--s-6);
-  padding: var(--padding) var(--main-content-padding-small);
+  padding: var(--padding-top) var(--main-content-padding-small);
   background-color: var(--color-faded-darker);
   display: flex;
   justify-content: center;
@@ -31,6 +31,12 @@
   max-width: 500px;
 }
 
+.l-donations__listWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .l-donations__list {
   display: flex;
   flex-direction: row;
@@ -39,6 +45,7 @@
   margin: 0;
   padding: 0;
   margin-right: calc(-1 * var(--s-4));
+  max-width: 80rem;
 }
 
 .l-donations__list > * {
