@@ -1,0 +1,124 @@
+.c-miniArticle {
+  --padding: var(--s-3);
+  padding-bottom: var(--padding);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: var(--color-bg-lightest);
+  position: relative;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.c-miniArticle.c-miniArticle-big {
+  padding: var(--padding) 0;
+  justify-content: flex-end;
+}
+
+.c-miniArticle__picture {
+  object-fit: cover;
+  width: 100%;
+  height: 12rem;
+  z-index: -2;
+  transition: transform 0.3s ease-out;
+}
+
+.c-miniArticle:hover .c-miniArticle__picture {
+  transform: scale(1.05);
+}
+
+.c-miniArticle__info {
+  margin: 0 var(--padding);
+  margin-top: var(--padding);
+  font-size: var(--font-base);
+}
+.c-miniArticle__categories {
+  font-size: var(--font-xs);
+  color: var(--color-tertiary);
+}
+.c-miniArticle__date {
+  font-size: var(--font-xs);
+  color: var(--color-text-dark);
+}
+
+.c-miniArticle__title {
+  --title-line-height: var(--font-xl);
+  margin: var(--s-3) var(--padding);
+  font-size: var(--font-lg);
+  color: var(--color-text-darker);
+  line-height: var(--title-line-height);
+  max-height: calc(4 * var(--font-xl));
+  overflow: hidden;
+}
+
+.c-miniArticle:hover .c-miniArticle__title {
+  text-decoration: underline;
+}
+
+.c-miniArticle__author {
+  margin: 0 var(--padding);
+  font-size: var(--font-xs);
+  color: var(--color-text-dark);
+  letter-spacing: -0.3px;
+}
+
+.c-miniArticle__authorName {
+  color: var(--color-text-dark);
+  font-weight: 700;
+}
+
+.c-miniArticle-big .c-miniArticle__picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+.c-miniArticle-big::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.5;
+  background-color: black;
+}
+
+.c-miniArticle-big .c-miniArticle__categories {
+  font-weight: bold;
+}
+.c-miniArticle-big .c-miniArticle__date {
+  color: var(--color-text-light);
+}
+
+.c-miniArticle-big .c-miniArticle__title {
+  font-size: var(--font-2xl);
+  --title-line-height: var(--font-2xl);
+  color: var(--color-text-lightest);
+}
+
+.c-miniArticle-big .c-miniArticle__author {
+  color: var(--color-text-light);
+}
+
+.c-miniArticle-big .c-miniArticle__authorName {
+  color: var(--color-text-light);
+}
+
+@media (max-width: 1536px) {
+}
+
+@media (max-width: 1280px) {
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 640px) {
+}
+@media (max-width: 359px) {
+}

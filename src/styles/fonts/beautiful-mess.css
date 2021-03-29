@@ -1,0 +1,7 @@
+@font-face {
+  font-family: Beautiful Mess;
+  src: url(../../fonts/beautiful_mess/beautiful_mess-webfont.woff2)
+      format("woff2"),
+    url(../../fonts/beautiful_mess/beautiful_mess-webfont.woff2) format("woff2"),
+    url(../../fonts/beautiful_mess/Beautiful\ Mess.ttf);
+}
