@@ -85,10 +85,14 @@
 @media (max-width: 768px) {
   .c-donations {
     --padding: var(--s-6);
+    --padding-top: var(--s-4);
   }
 }
 
 @media (max-width: 640px) {
+  .c-donations {
+    --padding-top: var(--s-2);
+  }
   .c-donations__bgLeft {
     display: none;
   }

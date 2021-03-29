@@ -1,6 +1,8 @@
 .c-about {
   --padding-top: var(--s-9);
+  --padding-bottom: 0;
   padding: var(--padding-top) var(--main-content-padding);
+  padding-bottom: var(--padding-bottom);
   background-color: var(--color-faded);
   display: flex;
   flex-wrap: wrap;
@@ -102,6 +104,7 @@
   width: 100%;
   flex: 1;
   margin-top: var(--s-3);
+  min-height: 14rem;
 }
 
 .c-about__bottom {
@@ -130,6 +133,7 @@
 @media (max-width: 1024px) {
   .c-about {
     --padding-top: var(--s-5);
+    --padding-bottom: var(--s-9);
   }
   .l-about__col1 {
     flex: 0 0 100%;
