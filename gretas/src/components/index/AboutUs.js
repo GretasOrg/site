@@ -25,6 +25,7 @@ export default function AboutUs() {
           className="c-about__joinUs"
           href="https://wa.me/5581991984672"
           target="_blank"
+          rel="noreferrer"
         >
           Junte-se a nós!
         </a>

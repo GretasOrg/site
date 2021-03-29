@@ -30,22 +30,12 @@ export default function Footer() {
       <ul className="c-footer__socialLinks">
         <li className="c-footer__link">
           <a href="https://www.facebook.com/projetogretas/" target="_blank">
-            {/* <img
-              className="c-footer__linkImage"
-              src="assets/images/icons/facebook.svg"
-              alt="Logo Facebook"
-            /> */}
             <FacebookSVG className="c-footer__linkImage" />
             Facebook
           </a>
         </li>
         <li className="c-footer__link">
           <a href="https://instagram.com/gretas_org" target="_blank">
-            {/* <img
-              className="c-footer__linkImage"
-              src="assets/images/icons/instagram.svg"
-              alt="Logo Instagram"
-            /> */}
             <InstagramSVG className="c-footer__linkImage" />
             Instagram
           </a>

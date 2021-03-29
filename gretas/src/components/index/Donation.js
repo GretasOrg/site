@@ -30,18 +30,14 @@ export default function Donation({
     return options.find((el) => el.value === currentFrequency);
   }
 
-  function onChange(ev) {
-    if (readonly !== true) {
-      setPrice(ev.target.value);
-    }
-  }
-
   function toggleDropdown() {
     setIsOpen(!isOpen);
   }
 
-  function closeDropdown() {
-    setIsOpen(false);
+  function handleDropdownKey(ev) {
+    if (ev.key === 'Enter') {
+      this.toggleDropdown();
+    }
   }
 
   return (
@@ -75,18 +71,19 @@ export default function Donation({
         <div
           className={`c-donation__plan c-dropdown ${isOpen ? '' : 'js-closed'}`}
           onClick={toggleDropdown}
+          onKeyDown={handleDropdownKey}
+          role="listbox"
+          tabIndex={0}
         >
           <span className="c-dropdown__selected">
             {selectedOption()?.label}
           </span>
           <ul className="c-dropdown__menu">
             {options.map((option) => (
-              <li
-                className="c-dropdown__option"
-                onClick={() => setFrequency(option.value)}
-                key={option.value}
-              >
-                {option.label}
+              <li className="c-dropdown__option" key={option.value}>
+                <button onClick={() => setFrequency(option.value)}>
+                  {option.label}
+                </button>
               </li>
             ))}
           </ul>
@@ -96,7 +93,7 @@ export default function Donation({
           className="c-donation__action c-button c-button-success c-button-round"
           href={url()}
           target="_blank"
-          rel="noopener"
+          rel="noreferrer"
         >
           Doar
         </a>
