@@ -27,11 +27,7 @@ export default function Header({ actionLink }) {
           Sobre nós
         </a>
       </ul>
-      <a
-        className="c-button c-button-danger c-button-sm-xs c-menu__action"
-        aria-label="Doe Agora!"
-        href={actionLink}
-      >
+      <a className="c-menu__action" href={actionLink}>
         Doe agora!
       </a>
       <button

@@ -27,6 +27,7 @@
   --color-text-lightest: var(--white);
   --color-text-lighter: var(--grey);
   --color-text-light: var(--grey);
+  --color-text-danger: var(--red);
   --color-text-dark: var(--grey-dark);
   --color-text-darker: var(--black);
 

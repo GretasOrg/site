@@ -48,8 +48,14 @@ right flower */
 
 .c-menu__action {
   margin-left: auto;
+  font-family: var(--family-handwritten);
+  color: var(--color-text-danger);
+  font-size: var(--font-4xl);
 }
 
+.c-menu__action:hover {
+  text-decoration: underline;
+}
 .c-menu__btn {
   display: none;
 }
@@ -87,7 +93,7 @@ right flower */
     margin-left: auto;
     border: none;
     padding: var(--s-3);
-    background-color: var(--color-bg);
+    background-color: var(--color-bg-faded);
     transition: background-color 0.2s ease;
     cursor: pointer;
     z-index: 101;
@@ -101,7 +107,7 @@ right flower */
   }
   .c-menu__btn::after,
   .c-menu__btn::before {
-    content: "-";
+    content: '-';
     width: var(--font-lg);
     height: var(--s-01);
     background-color: var(--color-text-darker);
@@ -174,6 +180,9 @@ right flower */
   .c-menu__logo {
     height: var(--s-5);
     max-width: 7.5rem;
+  }
+  .c-menu__action {
+    font-size: var(--font-2xl);
   }
   .c-mobileMenu__item {
     font-size: var(--font-2xl);
