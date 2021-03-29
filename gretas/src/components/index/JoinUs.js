@@ -5,7 +5,6 @@ import PaperEffect from '../shared/PaperEffect';
 export default function JoinUs() {
   return (
     <section className="c-joinUs">
-      <img className="c-joinUs__bg" />
       <StaticImage
         className="c-joinUs__bg"
         src="../../images/join-us/bg.png"
@@ -29,6 +28,7 @@ export default function JoinUs() {
         className="c-joinUs__action c-button c-button-danger"
         href="https://wa.me/5581991984672"
         target="_blank"
+        rel="noreferrer"
       >
         Junte-se a nós
       </a>

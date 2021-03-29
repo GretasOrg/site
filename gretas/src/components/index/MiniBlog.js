@@ -78,9 +78,10 @@ export default function MiniBlog() {
         tags={['PARCERIAS', 'REDE', 'SAÚDE']}
       />
       <a
+        className="c-miniBlog__action c-button c-button-danger"
         href="https://instagram.com/gretas_org"
         target="_blank"
-        className="c-miniBlog__action c-button c-button-danger"
+        rel="noreferrer"
       >
         Ver todas as publicações
       </a>

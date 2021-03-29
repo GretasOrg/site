@@ -11,11 +11,11 @@ import Header from '../components/shared/Header';
 export default function Home() {
   return (
     <React.Fragment>
-      <Header />
+      <Header actionLink="#donations" />
       <main>
         <Intro />
         <AboutUs />
-        <Donations />
+        <Donations id="donations" />
         <Features />
         <JoinUs />
         <MiniBlog />

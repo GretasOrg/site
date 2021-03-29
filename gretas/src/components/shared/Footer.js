@@ -17,25 +17,41 @@ export default function Footer() {
       />
       <ul className="c-footer__textLinks">
         <li className="c-footer__link">
-          <a href="https://instagram.com/gretas_org" target="_blank">
+          <a
+            href="https://instagram.com/gretas_org"
+            target="_blank"
+            rel="noreferrer"
+          >
             Sobre nós
           </a>
         </li>
         <li className="c-footer__link">
-          <a href="https://wa.me/5581991984672" target="_blank">
+          <a
+            href="https://wa.me/5581991984672"
+            target="_blank"
+            rel="noreferrer"
+          >
             Contato
           </a>
         </li>
       </ul>
       <ul className="c-footer__socialLinks">
         <li className="c-footer__link">
-          <a href="https://www.facebook.com/projetogretas/" target="_blank">
+          <a
+            href="https://www.facebook.com/projetogretas/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FacebookSVG className="c-footer__linkImage" />
             Facebook
           </a>
         </li>
         <li className="c-footer__link">
-          <a href="https://instagram.com/gretas_org" target="_blank">
+          <a
+            href="https://instagram.com/gretas_org"
+            target="_blank"
+            rel="noreferrer"
+          >
             <InstagramSVG className="c-footer__linkImage" />
             Instagram
           </a>

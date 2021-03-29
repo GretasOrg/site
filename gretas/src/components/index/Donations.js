@@ -18,7 +18,7 @@ export const donationImage = graphql`
   }
 `;
 
-export default function Donations() {
+export default function Donations({ id }) {
   const data = useStaticQuery(graphql`
     query {
       image1: file(
@@ -57,7 +57,7 @@ export default function Donations() {
   const img6 = getImage(data.image6);
 
   return (
-    <section className="c-donations">
+    <section className="c-donations" id={id}>
       <HighlightedText className="c-donations__title" color="faded-dark">
         Nossas Ações
       </HighlightedText>

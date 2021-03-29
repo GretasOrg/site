@@ -1,11 +1,11 @@
-import { StaticImage } from "gatsby-plugin-image"
-import React, { useState } from "react"
+import { StaticImage } from 'gatsby-plugin-image';
+import React, { useState } from 'react';
 
-export default function Header() {
-  const [isOpen, setOpen] = useState(false)
+export default function Header({ actionLink }) {
+  const [isOpen, setOpen] = useState(false);
 
   function onClick() {
-    setOpen(!isOpen)
+    setOpen(!isOpen);
   }
 
   return (
@@ -20,26 +20,27 @@ export default function Header() {
         objectFit="contain"
       />
       <ul className="l-menu__items">
-        <a className="c-menu__item" href="#">
+        <a className="c-menu__item" href="/">
           Home
         </a>
         <a className="c-menu__item" href="https://instagram.com/gretas_org">
           Sobre nós
         </a>
       </ul>
-      <button
+      <a
         className="c-button c-button-danger c-button-sm-xs c-menu__action"
         aria-label="Doe Agora!"
+        href={actionLink}
       >
         Doe agora!
-      </button>
+      </a>
       <button
-        className={isOpen ? "c-menu__btn js-open" : "c-menu__btn"}
+        className={isOpen ? 'c-menu__btn js-open' : 'c-menu__btn'}
         aria-label="Menu"
         onClick={onClick}
       ></button>
-      <nav className={isOpen ? "c-mobileMenu js-open" : "c-mobileMenu"}>
-        <a className="c-mobileMenu__item" href="#">
+      <nav className={isOpen ? 'c-mobileMenu js-open' : 'c-mobileMenu'}>
+        <a className="c-mobileMenu__item" href="/">
           Home
         </a>
         <a
@@ -50,5 +51,5 @@ export default function Header() {
         </a>
       </nav>
     </header>
-  )
+  );
 }

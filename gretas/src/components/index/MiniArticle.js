@@ -18,6 +18,7 @@ function MiniArticle({
       }
       href={url}
       target="_blank"
+      rel="noreferrer"
     >
       <article
         className={
