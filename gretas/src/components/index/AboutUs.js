@@ -4,6 +4,7 @@ import FluidSquareSVG from '../../images/effects/fluid-square-effect.inline.svg'
 import HighlightedText from '../shared/HighlightedText';
 import PaperEffect from '../shared/PaperEffect';
 import StatsEffect from '../shared/StatsEffect';
+import Video from '../shared/Video';
 
 export default function AboutUs() {
   return (
@@ -69,11 +70,19 @@ export default function AboutUs() {
             te ajudar!
           </span>
         </div>
-        <video
+        {/* <video
           className="c-about__video"
           controls
           src="assets/videos/video-trator.mp4"
         ></video>
+        <iframe src=""></iframe> */}
+        <Video
+          className="c-about__video"
+          videoSrcURL="https://www.youtube.com/embed/lut_fiA-dN0"
+          videoTitle="Ação Ibimirim GRETAS 2021 - Primeiro final de semana"
+          // width="560"
+          // height="315"
+        />
       </div>
       <PaperEffect className="c-about__bottom" />
     </section>
