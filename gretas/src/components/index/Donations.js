@@ -167,7 +167,7 @@ export default function Donations() {
             auxText="Itens: papel higiênico, sabonete, água sanitária, sabão em
             barra, creme dental, escova de dente, cloro, máscara e álcool
             líquido."
-            image={img5}
+            image={img6}
             imageAlt="Pessoa usando álcool gel nas mãos ao lado de uma cesta com itens diversos para higiene pessoal"
             readonly={true}
           />
