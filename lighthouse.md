@@ -1,4 +1,15 @@
 ### 2021-03-21 13:25
+
+- Ambiente de staging, sem domínio gretas.org, o que pode levar a problemas
+- Ao incluir video embedado do youtube, é possível que problemas apareçam
+
+Performance: 98
+Accessibility: 84
+Best Practices: 93
+SEO: 91
+
+### 2021-03-21 13:25
+
 (Ambiente de staging, sem domínio gretas.org, o que pode levar a problemas)
 
 Performance: 92
