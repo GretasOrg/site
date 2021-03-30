@@ -34,12 +34,14 @@ right flower */
 }
 .c-menu__item {
   margin-right: var(--menu-items-margin);
+}
+.c-menu__item a {
   text-decoration: none;
   text-transform: uppercase;
   color: var(--color-text-dark);
   font-size: var(--font-base);
 }
-.c-menu__item.c-menu__item-active {
+.c-menu__item.c-menu__item-active a {
   font-weight: bold;
 }
 .c-menu__item:last-of-type {

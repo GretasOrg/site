@@ -20,12 +20,12 @@ export default function Header({ actionLink }) {
         objectFit="contain"
       />
       <ul className="l-menu__items">
-        <a className="c-menu__item" href="/">
-          Home
-        </a>
-        <a className="c-menu__item" href="https://instagram.com/gretas_org">
-          Sobre nós
-        </a>
+        <li className="c-menu__item">
+          <a href="/">Home</a>
+        </li>
+        <li className="c-menu__item">
+          <a href="https://instagram.com/gretas_org">Sobre nós</a>
+        </li>
       </ul>
       <a className="c-menu__action" href={actionLink}>
         Doe agora!
