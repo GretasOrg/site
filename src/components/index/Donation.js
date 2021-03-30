@@ -74,6 +74,8 @@ export default function Donation({
           onKeyDown={handleDropdownKey}
           role="listbox"
           tabIndex={0}
+          aria-label="Seleção de frequência de doação"
+          id={'Seleção ' + title}
         >
           <span className="c-dropdown__selected">
             {selectedOption()?.label}
@@ -81,7 +83,12 @@ export default function Donation({
           <ul className="c-dropdown__menu">
             {options.map((option) => (
               <li className="c-dropdown__option" key={option.value}>
-                <button onClick={() => setFrequency(option.value)}>
+                <button
+                  onClick={() => setFrequency(option.value)}
+                  role="option"
+                  aria-selected={currentFrequency === option.value}
+                  aria-labelledby={'Seleção ' + title}
+                >
                   {option.label}
                 </button>
               </li>
