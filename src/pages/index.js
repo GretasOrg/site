@@ -23,11 +23,11 @@ export default function Home() {
         <MiniBlog />
       </main>
       <Footer />
-      <Helmet>
-        htmlAttributes=
-        {{
+      <Helmet
+        htmlAttributes={{
           lang: 'pt-BR',
         }}
+      >
         <meta charSet="utf-8" />
         <title>Gretas - Fortalecendo o Sertão</title>
         <link rel="icon" href={favicon} />
