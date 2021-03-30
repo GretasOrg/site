@@ -5,6 +5,7 @@
   border: solid 1px rgb(222, 222, 222);
   cursor: pointer;
   position: relative;
+  outline: none;
 }
 .c-dropdown__selected {
   display: flex;
@@ -22,6 +23,7 @@
   height: var(--font-xl);
 }
 .c-dropdown__menu {
+  margin-top: var(--s-1);
   position: absolute;
   width: 100%;
   background: var(--color-dropdown-bg);

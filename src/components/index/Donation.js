@@ -34,9 +34,15 @@ export default function Donation({
     setIsOpen(!isOpen);
   }
 
-  function handleDropdownKey(ev) {
+  function handleKeyDownOnDropdownToggle(ev) {
     if (ev.key === 'Enter') {
-      this.toggleDropdown();
+      toggleDropdown();
+    }
+  }
+
+  function handleKeyDownOnOption(ev, value) {
+    if (ev.key === 'Enter') {
+      setFrequency(value);
     }
   }
 
@@ -68,29 +74,40 @@ export default function Donation({
             readonly={readonly}
           ></CurrencyInput>
         </div>
+        {/* role="listbox"
+        onKeyDown={handleDropdownKey}
+        aria-label="Seleção de frequência de doação"
+      */}
         <div
           className={`c-donation__plan c-dropdown ${isOpen ? '' : 'js-closed'}`}
           onClick={toggleDropdown}
-          onKeyDown={handleDropdownKey}
-          role="listbox"
+          onKeyDown={handleKeyDownOnDropdownToggle}
+          role="button"
           tabIndex={0}
-          aria-label="Seleção de frequência de doação"
-          id={'Seleção ' + title}
         >
           <span className="c-dropdown__selected">
             {selectedOption()?.label}
           </span>
-          <ul className="c-dropdown__menu">
+          <ul
+            className={`c-dropdown__menu ${isOpen ? '' : 'js-closed'}`}
+            role="listbox"
+            id={'Seleção ' + title}
+          >
             {options.map((option) => (
-              <li className="c-dropdown__option" key={option.value}>
-                <button
-                  onClick={() => setFrequency(option.value)}
-                  role="option"
-                  aria-selected={currentFrequency === option.value}
-                  aria-labelledby={'Seleção ' + title}
-                >
-                  {option.label}
-                </button>
+              <li
+                className="c-dropdown__option"
+                key={option.value}
+                onClick={() => setFrequency(option.value)}
+                onKeyDown={(ev) => handleKeyDownOnOption(ev, option.value)}
+                role="option"
+                aria-selected={currentFrequency === option.value}
+                aria-labelledby={'Seleção ' + title}
+              >
+                {option.label}
+                {/* <button
+                
+              >
+              </button> */}
               </li>
             ))}
           </ul>
