@@ -24,6 +24,10 @@ export default function Home() {
       </main>
       <Footer />
       <Helmet>
+        htmlAttributes=
+        {{
+          lang: 'pt-BR',
+        }}
         <meta charSet="utf-8" />
         <title>Gretas - Fortalecendo o Sertão</title>
         <link rel="icon" href={favicon} />
@@ -39,7 +43,6 @@ export default function Home() {
         />
         <link rel="canonical" href="https://www.gretas.org/" />
         <meta name="robots" content="index, follow" />
-
         <meta property="og:type" content="article" />
         <meta property="og:title" content="Gretas - Fortalecendo o Sertão" />
         <meta
@@ -52,7 +55,6 @@ export default function Home() {
         />
         <meta property="og:url" content="https://www.gretas.org/" />
         <meta property="og:site_name" content="Projeto Gretas" />
-
         <meta name="twitter:title" content="Gretas - Fortalecendo o Sertão" />
         <meta
           name="twitter:description"
