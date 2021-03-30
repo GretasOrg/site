@@ -16,10 +16,10 @@ export default function JoinUs() {
         style={{ position: 'absolute' }}
         tracedSVGOptions={{ color: '#fcf5db' }}
       />
-      <h1 className="c-joinUs__title">
+      <h2 className="c-joinUs__title">
         Ajude o projeto, <br />
         seja voluntário!
-      </h1>
+      </h2>
       <p className="c-joinUs__description">
         Quer participar de alguma ação? Torne-se um valioso voluntário do
         Gretas. Sua atitude pode mudar vidas!

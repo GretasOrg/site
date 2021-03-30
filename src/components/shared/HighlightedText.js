@@ -16,7 +16,7 @@ export default function HighlightedText({ children, color, className }) {
   const rootClass = className == null ? baseClass : `${baseClass} ${className}`;
   return (
     <article className={rootClass}>
-      <h1 className="c-highlightedText__text">{children}</h1>
+      <h2 className="c-highlightedText__text">{children}</h2>
       <HighlightedTextSVG
         className={'c-highlightedText__bg ' + colorClass}
       ></HighlightedTextSVG>

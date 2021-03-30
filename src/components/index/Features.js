@@ -25,7 +25,7 @@ export default function Features() {
             objectFit="cover"
           />
           <div className="l-feature__content">
-            <h5 className="c-feature__title">Erradicação da Pobreza</h5>
+            <h3 className="c-feature__title">Erradicação da Pobreza</h3>
             <p className="c-feature__text">
               Acabar com a pobreza extrema em todas as suas formas e proporções.
             </p>
@@ -42,7 +42,7 @@ export default function Features() {
             objectFit="cover"
           />
           <div className="l-feature__content">
-            <h5 className="c-feature__title">Fome Zero</h5>
+            <h3 className="c-feature__title">Fome Zero</h3>
             <p className="c-feature__text">
               Combate à fome, através de políticas estruturais, assegurando que
               exista comida e qualidade alimentar na mesa de quem mais precisa.
@@ -60,7 +60,7 @@ export default function Features() {
             objectFit="cover"
           />
           <div className="l-feature__content">
-            <h5 className="c-feature__title">Educação de Qualidade</h5>
+            <h3 className="c-feature__title">Educação de Qualidade</h3>
             <p className="c-feature__text">
               Oferecer educação de qualidade e dar oportunidades de conhecimento
               ao longo dos anos, transformando vidas.
@@ -78,7 +78,7 @@ export default function Features() {
             objectFit="cover"
           />
           <div className="l-feature__content">
-            <h5 className="c-feature__title">Água potável e Saneamento</h5>
+            <h3 className="c-feature__title">Água potável e Saneamento</h3>
             <p className="c-feature__text">
               Beneficia a erradicação da pobreza, promove a sustentabilidade
               ambiental e assegura a disponibilidade de água a todos e todas.
@@ -96,9 +96,9 @@ export default function Features() {
             objectFit="cover"
           />
           <div className="l-feature__content">
-            <h5 className="c-feature__title">
+            <h3 className="c-feature__title">
               Trabalho decente e Crescimento econômico
-            </h5>
+            </h3>
             <p className="c-feature__text">
               Direito digno de emprego pleno para todas as pessoas,
               possibilitando crescimento econômico saudável e inclusivo.
@@ -116,7 +116,7 @@ export default function Features() {
             objectFit="cover"
           />
           <div className="l-feature__content">
-            <h5 className="c-feature__title">Redução das Desigualdades</h5>
+            <h3 className="c-feature__title">Redução das Desigualdades</h3>
             <p className="c-feature__text">
               Diminuir as desigualdades nos países e entre eles.
             </p>

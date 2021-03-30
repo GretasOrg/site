@@ -39,7 +39,7 @@ function MiniArticle({
           <span className="c-miniArticle__categories">{tags.join(' ')} |</span>
           <span className="c-miniArticle__date">{date}</span>
         </div>
-        <h6 className="c-miniArticle__title">{title}</h6>
+        <h3 className="c-miniArticle__title">{title}</h3>
         <span className="c-miniArticle__author">
           Por <span className="c-miniArticle__authorName">{author}</span>
         </span>
