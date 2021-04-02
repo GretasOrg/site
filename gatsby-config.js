@@ -4,6 +4,10 @@
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
 
+const { setBranchEnvironment } = require('./env-helper');
+
+setBranchEnvironment();
+
 module.exports = {
   /* Your site config here */
   siteMetadata: {
@@ -15,30 +19,15 @@ module.exports = {
     fonte de renda. Contribuímos para a diminuição das
     desigualdades sociais e promoção da dignidade
     humana.`,
-
-    // <link rel="canonical" href="https://www.gretas.org/" />
-    // <meta name="robots" content="index, follow" />
-
-    // <meta property="og:type" content="article" />
-    // <meta property="og:title" content="Gretas - Fortalecendo o Sertão" />
-    // <meta
-    //   property="og:description"
-    //   content="Trabalhamos com as comunidades rurais de Ibimirim no estímulo à autonomia e empoderamento de todos que nelas fazem morada, através de programas focados em saúde, segurança alimentar, educação e fonte de renda. Contribuímos para a diminuição das desigualdades sociais e promoção da dignidade humana."
-    // />
-    // <meta property="og:image" content="https://gretas.org/assets/images/mulher-simbolo.jpg" />
-    // <meta property="og:url" content="https://www.gretas.org/" />
-    // <meta property="og:site_name" content="Projeto Gretas" />
-
-    // <meta name="twitter:title" content="Gretas - Fortalecendo o Sertão" />
-    // <meta
-    //   name="twitter:description"
-    //   content="Trabalhamos com as comunidades rurais de Ibimirim no estímulo à autonomia e empoderamento de todos que nelas fazem morada, através de programas focados em saúde, segurança alimentar, educação e fonte de renda. Contribuímos para a diminuição das desigualdades sociais e promoção da dignidade humana."
-    // />
-    // <meta name="twitter:image" content="https://gretas.org/assets/images/mulher-simbolo.jpg" />
-    // <meta name="twitter:site" content="Projeto Gretas" />
-    // <meta name="twitter:creator" content="Projeto Gretas" />
   },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-netlify-cms',
+      options: {
+        manualInit: true,
+        modulePath: `${__dirname}/src/cms/cms.js`,
+      },
+    },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-image',
     'gatsby-plugin-sharp',
@@ -56,6 +45,28 @@ module.exports = {
       options: {
         name: `src`,
         path: `${__dirname}/src/`,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 630,
+            },
+          },
+          {
+            resolve: `gatsby-remark-responsive-iframe`,
+            options: {
+              wrapperStyle: `margin-bottom: 1.0725rem`,
+            },
+          },
+          `gatsby-remark-prismjs`,
+          `gatsby-remark-copy-linked-files`,
+          `gatsby-remark-smartypants`,
+        ],
       },
     },
   ],
