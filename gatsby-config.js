@@ -4,6 +4,10 @@
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
 
+const { setBranchEnvironment } = require('./env-helper');
+
+setBranchEnvironment();
+
 module.exports = {
   /* Your site config here */
   siteMetadata: {
@@ -17,6 +21,13 @@ module.exports = {
     humana.`,
   },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-netlify-cms',
+      options: {
+        manualInit: true,
+        modulePath: `${__dirname}/src/cms/cms.js`,
+      },
+    },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-image',
     'gatsby-plugin-sharp',
