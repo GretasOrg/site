@@ -34,7 +34,7 @@ const aboutUsSection = {
     {
       name: "bannerText",
       label: "Texto do Banner",
-      widget: "string",
+      widget: "text",
     },
     {
       name: "video",

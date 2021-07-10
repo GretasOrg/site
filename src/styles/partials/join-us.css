@@ -21,7 +21,7 @@
 
 .c-joinUs__title {
   font-family: var(--family-handwritten);
-  font-size: var(--font-12xl);
+  font-size: var(--font-10xl);
   font-weight: normal;
   line-height: 0.8;
   color: var(--color-text-darker);
@@ -62,9 +62,16 @@
     --padding-top: var(--s-3);
     justify-content: center;
   }
+
+  .c-joinUs__title {
+    font-size: var(--font-8xl);
+  }
 }
 
 @media (max-width: 768px) {
+  .c-joinUs__title {
+    font-size: var(--font-7xl);
+  }
 }
 
 @media (max-width: 640px) {
@@ -72,13 +79,13 @@
     height: 31.25rem;
   }
   .c-joinUs__title {
-    font-size: var(--font-9xl);
+    font-size: var(--font-6xl);
   }
 }
 
 @media (max-width: 400px) {
   .c-joinUs__title {
-    font-size: var(--font-7xl);
+    font-size: var(--font-5xl);
   }
 
   .c-joinUs__action {
@@ -88,7 +95,7 @@
 
 @media (max-width: 380px) {
   .c-joinUs__title {
-    font-size: var(--font-5xl);
+    font-size: var(--font-4xl);
   }
 
   .c-joinUs__description {

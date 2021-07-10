@@ -1,4 +1,4 @@
-import { getImage, StaticImage, GatsbyImage } from "gatsby-plugin-image";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import React from "react";
 import PaperEffect from "../shared/PaperEffect";
 

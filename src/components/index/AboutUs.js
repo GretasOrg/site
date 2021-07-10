@@ -65,7 +65,12 @@ export default function AboutUs({ data }) {
             loading="lazy"
             style={{ position: "absolute" }}
           />
-          <span className="c-about__helpText">{bannerText}</span>
+          <span
+            className="c-about__helpText"
+            dangerouslySetInnerHTML={{
+              __html: converter.makeHtml(bannerText),
+            }}
+          ></span>
         </div>
         <Video
           className="c-about__video"

@@ -93,11 +93,16 @@
 .c-about__helpText {
   position: absolute;
   left: 14.8%;
+  margin-top: var(--s-5);
+}
+
+/* markdown purposes */
+.c-about__helpText p {
+  margin: 0;
   font-family: var(--family-handwritten);
   font-size: var(--font-3xl);
   line-height: var(--font-2xl);
   color: var(--color-text-darker);
-  margin-top: var(--s-5);
 }
 
 .c-about__video {

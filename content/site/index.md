@@ -23,7 +23,14 @@ aboutUs:
     desigualdades sociais e promoção da dignidade humana.
   aboutLink: https://wa.me/5581991984672
   bannerImg: /images/uploads/volunteer.png
-  bannerText: texto do banner
+  bannerText: |-
+    Ficou com alguma
+
+    dúvida?
+
+    Estamos aqui para
+
+    te ajudar!
   video: https://www.youtube.com/embed/lut_fiA-dN0
   stats:
     - count: 10
