@@ -1,10 +1,11 @@
-import { graphql, useStaticQuery } from 'gatsby';
-import { getImage } from 'gatsby-plugin-image';
-import React from 'react';
-import GretasEffect from '../shared/GretasEffect';
-import HighlightedText from '../shared/HighlightedText';
-import PaperEffect from '../shared/PaperEffect';
-import { MiniArticleSmall, MiniArticleBig } from './MiniArticle';
+import { format, parseISO } from "date-fns";
+import { graphql, useStaticQuery } from "gatsby";
+import { getImage } from "gatsby-plugin-image";
+import React from "react";
+import GretasEffect from "../shared/GretasEffect";
+import HighlightedText from "../shared/HighlightedText";
+import PaperEffect from "../shared/PaperEffect";
+import { MiniArticleBig, MiniArticleSmall } from "./MiniArticle";
 
 export const miniBlogImage = graphql`
   fragment miniBlogImage on File {
@@ -14,76 +15,101 @@ export const miniBlogImage = graphql`
   }
 `;
 
-export default function MiniBlog() {
-  const data = useStaticQuery(graphql`
-    query {
-      image1: file(relativePath: { eq: "images/mini-blog/artigo-1.jpg" }) {
-        ...miniBlogImage
-      }
-      image2: file(relativePath: { eq: "images/mini-blog/artigo-2.jpg" }) {
-        ...miniBlogImage
-      }
-      image3: file(relativePath: { eq: "images/mini-blog/artigo-3.jpg" }) {
-        ...miniBlogImage
-      }
-      image4: file(relativePath: { eq: "images/mini-blog/artigo-4.jpg" }) {
-        ...miniBlogImage
+export default function MiniBlog({ data }) {
+  const { title, linkText, articles } = data;
+  const query = useStaticQuery(graphql`
+    query ArticlesQuery {
+      allMarkdownRemark(
+        filter: {
+          fileAbsolutePath: { glob: "**/content/articles/**/index.md" }
+        }
+      ) {
+        edges {
+          node {
+            frontmatter {
+              name
+              shortDescription
+              date
+              author
+              categories
+              image {
+                ...miniBlogImage
+              }
+              imageAlt
+              externalUrl
+            }
+          }
+        }
       }
     }
   `);
-  const img1 = getImage(data.image1);
-  const img2 = getImage(data.image2);
-  const img3 = getImage(data.image3);
-  const img4 = getImage(data.image4);
+  const {
+    allMarkdownRemark: { edges },
+  } = query;
+  const filteredArticles = edges.filter(({ node: { frontmatter } }) =>
+    articles.includes(frontmatter.name)
+  );
+
+  const renderArticle = (
+    {
+      node: {
+        frontmatter: {
+          name,
+          author,
+          date,
+          image,
+          imageAlt,
+          categories,
+          externalUrl,
+        },
+      },
+    },
+    index
+  ) => {
+    let Component;
+    switch (index) {
+      case 0:
+      case 3:
+        Component = MiniArticleSmall;
+        break;
+      case 1:
+      case 2:
+        Component = MiniArticleBig;
+        break;
+      default:
+        if (index % 2 === 0) {
+          Component = MiniArticleSmall;
+        } else {
+          Component = MiniArticleBig;
+        }
+    }
+    return (
+      <Component
+        key={index}
+        title={name}
+        author={author}
+        date={format(parseISO(date), "MMMM, d, y")}
+        image={getImage(image)}
+        imageAlt={imageAlt}
+        url={externalUrl}
+        tags={categories}
+      />
+    );
+  };
 
   return (
     <section className="c-miniBlog">
       <div className="c-miniBlog__titleWrapper">
-        <HighlightedText className="c-miniBlog__title">Blog</HighlightedText>
+        <HighlightedText className="c-miniBlog__title">{title}</HighlightedText>
       </div>
-      <MiniArticleSmall
-        title="Agradecimentos"
-        author="Assessoria de Comunicação"
-        date="25 de FEVEREIRO, 2021"
-        image={img1}
-        imageAlt="Médica voluntária conversando com uma paciente"
-        url="https://www.instagram.com/p/CLsbh-xrqtm/"
-        tags={['PARCERIAS', 'REDE']}
-      />
-      <MiniArticleBig
-        title="Educação para Saúde"
-        author="Assessoria de Comunicação"
-        date="22 de FEVEREIRO, 2021"
-        image={img2}
-        imageAlt="Sala de aula repleta de pessoas com um video sendo projetado na parede"
-        url="https://www.instagram.com/p/CLkxw3lr1Lb/"
-        tags={['EDUCAÇÃO', 'SAÚDE', 'AÇÕES']}
-      />
-      <MiniArticleBig
-        title="Série de fotos #TBT"
-        author="Assessoria de Comunicação"
-        date="18 de FEVEREIRO, 2021"
-        image={img3}
-        imageAlt="Sala de aula repleta de pessoas com um video sendo projetado na parede"
-        url="https://www.instagram.com/p/CLcCKXRLEgn/"
-        tags={['PESSOAS', 'TBT']}
-      />
-      <MiniArticleSmall
-        title="Novidade 2021: Atendimento médico presencial"
-        author="Assessoria de Comunicação"
-        date="15 de FEVEREIRO, 2021"
-        image={img4}
-        imageAlt="Médica voluntária conversando com uma paciente"
-        url="https://www.instagram.com/p/CLUVPSkD0Zh/"
-        tags={['PARCERIAS', 'REDE', 'SAÚDE']}
-      />
+      {filteredArticles.map(renderArticle)}
       <a
         className="c-miniBlog__action c-button c-button-danger"
         href="https://instagram.com/gretas_org"
         target="_blank"
         rel="noreferrer"
       >
-        Ver todas as publicações
+        {linkText}
       </a>
       <GretasEffect className="c-miniBlog__bg" />
       <PaperEffect className="c-miniBlog__bottom" />

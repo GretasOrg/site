@@ -11,9 +11,11 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "netlify-local-backend": "npx netlify-cms-proxy-server"
   },
   "dependencies": {
+    "date-fns": "^2.22.1",
     "gatsby": "^3.1.1",
     "gatsby-plugin-image": "^1.1.2",
     "gatsby-plugin-netlify-cms": "^5.2.0",
@@ -23,6 +25,7 @@
     "gatsby-remark-copy-linked-files": "^3.2.0",
     "gatsby-remark-images": "^4.2.0",
     "gatsby-remark-prismjs": "^4.2.0",
+    "gatsby-remark-relative-images": "^2.0.2",
     "gatsby-remark-responsive-iframe": "^3.2.0",
     "gatsby-remark-smartypants": "^3.2.0",
     "gatsby-source-filesystem": "^3.1.0",
@@ -33,7 +36,8 @@
     "prismjs": "^1.23.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "showdown": "^1.9.1"
   },
   "devDependencies": {
     "eslint": "^7.22.0",

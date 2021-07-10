@@ -1,39 +1,42 @@
-import React from 'react';
-import { StaticImage } from 'gatsby-plugin-image';
-import FlowerEffect from '../shared/FlowerEffect';
-import HighlightedText from '../shared/HighlightedText';
-import PaperEffect from '../shared/PaperEffect';
+import { graphql } from "gatsby";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import React from "react";
+import FlowerEffect from "../shared/FlowerEffect";
+import HighlightedText from "../shared/HighlightedText";
+import PaperEffect from "../shared/PaperEffect";
 
-export default function Intro() {
+export const introBgImg = graphql`
+  fragment bgImage on File {
+    childImageSharp {
+      gatsbyImageData(width: 1920, placeholder: BLURRED, layout: FULL_WIDTH)
+    }
+  }
+`;
+
+export default function Intro({ data }) {
+  const { bgImg, linkText, title } = data;
+  const bgImgObj = getImage(bgImg.childImageSharp.gatsbyImageData);
+  console.log(bgImgObj);
   return (
     <section className="c-intro">
-      <StaticImage
+      <GatsbyImage
         className="c-intro__bg"
-        src="../../images/intro/bg.png"
+        image={bgImgObj}
         alt="Criança Sertaneja"
         loading="lazy"
-        placeholder="blurred"
-        layout="fullWidth"
         objectFit="cover"
-        style={{ position: 'absolute' }}
+        style={{ position: "absolute" }}
       />
-      <HighlightedText className="c-intro__title" color="warning">
-        Desenvolver o Sertão
-      </HighlightedText>
-      <HighlightedText className="c-intro__title" color="warning">
-        é dar oportunidade
-      </HighlightedText>
-      <HighlightedText className="c-intro__title" color="warning">
-        de crescimento
-      </HighlightedText>
-      <HighlightedText className="c-intro__title" color="warning">
-        à sua riqueza
-      </HighlightedText>
+      {title.map((line, index) => (
+        <HighlightedText className="c-intro__title" color="warning" key={index}>
+          {line}
+        </HighlightedText>
+      ))}
       <a
         href="#features"
         className="c-button c-button-danger c-intro__readMore"
       >
-        Saiba mais
+        {linkText}
       </a>
       <PaperEffect className="c-intro__bottom" />
       <FlowerEffect className="c-intro__flowerTopLeft" />

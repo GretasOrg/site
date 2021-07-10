@@ -1,31 +1,35 @@
-import React from 'react';
-import { Helmet } from 'react-helmet';
-import AboutUs from '../components/index/AboutUs';
-import Donations from '../components/index/Donations';
-import Features from '../components/index/Features';
-import Intro from '../components/index/Intro';
-import JoinUs from '../components/index/JoinUs';
-import MiniBlog from '../components/index/MiniBlog';
-import Footer from '../components/shared/Footer';
-import Header from '../components/shared/Header';
-import favicon from '../images/branding/favicon.png';
+import { graphql } from "gatsby";
+import React from "react";
+import { Helmet } from "react-helmet";
+import AboutUs from "../components/index/AboutUs";
+import Donations from "../components/index/Donations";
+import Features from "../components/index/Features";
+import Intro from "../components/index/Intro";
+import JoinUs from "../components/index/JoinUs";
+import MiniBlog from "../components/index/MiniBlog";
+import Footer from "../components/shared/Footer";
+import Header from "../components/shared/Header";
+import favicon from "../images/branding/favicon.png";
 
-export default function Home() {
+export default function Home({ data }) {
   return (
     <React.Fragment>
       <Header actionLink="#donations" />
       <main>
-        <Intro />
-        <AboutUs />
-        <Donations id="donations" />
-        <Features />
-        <JoinUs />
-        <MiniBlog />
+        <Intro data={data.markdownRemark.frontmatter.intro} />
+        <AboutUs data={data.markdownRemark.frontmatter.aboutUs} />
+        <Donations
+          id="donations"
+          data={data.markdownRemark.frontmatter.donations}
+        />
+        <Features data={data.markdownRemark.frontmatter.features} />
+        <JoinUs data={data.markdownRemark.frontmatter.joinUs} />
+        <MiniBlog data={data.markdownRemark.frontmatter.miniBlog} />
       </main>
       <Footer />
       <Helmet
         htmlAttributes={{
-          lang: 'pt-BR',
+          lang: "pt-BR",
         }}
       >
         <meta charSet="utf-8" />
@@ -70,3 +74,63 @@ export default function Home() {
     </React.Fragment>
   );
 }
+
+export const query = graphql`
+  {
+    markdownRemark(fileAbsolutePath: { glob: "**/content/site/index.md" }) {
+      frontmatter {
+        aboutUs {
+          aboutLink
+          aboutLinkText
+          aboutText
+          bannerImg {
+            ...fullWidthImageFragment
+          }
+          bannerText
+          stats {
+            color
+            count
+            text
+          }
+          title
+          video
+        }
+        donations {
+          bgImgLeft {
+            ...fullWidthImageFragment
+          }
+          bgImgRight {
+            ...fullWidthImageFragment
+          }
+          linkText
+          title
+        }
+        features {
+          quotes
+          title
+        }
+        intro {
+          bgImg {
+            ...fullWidthImageFragment
+          }
+          linkText
+          title
+        }
+        joinUs {
+          bgImg {
+            ...fullWidthImageFragment
+          }
+          bgImgAlt
+          linkText
+          text
+          title
+        }
+        miniBlog {
+          title
+          linkText
+          articles
+        }
+      }
+    }
+  }
+`;

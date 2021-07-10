@@ -4,7 +4,7 @@
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
 
-const { setBranchEnvironment } = require('./env-helper');
+const { setBranchEnvironment } = require("./env-helper");
 
 setBranchEnvironment();
 
@@ -21,19 +21,12 @@ module.exports = {
     humana.`,
   },
   plugins: [
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp", // Needed for dynamic images
     {
-      resolve: 'gatsby-plugin-netlify-cms',
-      options: {
-        manualInit: true,
-        modulePath: `${__dirname}/src/cms/cms.js`,
-      },
-    },
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-image',
-    'gatsby-plugin-sharp',
-    'gatsby-transformer-sharp', // Needed for dynamic images
-    {
-      resolve: 'gatsby-plugin-react-svg',
+      resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
           include: /\.inline\.svg$/,
@@ -43,18 +36,40 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `images`,
+        path: `${__dirname}/static`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `src`,
-        path: `${__dirname}/src/`,
+        path: `${__dirname}/content`,
       },
     },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          // gatsby-remark-relative-images must go before gatsby-remark-images
+          {
+            resolve: `gatsby-remark-relative-images`,
+            options: {
+              // [Optional] The root of "media_folder" in your config.yml
+              // Defaults to "static"
+              staticFolderName: "static",
+              // [Optional] Include the following fields, use dot notation for nested fields
+              // All fields are included by default
+              // include: ['featured'],
+              // [Optional] Exclude the following fields, use dot notation for nested fields
+              // No fields are excluded by default
+              // exclude: ['featured.skip'],
+            },
+          },
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 630,
+              maxWidth: 590,
             },
           },
           {
@@ -66,6 +81,13 @@ module.exports = {
           `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
+          {
+            resolve: "gatsby-plugin-netlify-cms",
+            options: {
+              manualInit: true,
+              modulePath: `${__dirname}/src/cms/cms.js`,
+            },
+          },
         ],
       },
     },

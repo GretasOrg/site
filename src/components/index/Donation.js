@@ -1,29 +1,29 @@
-import { GatsbyImage } from 'gatsby-plugin-image';
-import React, { useState } from 'react';
-import CurrencyInput from '../shared/CurrencyInput';
+import { GatsbyImage } from "gatsby-plugin-image";
+import React, { useState } from "react";
+import CurrencyInput from "../shared/CurrencyInput";
 
 export default function Donation({
   className,
-  plan,
-  price,
-  title,
+  planId,
+  value,
+  name,
   description,
   auxText,
   image,
   imageAlt,
-  readonly = false,
+  isEditable = false,
   titleSmall = false,
 }) {
   const [isOpen, setIsOpen] = useState(false);
-  const [currentPrice, setPrice] = useState(price);
+  const [currentPrice, setPrice] = useState(value);
   const [currentFrequency, setFrequency] = useState(0);
   const options = [
-    { value: 0, label: 'Somente uma vez' },
-    { value: 1, label: 'Por mês' },
+    { value: 0, label: "Somente uma vez" },
+    { value: 1, label: "Por mês" },
   ];
 
   function url() {
-    return `https://gretas.faturasimples.com.br/contratar/gretas?plano=${plan}&valor=${currentPrice}&recorrencia=${currentFrequency}`;
+    return `https://gretas.faturasimples.com.br/contratar/gretas?plano=${planId}&valor=${currentPrice}&recorrencia=${currentFrequency}`;
   }
 
   function selectedOption() {
@@ -35,21 +35,21 @@ export default function Donation({
   }
 
   function handleKeyDownOnDropdownToggle(ev) {
-    if (ev.key === 'Enter') {
+    if (ev.key === "Enter") {
       toggleDropdown();
     }
   }
 
   function handleKeyDownOnOption(ev, value) {
-    if (ev.key === 'Enter') {
+    if (ev.key === "Enter") {
       setFrequency(value);
     }
   }
 
   return (
     <article
-      className={`c-donation ${className || ''} ${
-        titleSmall === true ? 'c-donation-titleSmall' : ''
+      className={`c-donation ${className || ""} ${
+        titleSmall === true ? "c-donation-titleSmall" : ""
       }`}
     >
       <div className="l-donation__header">
@@ -62,24 +62,20 @@ export default function Donation({
         />
       </div>
       <div className="l-donation__body">
-        <h3 className="c-donation__title">{title}</h3>
+        <h3 className="c-donation__title">{name}</h3>
         <p className="c-donation__text">{description}</p>
         <div className="c-donation__price">
           <span className="c-donation__currency">R$</span>
           <CurrencyInput
             className="c-donation__input c-input c-input-success c-input-noControls c-input-big"
-            ariaTitle={title}
+            ariaTitle={name}
             onChange={setPrice}
-            initialValue={price}
-            readonly={readonly}
+            initialValue={value}
+            readonly={!isEditable}
           ></CurrencyInput>
         </div>
-        {/* role="listbox"
-        onKeyDown={handleDropdownKey}
-        aria-label="Seleção de frequência de doação"
-      */}
         <div
-          className={`c-donation__plan c-dropdown ${isOpen ? '' : 'js-closed'}`}
+          className={`c-donation__plan c-dropdown ${isOpen ? "" : "js-closed"}`}
           onClick={toggleDropdown}
           onKeyDown={handleKeyDownOnDropdownToggle}
           role="button"
@@ -89,9 +85,9 @@ export default function Donation({
             {selectedOption()?.label}
           </span>
           <ul
-            className={`c-dropdown__menu ${isOpen ? '' : 'js-closed'}`}
+            className={`c-dropdown__menu ${isOpen ? "" : "js-closed"}`}
             role="listbox"
-            id={'Seleção ' + title}
+            id={"Seleção " + name}
           >
             {options.map((option) => (
               <li
@@ -101,13 +97,9 @@ export default function Donation({
                 onKeyDown={(ev) => handleKeyDownOnOption(ev, option.value)}
                 role="option"
                 aria-selected={currentFrequency === option.value}
-                aria-labelledby={'Seleção ' + title}
+                aria-labelledby={"Seleção " + name}
               >
                 {option.label}
-                {/* <button
-                
-              >
-              </button> */}
               </li>
             ))}
           </ul>
