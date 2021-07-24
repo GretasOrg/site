@@ -1,6 +1,6 @@
 .c-about {
   --padding-top: var(--s-9);
-  --padding-bottom: 0;
+  --padding-bottom: var(--s-10);
   padding: var(--padding-top) var(--main-content-padding);
   padding-bottom: var(--padding-bottom);
   background-color: var(--color-faded);
