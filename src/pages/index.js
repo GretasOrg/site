@@ -18,13 +18,13 @@ export default function Home({ data }) {
       <main>
         <Intro data={data.markdownRemark.frontmatter.intro} />
         <AboutUs data={data.markdownRemark.frontmatter.aboutUs} />
+        <Features data={data.markdownRemark.frontmatter.features} />
         <Donations
           id="donations"
           data={data.markdownRemark.frontmatter.donations}
         />
-        <Features data={data.markdownRemark.frontmatter.features} />
         <JoinUs data={data.markdownRemark.frontmatter.joinUs} />
-        <MiniBlog data={data.markdownRemark.frontmatter.miniBlog} />
+        {/* <MiniBlog data={data.markdownRemark.frontmatter.miniBlog} /> */}
       </main>
       <Footer />
       <Helmet

@@ -33,6 +33,14 @@
   max-width: calc(400rem / 16);
 }
 
+.c-features__bottom {
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  fill: var(--color-bg-faded-darker);
+}
+
 @media (max-width: 1536px) {
 }
 

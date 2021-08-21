@@ -13,7 +13,7 @@ intro:
     - é valorizar
     - sua riqueza
 aboutUs:
-  title: Nós somos o Gretas!
+  title: Nós somos o Gretas
   aboutText: Somos um grupo de pessoas inquietas, transformadoras e comprometidas
     com a causa sertaneja. Trabalhamos com as comunidades rurais do Sertão
     Pernambucano, no estímulo à autonomia e empoderamento dos moradores e
@@ -49,7 +49,7 @@ aboutUs:
       color: --color-faded-dark
   aboutLinkText: Junte-se a nós!
 donations:
-  title: Nossas Ações
+  title: Apoie o Gretas
   linkText: Todas as ações
   bgImgLeft: /images/uploads/bg-verde.png
   bgImgRight: /images/uploads/bg-amarelo.png
@@ -60,12 +60,8 @@ features:
     rurais de Pernambuco através de programas com projetos que contribuem
     para os seguintes Objetivos de Desenvolvimentos Sustentáveis (ODS):
 joinUs:
-  title: |-
-    Quer participar de alguma ação? Torne-se um valioso voluntário do
-    Gretas. Sua atitude pode mudar vidas!
-  text: |-
-    Ajude o projeto,
-    seja voluntário!
+  title: Faça a diferença. Seja um voluntário do Gretas. Sua atitude pode mudar vidas!
+  text: " "
   linkText: Junte-se a nós!
   bgImg: /images/uploads/join-us-bg.png
   bgImgAlt: Sombra de pessoas brincando

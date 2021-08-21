@@ -2,6 +2,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import React from "react";
 import HighlightedText from "../shared/HighlightedText";
+import PaperEffect from "../shared/PaperEffect";
 
 export const odsImage = graphql`
   fragment odsImage on File {
@@ -60,6 +61,7 @@ export default function Features({ data }) {
           </li>
         ))}
       </ul>
+      <PaperEffect className="c-features__bottom" />
     </section>
   );
 }
