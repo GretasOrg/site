@@ -56,7 +56,7 @@ export default function AboutUs({ data }) {
         </ul>
       </div>
       <div className="l-about__col3">
-        <div className="c-about__banner">
+        {/* <div className="c-about__banner">
           <FluidSquareSVG className="c-about__bannerBg" />
           <GatsbyImage
             className="c-about__volunteer"
@@ -71,7 +71,7 @@ export default function AboutUs({ data }) {
               __html: converter.makeHtml(bannerText),
             }}
           ></span>
-        </div>
+        </div> */}
         <Video
           className="c-about__video"
           videoSrcURL={video}

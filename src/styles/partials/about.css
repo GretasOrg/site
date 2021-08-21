@@ -107,7 +107,7 @@
 
 .c-about__video {
   width: 100%;
-  flex: 1;
+  /* flex: 1; */
   margin-top: var(--s-3);
   min-height: 14rem;
 }
