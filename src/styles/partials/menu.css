@@ -58,6 +58,12 @@ right flower */
 .c-menu__action:hover {
   text-decoration: underline;
 }
+
+.c-menu__actionIcon {
+  margin-left: var(--s-2);
+  fill: var(--color-text-danger);
+}
+
 .c-menu__btn {
   display: none;
 }
@@ -109,7 +115,7 @@ right flower */
   }
   .c-menu__btn::after,
   .c-menu__btn::before {
-    content: '-';
+    content: "-";
     width: var(--font-lg);
     height: var(--s-01);
     background-color: var(--color-text-darker);

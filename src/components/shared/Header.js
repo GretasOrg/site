@@ -1,5 +1,6 @@
-import { StaticImage } from 'gatsby-plugin-image';
-import React, { useState } from 'react';
+import { StaticImage } from "gatsby-plugin-image";
+import React, { useState } from "react";
+import InstagramSVG from "../../images/icons/instagram.inline.svg";
 
 export default function Header({ actionLink }) {
   const [isOpen, setOpen] = useState(false);
@@ -29,13 +30,14 @@ export default function Header({ actionLink }) {
       </ul>
       <a className="c-menu__action" href={actionLink}>
         Doe agora!
+        <InstagramSVG className="c-menu__actionIcon" />
       </a>
       <button
-        className={isOpen ? 'c-menu__btn js-open' : 'c-menu__btn'}
+        className={isOpen ? "c-menu__btn js-open" : "c-menu__btn"}
         aria-label="Menu"
         onClick={onClick}
       ></button>
-      <nav className={isOpen ? 'c-mobileMenu js-open' : 'c-mobileMenu'}>
+      <nav className={isOpen ? "c-mobileMenu js-open" : "c-mobileMenu"}>
         <a className="c-mobileMenu__item" href="/">
           Home
         </a>
