@@ -10,9 +10,8 @@ intro:
   bgImg: /images/uploads/bg.png
   title:
     - Desenvolver o Sertão
-    - é dar oportunidade
-    - de crescimento
-    - à sua riqueza
+    - é valorizar
+    - sua riqueza
 aboutUs:
   title: Nós somos o Gretas!
   aboutText: Somos um grupo de pessoas inquietas, transformadoras e comprometidas
