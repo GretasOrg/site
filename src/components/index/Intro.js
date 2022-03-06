@@ -33,7 +33,7 @@ export default function Intro({ data }) {
         </HighlightedText>
       ))}
       <a
-        href="#features"
+        href="https://wa.me/5581991984672"
         className="c-button c-button-danger c-intro__readMore"
       >
         {linkText}

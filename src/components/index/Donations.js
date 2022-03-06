@@ -81,12 +81,14 @@ export default function Donations({ id, data }) {
           ))}
         </ul>
       </div>
-      <a
-        className="c-button c-button-danger c-donations__action"
-        href="https://instagram.com/gretas_org"
-      >
-        {linkText}
-      </a>
+      {linkText?.length > 0 && (
+        <a
+          className="c-button c-button-danger c-donations__action"
+          href="https://instagram.com/gretas_org"
+        >
+          {linkText}
+        </a>
+      )}
       <PaperEffect className="c-donations__bottom" />
     </section>
   );

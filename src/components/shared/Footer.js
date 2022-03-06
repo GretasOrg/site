@@ -1,7 +1,7 @@
-import { StaticImage } from 'gatsby-plugin-image';
-import React from 'react';
-import InstagramSVG from '../../images/icons/instagram.inline.svg';
-import FacebookSVG from '../../images/icons/facebook.inline.svg';
+import { StaticImage } from "gatsby-plugin-image";
+import React from "react";
+import InstagramSVG from "../../images/icons/instagram.inline.svg";
+import FacebookSVG from "../../images/icons/facebook.inline.svg";
 
 export default function Footer() {
   return (
@@ -57,7 +57,11 @@ export default function Footer() {
           </a>
         </li>
       </ul>
-      <form className="c-footer__subscriptionForm">
+      <form
+        className="c-footer__subscriptionForm"
+        action="https://wa.me/5581991984672"
+        method="GET"
+      >
         <label className="c-footer__subscriptionLabel" htmlFor="email">
           Inscreva-se na nossa newsletter
         </label>
@@ -79,7 +83,7 @@ export default function Footer() {
         <li className="c-footer__link">
           AV. NORTE MIGUEL ARRAES DE ALENCAR, 3003 - ROSARINHO. RECIFE-PE
         </li>
-        <li className="c-footer__link">+55 (81) 9 9723-0560</li>
+        <li className="c-footer__link">(81) 9 9198-4672</li>
         <li className="c-footer__link">contato@gretas.org</li>
       </ul>
     </footer>

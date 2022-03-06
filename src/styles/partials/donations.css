@@ -35,6 +35,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-bottom: var(--s-5);
 }
 
 .l-donations__list {
