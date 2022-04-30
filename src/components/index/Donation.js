@@ -104,7 +104,7 @@ export default function Donation({
             ))}
           </ul>
         </div>
-        <p className="c-donation__description">{auxText}</p>
+        {auxText && <p className="c-donation__description">{auxText}</p>}
         <a
           className="c-donation__action c-button c-button-success c-button-round"
           href={url()}

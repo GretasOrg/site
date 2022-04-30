@@ -1,8 +1,7 @@
 ---
 name: Doe o quanto quiser!
-description: Sua contribuição auxilia o Gretas a levar benefícios de alimentação
-  e cuidados básicos, acesso à saúde e educação para a população de Ibimirim.
-auxText: Todo valor doado será direcionado para a Ação Ibimirim.
+description: Sua contribuição auxilia o Gretas a realizar suas atividades de Planejamento e Gestão focados no desenvolvimento social de Ibimirim.
+auxText: ""
 value: 0
 isEditable: true
 planId: "9"
