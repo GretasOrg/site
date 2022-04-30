@@ -16,7 +16,6 @@ export const introBgImg = graphql`
 export default function Intro({ data }) {
   const { bgImg, linkText, title } = data;
   const bgImgObj = getImage(bgImg.childImageSharp.gatsbyImageData);
-  console.log(bgImgObj);
   return (
     <section className="c-intro">
       <GatsbyImage

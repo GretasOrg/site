@@ -4,7 +4,6 @@ import PaperEffect from "../shared/PaperEffect";
 
 export default function JoinUs({ data }) {
   const { title, text, bgImg, bgImgAlt, linkText } = data;
-  console.log("JoinUs", { title, text, bgImg, linkText });
   const bgImgObj = getImage(bgImg);
   return (
     <section className="c-joinUs">
