@@ -4,8 +4,11 @@
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
 
-const { setBranchEnvironment } = require("./env-helper");
+require("dotenv").config({
+  path: `.env`,
+});
 
+const { setBranchEnvironment } = require("./env-helper");
 setBranchEnvironment();
 
 module.exports = {
