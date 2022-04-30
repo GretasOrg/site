@@ -1,0 +1,114 @@
+.c-miniBlog {
+  --padding-top: var(--s-7);
+  --padding-bottom: var(--s-15);
+  --general-font-size: var(--font-lg);
+  --flex-gap: var(--s-3);
+  --item-gap: var(--s-2);
+  padding: var(--padding-top) var(--main-content-padding);
+  padding-bottom: var(--padding-bottom);
+  background-color: var(--color-bg-lightest);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+}
+
+.c-miniBlog__titleWrapper {
+  flex: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+.c-miniBlog__title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--s-9);
+  fill: var(--color-bg-faded-dark);
+}
+
+.c-miniBlog__item-small,
+.c-miniBlog__item-big {
+  margin-bottom: var(--s-3);
+  min-height: 21rem;
+  max-height: 30rem;
+  z-index: 1;
+}
+
+.c-miniBlog__item-small > *,
+.c-miniBlog__item-big > * {
+  height: 100%;
+}
+
+.c-miniBlog__item-small {
+  flex: 0 0 calc(30% - var(--flex-gap) / 2);
+}
+
+.c-miniBlog__item-big {
+  flex: 0 0 calc(70% - var(--flex-gap) / 2);
+}
+
+.c-miniBlog__bg,
+.c-miniBlog__bottom {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.c-miniBlog__bottom {
+  bottom: -2px;
+  fill: var(--color-bg-faded-dark);
+}
+
+.c-miniBlog__action {
+  margin: auto;
+  margin-top: var(--s-5);
+  z-index: 1;
+}
+
+@media (max-width: 1536px) {
+}
+
+@media (max-width: 1280px) {
+}
+
+@media (max-width: 1024px) {
+  .c-miniBlog__item-small {
+    flex: 0 0 calc(33.3% - var(--flex-gap) / 2);
+  }
+
+  .c-miniBlog__item-big {
+    flex: 0 0 calc(66.6% - var(--flex-gap) / 2);
+  }
+}
+
+@media (max-width: 768px) {
+  .c-miniBlog {
+    --padding-top: var(--s-6);
+  }
+  .c-miniBlog__title {
+    margin-bottom: var(--s-7);
+  }
+
+  .c-miniBlog__item-small {
+    flex: 0 0 calc(44% - var(--flex-gap) / 2);
+  }
+
+  .c-miniBlog__item-big {
+    flex: 0 0 calc(56% - var(--flex-gap) / 2);
+  }
+}
+
+@media (max-width: 640px) {
+  .c-miniBlog__title {
+    margin-bottom: var(--s-5);
+  }
+
+  .c-miniBlog__item-small,
+  .c-miniBlog__item-big {
+    flex: 0 0 100%;
+  }
+}
+@media (max-width: 359px) {
+}

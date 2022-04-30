@@ -1,0 +1,40 @@
+.c-input:focus {
+  outline: none;
+}
+
+.c-input {
+  line-height: var(--font-base);
+  font-size: var(--font-base);
+  font-weight: bold;
+  display: inline-block;
+  border: none;
+  border-bottom: calc(1rem / 16) solid var(--color-input-border);
+  user-select: none;
+  padding: var(--s-2) 0;
+  text-decoration: none;
+}
+
+.c-input.c-input-disabledDiscrete[aria-disabled="true"],
+.c-input.c-input-disabledDiscrete[disabled] {
+  cursor: unset;
+}
+
+.c-input.c-input-success {
+  color: var(--color-success);
+}
+
+.c-input.c-input-big {
+  font-size: var(--font-5xl);
+}
+
+/* Firefox */
+.c-input.c-input-noControls[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input.c-input.c-input-noControls::-webkit-outer-spin-button,
+input.c-input.c-input-noControls::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
