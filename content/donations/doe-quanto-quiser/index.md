@@ -2,8 +2,7 @@
 name: Doe o quanto quiser!
 description: Sua contribuição auxilia o Gretas a realizar suas atividades de
   Planejamento e Gestão focados no desenvolvimento social de Ibimirim.
-auxText: Algum texto aqui soh pra testar uma parada la Algum texto aqui soh pra
-  testar uma parada la Algum texto aqui soh pra testar uma parada la
+auxText:
 value: 0
 isEditable: true
 titleSmall: false
