@@ -1,7 +1,6 @@
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { getImage } from "gatsby-plugin-image";
 import React from "react";
 import { Converter } from "showdown";
-import FluidSquareSVG from "../../images/effects/fluid-square-effect.inline.svg";
 import HighlightedText from "../shared/HighlightedText";
 import PaperEffect from "../shared/PaperEffect";
 import StatsEffect from "../shared/StatsEffect";

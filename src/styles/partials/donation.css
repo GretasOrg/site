@@ -4,7 +4,8 @@
   background-color: var(--color-bg-lightest);
   width: calc(100vh * 401 / 1920);
   min-width: calc(322rem / 16);
-  height: calc(480rem / 16);
+  height: calc(632rem / 16);
+  /* height: calc(480rem / 16); */
   /* height: calc(600rem / 16); -- height com o auxText */
   overflow: hidden;
 }
@@ -51,9 +52,10 @@
 }
 
 .c-donation__text {
-  --lines: 2;
+  --lines: 3;
   --line-height: var(--font-lg);
   margin: var(--s-5) auto 0 auto;
+  padding: var(--s-1) 0;
   font-size: var(--font-sm);
   line-height: var(--line-height);
   height: calc(var(--lines) * var(--line-height));
@@ -92,7 +94,7 @@
 }
 
 .c-donation__description {
-  --lines: 4;
+  --lines: 5;
   --line-height: var(--font-xl);
   margin: var(--s-2) auto 0 auto;
   font-size: var(--font-xs);

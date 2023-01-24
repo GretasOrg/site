@@ -15,6 +15,11 @@ const donationsCollections = {
     { label: "Texto Auxiliar", name: "auxText", widget: "text" },
     { label: "Valor", name: "value", widget: "number" },
     { label: "É Editável?", name: "isEditable", widget: "boolean" },
+    {
+      label: "Diminuir fonte do título?",
+      name: "titleSmall",
+      widget: "boolean",
+    },
     { label: "ID do Plano", name: "planId", widget: "string" },
     {
       label: "Imagem",
