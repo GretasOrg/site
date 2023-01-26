@@ -43,6 +43,7 @@ export default function Donations({ id, data }) {
                 ...donationImage
               }
               imageAlt
+              titleSmall
             }
           }
         }
@@ -74,11 +75,14 @@ export default function Donations({ id, data }) {
       />
       <div className="l-donations__listWrapper">
         <ul className="l-donations__list">
-          {edges.map(({ node: { frontmatter: props } }) => (
-            <li key={props.name}>
-              <Donation {...props} image={getImage(props.image)} />
-            </li>
-          ))}
+          {edges
+            .map(({ node: { frontmatter: props } }) => props)
+            .sort((a, b) => (a.isEditable ? -1 : a.value < b.value ? -1 : 1))
+            .map((props) => (
+              <li key={props.name}>
+                <Donation {...props} image={getImage(props.image)} />
+              </li>
+            ))}
         </ul>
       </div>
       {linkText?.length > 0 && (
